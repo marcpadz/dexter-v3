@@ -1,16 +1,19 @@
 "use server";
 
-import { prisma } from "@/lib/db";
-import { auth } from "@/lib/session";
+import { db } from "@/lib/db";
+import { messages } from "@/lib/db/schema/messages";
+import { conversations } from "@/lib/db/schema/conversations";
+import { eq, asc, and } from "drizzle-orm";
+import { getSession } from "@/lib/auth/session";
 
 export async function getMessages(conversationId: string) {
-  const { userId } = await auth();
-  if (!userId) return [];
-  const conv = await prisma.conversation.findFirst({
-    where: { id: conversationId, userId },
-    include: { messages: { orderBy: { createdAt: "asc" } } },
-  });
-  return conv?.messages ?? [];
+  const session = await getSession();
+  if (!session) return [];
+
+  const conv = await db.select().from(conversations).where(and(eq(conversations.id, conversationId), eq(conversations.userId, session.user.id))).limit(1);
+  if (!conv.length) return [];
+
+  return db.select().from(messages).where(eq(messages.conversationId, conversationId)).orderBy(asc(messages.createdAt));
 }
 
 export async function createMessage(data: {
@@ -18,29 +21,23 @@ export async function createMessage(data: {
   role: string;
   content: string;
   model?: string;
-  messageGroupId?: string;
+  toolCalls?: any;
+  toolCallId?: string;
 }) {
-  const { userId } = await auth();
-  if (!userId) throw new Error("Unauthorized");
-  const conv = await prisma.conversation.findFirst({
-    where: { id: data.conversationId, userId },
-  });
-  if (!conv) throw new Error("Conversation not found");
-  return prisma.message.create({
-    data: {
-      conversationId: data.conversationId,
-      role: data.role,
-      content: data.content,
-      model: data.model || null,
-      messageGroupId: data.messageGroupId || "main",
-    },
-  });
-}
+  const session = await getSession();
+  if (!session) throw new Error("Unauthorized");
 
-export async function deleteMessage(id: string) {
-  const { userId } = await auth();
-  if (!userId) throw new Error("Unauthorized");
-  const msg = await prisma.message.findUnique({ where: { id }, include: { conversation: true } });
-  if (!msg || msg.conversation.userId !== userId) throw new Error("Unauthorized");
-  await prisma.message.delete({ where: { id } });
+  const conv = await db.select().from(conversations).where(and(eq(conversations.id, data.conversationId), eq(conversations.userId, session.user.id))).limit(1);
+  if (!conv.length) throw new Error("Conversation not found");
+
+  const [msg] = await db.insert(messages).values({
+    conversationId: data.conversationId,
+    role: data.role,
+    content: data.content,
+    model: data.model || null,
+    toolCalls: data.toolCalls || null,
+    toolCallId: data.toolCallId || null,
+  }).returning();
+
+  return msg;
 }
