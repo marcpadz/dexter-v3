@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { getApiKeys, saveApiKey, deleteApiKey, updateProfile, getUserSettings } from "@/lib/server/actions/settings";
+import { getApiKeys, saveApiKey, deleteApiKey, updateUserSettings, getUserSettings } from "@/lib/server/actions/settings";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -40,7 +40,7 @@ export default function SettingsPage() {
     const key = providerInputs[provider];
     if (!key) return;
     try {
-      await saveApiKey(provider, key);
+      await saveApiKey({ provider, encryptedKey: key, iv: "" });
       toast.success(`${provider} API key saved`);
       setProviderInputs(prev => ({ ...prev, [provider]: "" }));
       const updatedKeys = await getApiKeys();
@@ -67,7 +67,7 @@ export default function SettingsPage() {
     const name = formData.get("name") as string;
     const image = formData.get("image") as string;
     try {
-      await updateProfile({ name, image });
+      await updateUserSettings({ name });
       toast.success("Profile updated");
     } catch (e) {
       toast.error("Failed to update profile");

@@ -1,16 +1,8 @@
 "use client";
 
-// TODO: When CopilotKit is available, import useCopilotAction
-// import { useCopilotAction } from "@copilotkit/react-core";
+import { useCopilotAction } from "@copilotkit/react-core";
 import { useWorkspaceStore, ArtifactType } from "../workspace/workspace-store";
 import { v4 as uuidv4 } from "uuid";
-
-// Mock hook since CopilotKit isn't fully installed yet according to dependencies
-// eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any
-const useCopilotAction = (params: any) => {
-  // Mock implementation
-  return null;
-};
 
 export function useWorkspaceTools() {
   const addArtifact = useWorkspaceStore((s) => s.addArtifact);
@@ -53,8 +45,7 @@ export function useWorkspaceTools() {
         required: false,
       },
     ],
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    handler: async ({ type, title, content, language }: any) => {
+    handler: async ({ type, title, content, language }: { type: string; title: string; content: string; language?: string }) => {
       const id = uuidv4();
       addArtifact({
         id,
@@ -84,8 +75,7 @@ export function useWorkspaceTools() {
       },
       { name: "content", type: "string", description: "The new content." },
     ],
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    handler: async ({ id, content }: any) => {
+    handler: async ({ id, content }: { id: string; content: string }) => {
       updateArtifactStore(id, content);
       pushActivity({
         kind: "success",
@@ -110,8 +100,7 @@ export function useWorkspaceTools() {
         description: "The HTML content of the document.",
       },
     ],
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    handler: async ({ title, content }: any) => {
+    handler: async ({ title, content }: { title: string; content: string }) => {
       const id = uuidv4();
       setDocumentId(id);
       setDocumentTitle(title);
@@ -136,8 +125,7 @@ export function useWorkspaceTools() {
         description: "The base64 encoded screenshot of the page.",
       },
     ],
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    handler: async ({ url, screenshot_base64 }: any) => {
+    handler: async ({ url, screenshot_base64 }: { url: string; screenshot_base64: string }) => {
       setBrowserUrl(url);
       setBrowserScreenshot(screenshot_base64);
       setActiveTab("browser");
@@ -164,8 +152,7 @@ export function useWorkspaceTools() {
         description: "The output of the command execution.",
       },
     ],
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    handler: async ({ command, output }: any) => {
+    handler: async ({ command, output }: { command: string; output: string }) => {
       appendTerminalOutput(`$ ${command}\n${output}\n`);
       setActiveTab("terminal");
       pushActivity({
@@ -191,8 +178,7 @@ export function useWorkspaceTools() {
         description: "The files in the directory.",
       },
     ],
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    handler: async ({ path, files }: any) => {
+    handler: async ({ path, files }: { path: string; files: Array<{ name: string; path: string; isDir: boolean; size: number; modifiedAt: string }> }) => {
       setFiles(files);
       setActiveTab("files");
       pushActivity({
@@ -218,9 +204,7 @@ export function useWorkspaceTools() {
         description: "The content of the file.",
       },
     ],
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any
-    handler: async ({ path, content }: any) => {
-      // In a real app we'd load the content into the file object
+    handler: async ({ path, content }: { path: string; content: string }) => {
       setSelectedFilePath(path);
       setActiveTab("files");
       pushActivity({
@@ -242,8 +226,7 @@ export function useWorkspaceTools() {
       },
       { name: "content", type: "string", description: "The content to write." },
     ],
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any
-    handler: async ({ path, content }: any) => {
+    handler: async ({ path, content }: { path: string; content: string }) => {
       pushActivity({
         kind: "success",
         title: `Wrote file: ${path}`,

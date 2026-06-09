@@ -32,51 +32,58 @@
     {
       "id": "t11",
       "content": "Clean up old v2 files and resolve conflicts",
-      "status": "in_progress",
+      "status": "completed",
       "priority": "high",
       "activeForm": "Cleaning up old files",
       "metadata": {},
       "blocks": [],
       "blockedBy": [],
       "createdAt": 1781037607371,
-      "updatedAt": 1781037858601,
-      "startedAt": 1781037858601
+      "updatedAt": 1781037908507,
+      "startedAt": 1781037858601,
+      "completedAt": 1781037908507
     },
     {
       "id": "t12",
       "content": "Build 6 missing workspace surface components",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "activeForm": "Building workspace surfaces",
       "metadata": {},
       "blocks": [],
       "blockedBy": [],
       "createdAt": 1781037607377,
-      "updatedAt": 1781037607377
+      "updatedAt": 1781038541896,
+      "startedAt": 1781037926015,
+      "completedAt": 1781038541896
     },
     {
       "id": "t13",
       "content": "Wire real CopilotKit useCopilotAction (replace mock)",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "activeForm": "Wiring CopilotKit actions",
       "metadata": {},
       "blocks": [],
       "blockedBy": [],
       "createdAt": 1781037607384,
-      "updatedAt": 1781037607384
+      "updatedAt": 1781038622760,
+      "startedAt": 1781038551273,
+      "completedAt": 1781038622760
     },
     {
       "id": "t14",
       "content": "Verify build compiles cleanly",
-      "status": "pending",
+      "status": "completed",
       "priority": "high",
       "activeForm": "Verifying build",
       "metadata": {},
       "blocks": [],
       "blockedBy": [],
       "createdAt": 1781037607389,
-      "updatedAt": 1781037607389
+      "updatedAt": 1781039139359,
+      "startedAt": 1781038633180,
+      "completedAt": 1781039139359
     }
   ]
 }
