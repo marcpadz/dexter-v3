@@ -1,0 +1,48 @@
+from langgraph.graph import StateGraph, END
+from services.agent.app.graph.state import AgentState
+from services.agent.app.graph.nodes.llm import call_llm
+from services.agent.app.graph.nodes.router import route_after_llm
+from services.agent.app.graph.subgraphs.research import create_research_subgraph
+from services.agent.app.graph.subgraphs.code import create_code_subgraph
+from typing import Dict, Any
+
+# Mock tools node until implemented
+def tools_node(state: AgentState) -> Dict[str, Any]:
+    return {"messages": []}
+
+def build_agent_graph():
+    workflow = StateGraph(AgentState)
+
+    # Add nodes
+    workflow.add_node("llm", call_llm)
+    workflow.add_node("tools", tools_node)
+
+    # Compile sub-graphs
+    research_subgraph = create_research_subgraph().compile()
+    code_subgraph = create_code_subgraph().compile()
+
+    # Add sub-graphs as nodes
+    workflow.add_node("research", research_subgraph)
+    workflow.add_node("code", code_subgraph)
+
+    # Add edges
+    workflow.set_entry_point("llm")
+
+    # Conditional routing after LLM
+    workflow.add_conditional_edges(
+        "llm",
+        route_after_llm,
+        {
+            "tools": "tools",
+            "research": "research",
+            "code": "code",
+            "__end__": END
+        }
+    )
+
+    # Edges from sub-nodes back to LLM or End
+    workflow.add_edge("tools", "llm")
+    workflow.add_edge("research", "llm")
+    workflow.add_edge("code", "llm")
+
+    return workflow.compile()
