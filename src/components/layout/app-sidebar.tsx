@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { signOut } from "next-auth/react";
+import { authClient } from "@/lib/auth/client";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
@@ -87,7 +87,15 @@ export function AppSidebar() {
         <Button
           variant="ghost"
           className="w-full justify-start gap-2 text-sm text-sidebar-foreground"
-          onClick={() => signOut({ callbackUrl: "/" })}
+          onClick={async () => {
+              await authClient.signOut({
+                  fetchOptions: {
+                      onSuccess: () => {
+                          window.location.href = "/login";
+                      }
+                  }
+              });
+          }}
         >
           <LogOut className="h-4 w-4" />
           Sign out

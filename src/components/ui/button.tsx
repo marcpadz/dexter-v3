@@ -59,7 +59,7 @@ function Button({
   if (asChild && React.isValidElement(children)) {
     return React.cloneElement(children, {
       ...props,
-      className: cn(classes, children.props.className),
+      className: cn(classes, (children.props as any).className),
     } as React.HTMLAttributes<HTMLElement>)
   }
 

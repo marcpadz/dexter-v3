@@ -1,37 +1,33 @@
-import { NextResponse } from "next/server";
-import { nextAuth } from "@/lib/auth";
+import { betterFetch } from "@better-fetch/fetch";
+import type { auth } from "@/lib/auth";
+import { NextRequest, NextResponse } from "next/server";
 
-const publicPaths = ["/", "/login", "/sign-up", "/api/auth"];
+export async function middleware(request: NextRequest) {
+  const { data: session } = await betterFetch<typeof auth.$Infer.Session>(
+    "/api/auth/get-session",
+    {
+      baseURL: request.nextUrl.origin,
+      headers: {
+        cookie: request.headers.get("cookie") || "",
+      },
+    },
+  );
 
-export default nextAuth((req) => {
-  const pathname = req.nextUrl.pathname;
-  const session = req.auth;
+  const pathname = request.nextUrl.pathname;
+  const isAuthPage =
+    pathname.startsWith("/login") || pathname.startsWith("/sign-up");
 
-  if (publicPaths.some((path) => pathname.startsWith(path))) {
-    if ((pathname === "/login" || pathname === "/sign-up") && session) {
-      return NextResponse.redirect(new URL("/chat", req.url));
-    }
-    return NextResponse.next();
+  if (!session && !isAuthPage && !pathname.startsWith("/api/auth")) {
+    return NextResponse.redirect(new URL("/login", request.url));
   }
 
-  if (pathname.startsWith("/api/webhook")) {
-    return NextResponse.next();
-  }
-
-  if (!session) {
-    if (pathname.startsWith("/api")) {
-      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    }
-    return NextResponse.redirect(new URL("/login", req.url));
-  }
-
-  if (pathname.startsWith("/admin") && session.user?.role !== "admin") {
-    return NextResponse.redirect(new URL("/chat", req.url));
+  if (session && isAuthPage) {
+    return NextResponse.redirect(new URL("/chat", request.url));
   }
 
   return NextResponse.next();
-});
+}
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)"],
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
 };
