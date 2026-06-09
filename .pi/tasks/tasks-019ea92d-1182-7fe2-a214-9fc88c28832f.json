@@ -18,27 +18,29 @@
     {
       "id": "t10",
       "content": "Merge PR #3 (Settings/Memory/MCP/Delegation)",
-      "status": "in_progress",
+      "status": "completed",
       "priority": "high",
       "activeForm": "Merging PR #3",
       "metadata": {},
       "blocks": [],
       "blockedBy": [],
       "createdAt": 1781037607363,
-      "updatedAt": 1781037770455,
-      "startedAt": 1781037770455
+      "updatedAt": 1781037852327,
+      "startedAt": 1781037770455,
+      "completedAt": 1781037852327
     },
     {
       "id": "t11",
       "content": "Clean up old v2 files and resolve conflicts",
-      "status": "pending",
+      "status": "in_progress",
       "priority": "high",
       "activeForm": "Cleaning up old files",
       "metadata": {},
       "blocks": [],
       "blockedBy": [],
       "createdAt": 1781037607371,
-      "updatedAt": 1781037607371
+      "updatedAt": 1781037858601,
+      "startedAt": 1781037858601
     },
     {
       "id": "t12",
