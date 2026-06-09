@@ -57,9 +57,11 @@ function Button({
   const classes = cn(buttonVariants({ variant, size, className }))
 
   if (asChild && React.isValidElement(children)) {
-    return React.cloneElement(children, {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return React.cloneElement(children as React.ReactElement<any>, {
       ...props,
-      className: cn(classes, children.props.className),
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      className: cn(classes, (children as React.ReactElement<any>).props.className),
     } as React.HTMLAttributes<HTMLElement>)
   }
 
