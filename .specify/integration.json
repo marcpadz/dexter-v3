@@ -2,10 +2,35 @@
   "version": "0.9.5",
   "integration_state_schema": 1,
   "installed_integrations": [
-    "claude"
+    "claude",
+    "pi",
+    "opencode",
+    "agy",
+    "qodercli",
+    "codex"
   ],
   "integration_settings": {
     "claude": {
+      "script": "sh",
+      "invoke_separator": "-"
+    },
+    "pi": {
+      "script": "sh",
+      "invoke_separator": "."
+    },
+    "opencode": {
+      "script": "sh",
+      "invoke_separator": "."
+    },
+    "agy": {
+      "script": "sh",
+      "invoke_separator": "-"
+    },
+    "qodercli": {
+      "script": "sh",
+      "invoke_separator": "."
+    },
+    "codex": {
       "script": "sh",
       "invoke_separator": "-"
     }

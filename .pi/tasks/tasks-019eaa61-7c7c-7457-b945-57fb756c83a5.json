@@ -1,0 +1,20 @@
+{
+  "nextId": 2,
+  "tasks": [
+    {
+      "id": "t1",
+      "content": "Generate tasks.md for LangGraph hybrid architecture",
+      "description": "REGENERATE the dependency-ordered tasks at specs/001-agentic-workspace-rebuild/tasks.md for the updated LangGraph hybrid architecture. All design documents have been read and analyzed.",
+      "status": "completed",
+      "priority": "high",
+      "activeForm": "Generating tasks.md",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780975193509,
+      "updatedAt": 1780975577102,
+      "startedAt": 1780975202970,
+      "completedAt": 1780975577102
+    }
+  ]
+}

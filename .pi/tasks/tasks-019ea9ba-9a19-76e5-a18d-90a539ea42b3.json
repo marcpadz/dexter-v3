@@ -1,0 +1,89 @@
+{
+  "nextId": 7,
+  "tasks": [
+    {
+      "id": "t1",
+      "content": "Fill plan.md with Technical Context, Constitution Check, and Project Structure",
+      "description": "Complete the IMPL_PLAN template with all technical context from the spec, constitution gates, and project structure decisions",
+      "status": "completed",
+      "priority": "high",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780964081082,
+      "updatedAt": 1780964182251,
+      "startedAt": 1780964114011,
+      "completedAt": 1780964182251
+    },
+    {
+      "id": "t2",
+      "content": "Generate research.md (Phase 0) resolving all unknowns",
+      "description": "Create research.md with decisions on: CopilotKit integration patterns, Better Auth migration, Drizzle schema design, MCP client setup, Inngest durable execution, multi-provider routing, workspace surface architecture",
+      "status": "completed",
+      "priority": "high",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780964086297,
+      "updatedAt": 1780964266638,
+      "startedAt": 1780964186961,
+      "completedAt": 1780964266638
+    },
+    {
+      "id": "t3",
+      "content": "Generate data-model.md (Phase 1) with entity definitions",
+      "description": "Extract all entities from the spec (User, Conversation, Message, Document, Project, API Key, MCP Server) and define their fields, relationships, validation rules, and state transitions",
+      "status": "completed",
+      "priority": "high",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780964091657,
+      "updatedAt": 1780964332356,
+      "startedAt": 1780964270323,
+      "completedAt": 1780964332356
+    },
+    {
+      "id": "t4",
+      "content": "Generate contracts/ (Phase 1) for API and tool interfaces",
+      "description": "Define contracts for: CopilotKit runtime API, agent tool definitions, MCP client interface, Better Auth configuration, and workspace store API",
+      "status": "completed",
+      "priority": "high",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780964096573,
+      "updatedAt": 1780964465332,
+      "startedAt": 1780964337334,
+      "completedAt": 1780964465332
+    },
+    {
+      "id": "t5",
+      "content": "Generate quickstart.md (Phase 1) validation guide",
+      "description": "Create runnable validation scenarios proving the feature works end-to-end: auth flows, agent conversations with tools, workspace surfaces, multi-provider switching, MCP configuration",
+      "status": "completed",
+      "priority": "high",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780964102874,
+      "updatedAt": 1780964531144,
+      "startedAt": 1780964470194,
+      "completedAt": 1780964531144
+    },
+    {
+      "id": "t6",
+      "content": "Update AGENTS.md with plan reference and run agent context script",
+      "description": "Update the SPECKIT START/END markers in AGENTS.md to point to the plan file, then run the agent context update script",
+      "status": "completed",
+      "priority": "medium",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780964107863,
+      "updatedAt": 1780964562820,
+      "startedAt": 1780964536109,
+      "completedAt": 1780964562820
+    }
+  ]
+}

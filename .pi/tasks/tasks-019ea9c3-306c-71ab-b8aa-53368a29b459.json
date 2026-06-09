@@ -1,0 +1,20 @@
+{
+  "nextId": 2,
+  "tasks": [
+    {
+      "id": "t1",
+      "content": "Generate tasks.md for Dexter v3 agentic workspace rebuild",
+      "description": "Create the full dependency-ordered tasks.md based on plan.md, spec.md, data-model.md, contracts/, research.md, quickstart.md, and constitution.md",
+      "status": "completed",
+      "priority": "high",
+      "activeForm": "Generating tasks.md",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780964742576,
+      "updatedAt": 1780964912528,
+      "startedAt": 1780964747678,
+      "completedAt": 1780964912528
+    }
+  ]
+}

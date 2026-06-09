@@ -1,0 +1,19 @@
+{
+  "nextId": 2,
+  "tasks": [
+    {
+      "id": "t1",
+      "content": "Write the Dexter v3 constitution with all 8 principles",
+      "description": "Fill the constitution template at .specify/memory/constitution.md with concrete values for all 8 user-specified principles, technology constraints, development workflow, and governance.",
+      "status": "completed",
+      "priority": "high",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1780963713204,
+      "updatedAt": 1780963792671,
+      "startedAt": 1780963717354,
+      "completedAt": 1780963792671
+    }
+  ]
+}
