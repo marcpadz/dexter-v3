@@ -32,7 +32,8 @@ export async function updateUserSettings(data: Partial<{ name: string; systemPro
       ...(data.name !== undefined && { name: data.name }),
       ...(data.systemPrompt !== undefined && { systemPrompt: data.systemPrompt }),
       ...(data.favoriteModels !== undefined && { favoriteModels: data.favoriteModels }),
-      ...(data.preferences !== undefined && { preferences: data.preferences }),
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      ...(data.preferences !== undefined && { preferences: data.preferences as any }),
     },
   });
   revalidatePath("/settings");

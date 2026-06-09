@@ -1,4 +1,78 @@
 {
-  "nextId": 8,
-  "tasks": []
+  "nextId": 15,
+  "tasks": [
+    {
+      "id": "t9",
+      "content": "Merge PR #4 (Workspace Surfaces store/tools/renderers)",
+      "status": "in_progress",
+      "priority": "high",
+      "activeForm": "Merging PR #4",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1781037607350,
+      "updatedAt": 1781037616033,
+      "startedAt": 1781037616033
+    },
+    {
+      "id": "t10",
+      "content": "Merge PR #3 (Settings/Memory/MCP/Delegation)",
+      "status": "pending",
+      "priority": "high",
+      "activeForm": "Merging PR #3",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1781037607363,
+      "updatedAt": 1781037607363
+    },
+    {
+      "id": "t11",
+      "content": "Clean up old v2 files and resolve conflicts",
+      "status": "pending",
+      "priority": "high",
+      "activeForm": "Cleaning up old files",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1781037607371,
+      "updatedAt": 1781037607371
+    },
+    {
+      "id": "t12",
+      "content": "Build 6 missing workspace surface components",
+      "status": "pending",
+      "priority": "high",
+      "activeForm": "Building workspace surfaces",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1781037607377,
+      "updatedAt": 1781037607377
+    },
+    {
+      "id": "t13",
+      "content": "Wire real CopilotKit useCopilotAction (replace mock)",
+      "status": "pending",
+      "priority": "high",
+      "activeForm": "Wiring CopilotKit actions",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1781037607384,
+      "updatedAt": 1781037607384
+    },
+    {
+      "id": "t14",
+      "content": "Verify build compiles cleanly",
+      "status": "pending",
+      "priority": "high",
+      "activeForm": "Verifying build",
+      "metadata": {},
+      "blocks": [],
+      "blockedBy": [],
+      "createdAt": 1781037607389,
+      "updatedAt": 1781037607389
+    }
+  ]
 }
