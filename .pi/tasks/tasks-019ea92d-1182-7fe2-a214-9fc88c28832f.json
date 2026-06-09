@@ -4,27 +4,29 @@
     {
       "id": "t9",
       "content": "Merge PR #4 (Workspace Surfaces store/tools/renderers)",
-      "status": "in_progress",
+      "status": "completed",
       "priority": "high",
       "activeForm": "Merging PR #4",
       "metadata": {},
       "blocks": [],
       "blockedBy": [],
       "createdAt": 1781037607350,
-      "updatedAt": 1781037616033,
-      "startedAt": 1781037616033
+      "updatedAt": 1781037764407,
+      "startedAt": 1781037616033,
+      "completedAt": 1781037764407
     },
     {
       "id": "t10",
       "content": "Merge PR #3 (Settings/Memory/MCP/Delegation)",
-      "status": "pending",
+      "status": "in_progress",
       "priority": "high",
       "activeForm": "Merging PR #3",
       "metadata": {},
       "blocks": [],
       "blockedBy": [],
       "createdAt": 1781037607363,
-      "updatedAt": 1781037607363
+      "updatedAt": 1781037770455,
+      "startedAt": 1781037770455
     },
     {
       "id": "t11",
