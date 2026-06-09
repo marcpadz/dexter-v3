@@ -1,103 +1,93 @@
-export type User = {
-  id: string;
-  email: string | null;
-  name: string | null;
-  image: string | null;
-  role: string;
-  premium: boolean;
-  anonymous: boolean;
-  favoriteModels: string[];
-  systemPrompt: string;
-  preferences: Record<string, unknown>;
-};
+export type WorkspaceTab = "Artifacts" | "Browser" | "Document" | "Terminal" | "Files" | "Output";
+export type ArtifactType = "code" | "html" | "svg" | "react" | "diff" | "mermaid";
 
-export type Conversation = {
+export interface Artifact {
   id: string;
-  userId: string;
+  type: ArtifactType;
   title: string;
-  projectId: string | null;
+  content: string;
+  language?: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface WorkspaceFile {
+  name: string;
+  path: string;
+  type: "file" | "directory";
+  children?: WorkspaceFile[];
+}
+
+export interface WorkspaceActivity {
+  id: string;
+  type: string;
+  message: string;
+  timestamp: string;
+  status: "pending" | "success" | "error";
+}
+
+export interface Conversation {
+  id: string;
+  title: string;
   model: string | null;
+  projectId: string | null;
   pinned: boolean;
-  pinnedAt: Date | null;
+  threadId: string | null;
   createdAt: Date;
   updatedAt: Date;
-  messageCount?: number;
-};
+}
 
-export type Message = {
+export interface Message {
   id: string;
   conversationId: string;
-  role: "system" | "user" | "assistant";
+  role: string;
   content: string;
-  parts?: unknown;
-  annotations?: unknown;
-  attachments?: unknown;
-  messageGroupId: string;
+  toolCalls: any;
+  toolCallId: string | null;
   model: string | null;
   createdAt: Date;
-  updatedAt: Date;
-};
+}
 
-export type Project = {
+export interface Document {
   id: string;
-  userId: string;
+  type: string;
+  title: string;
+  content: string;
+  metadata: any;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+export interface Project {
+  id: string;
   name: string;
+  description: string | null;
   instructions: string | null;
   createdAt: Date;
   updatedAt: Date;
-};
+}
 
-export type Note = {
+export interface ApiKey {
   id: string;
-  userId: string;
-  title: string;
-  content: string;
-  isArchived: boolean;
-  createdAt: Date;
-  updatedAt: Date;
-};
-
-export type Task = {
-  id: string;
-  userId: string;
-  title: string;
-  completed: boolean;
-  priority: string | null;
-  dueDate: Date | null;
-  assignee: string | null;
-  createdAt: Date;
-  updatedAt: Date;
-};
-
-export type KnowledgeBase = {
-  id: string;
-  userId: string;
-  name: string;
-  description: string | null;
-  createdAt: Date;
-  updatedAt: Date;
-};
-
-export type ModelConfig = {
-  id: string;
-  modelId: string;
   provider: string;
-  displayName: string;
-  accessTier: string;
-  enabled: boolean;
-};
+  createdAt: Date;
+}
 
-export type ProviderConfig = {
+export interface McpServer {
   id: string;
-  providerType: string;
   name: string;
+  transportType: string;
+  command: string | null;
+  url: string | null;
+  args: any;
+  env: any;
   enabled: boolean;
-  sortOrder: number;
-};
+  createdAt: Date;
+}
 
-export type AttachmentMeta = {
-  name?: string;
-  contentType?: string;
-  url: string;
-  size?: number;
-};
+export interface Memory {
+  id: string;
+  content: string;
+  tags: any;
+  createdAt: Date;
+}

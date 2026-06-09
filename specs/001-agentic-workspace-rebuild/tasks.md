@@ -22,12 +22,12 @@
 
 **Purpose**: Remove deprecated packages, install new dependencies, create directory skeleton for both services.
 
-- [ ] T001 Remove Prisma dependencies and files: delete `prisma/` directory, remove `@prisma/client` and `@prisma/adapter-pg` from `package.json`, remove `prisma generate` from build scripts
-- [ ] T002 Remove NextAuth dependencies and files: delete `src/app/api/auth/[...nextauth]/route.ts`, remove `next-auth` and `@auth/prisma-adapter` from `package.json`
-- [ ] T003 Remove old chat route: delete `src/app/api/chat/route.ts`
-- [ ] T004 Clean up AppleDouble files: run `find . -name '._*' -delete` from repo root
-- [ ] T005 Install new JavaScript dependencies: `@copilotkit/react-core`, `@copilotkit/react-ui`, `@copilotkit/runtime`, `drizzle-orm`, `drizzle-kit`, `better-auth`, `@modelcontextprotocol/sdk`, `@tiptap/react`, `@tiptap/starter-kit`, `@xterm/xterm`, `@xterm/addon-fit`, `postgres`, `react-resizable-panels`, `zustand`
-- [ ] T006 [P] Create Python agent service directory structure: `services/agent/app/`, `services/agent/app/graph/`, `services/agent/app/graph/nodes/`, `services/agent/app/graph/subgraphs/`, `services/agent/app/tools/`, `services/agent/app/models/`, `services/agent/app/db/`, `services/agent/app/prompts/`, `services/agent/tests/` with `__init__.py` files
+- [X] T001 Remove Prisma dependencies and files: delete `prisma/` directory, remove `@prisma/client` and `@prisma/adapter-pg` from `package.json`, remove `prisma generate` from build scripts
+- [X] T002 Remove NextAuth dependencies and files: delete `src/app/api/auth/[...nextauth]/route.ts`, remove `next-auth` and `@auth/prisma-adapter` from `package.json`
+- [X] T003 Remove old chat route: delete `src/app/api/chat/route.ts`
+- [X] T004 Clean up AppleDouble files: run `find . -name '._*' -delete` from repo root
+- [X] T005 Install new JavaScript dependencies: `@copilotkit/react-core`, `@copilotkit/react-ui`, `@copilotkit/runtime`, `drizzle-orm`, `drizzle-kit`, `better-auth`, `@modelcontextprotocol/sdk`, `@tiptap/react`, `@tiptap/starter-kit`, `@xterm/xterm`, `@xterm/addon-fit`, `postgres`, `react-resizable-panels`, `zustand`
+- [X] T006 [P] Create Python agent service directory structure: `services/agent/app/`, `services/agent/app/graph/`, `services/agent/app/graph/nodes/`, `services/agent/app/graph/subgraphs/`, `services/agent/app/tools/`, `services/agent/app/models/`, `services/agent/app/db/`, `services/agent/app/prompts/`, `services/agent/tests/` with `__init__.py` files
 
 ---
 
@@ -39,43 +39,43 @@
 
 ### Drizzle ORM Setup
 
-- [ ] T007 Create Drizzle client instance in `src/lib/db/index.ts` — configure `drizzle(pgPool)` with connection from `DATABASE_URL` env var
-- [ ] T008 [P] Create `users` Drizzle schema in `src/lib/db/schema/users.ts` — id (uuid PK), email (unique), name, emailVerified, image, role, password, createdAt, updatedAt
-- [ ] T009 [P] Create `conversations` Drizzle schema in `src/lib/db/schema/conversations.ts` — id, userId FK, title, model, projectId FK, pinned, threadId, createdAt, updatedAt
-- [ ] T010 [P] Create `messages` Drizzle schema in `src/lib/db/schema/messages.ts` — id, conversationId FK, role, content, toolCalls (json), toolCallId, model, createdAt
-- [ ] T011 [P] Create `documents` Drizzle schema in `src/lib/db/schema/documents.ts` — id, userId FK, type, title, content, metadata (json), embedding (vector 1536), projectId FK, createdAt, updatedAt
-- [ ] T012 [P] Create `projects` Drizzle schema in `src/lib/db/schema/projects.ts` — id, userId FK, name, description, instructions, createdAt, updatedAt
-- [ ] T013 [P] Create `api_keys` Drizzle schema in `src/lib/db/schema/api-keys.ts` — id, userId FK, provider (unique per user), encryptedKey, iv, createdAt
-- [ ] T014 [P] Create `mcp_servers` Drizzle schema in `src/lib/db/schema/mcp-servers.ts` — id, userId FK, name, transportType, command, url, args (json), env (json), enabled, createdAt
-- [ ] T015 [P] Create `memories` Drizzle schema in `src/lib/db/schema/memories.ts` — id, userId FK, content, embedding (vector 1536), tags (json), sourceConversationId FK, createdAt
-- [ ] T015a [P] Create `tasks` Drizzle schema in `src/lib/db/schema/tasks.ts` — id, userId FK, title, description, completed (boolean), priority (text), dueDate (timestamp), projectId FK, sourceConversationId FK, createdAt, updatedAt
-- [ ] T016 Create Drizzle config in `drizzle.config.ts` at repo root — schema path `./src/lib/db/schema/`, output `./src/lib/db/migrations/`, pgvector enabled
-- [ ] T017 Generate and run initial Drizzle migration: `npx drizzle-kit generate` then `npx drizzle-kit migrate`
+- [X] T007 Create Drizzle client instance in `src/lib/db/index.ts` — configure `drizzle(pgPool)` with connection from `DATABASE_URL` env var
+- [X] T008 [P] Create `users` Drizzle schema in `src/lib/db/schema/users.ts` — id (uuid PK), email (unique), name, emailVerified, image, role, password, createdAt, updatedAt
+- [X] T009 [P] Create `conversations` Drizzle schema in `src/lib/db/schema/conversations.ts` — id, userId FK, title, model, projectId FK, pinned, threadId, createdAt, updatedAt
+- [X] T010 [P] Create `messages` Drizzle schema in `src/lib/db/schema/messages.ts` — id, conversationId FK, role, content, toolCalls (json), toolCallId, model, createdAt
+- [X] T011 [P] Create `documents` Drizzle schema in `src/lib/db/schema/documents.ts` — id, userId FK, type, title, content, metadata (json), embedding (vector 1536), projectId FK, createdAt, updatedAt
+- [X] T012 [P] Create `projects` Drizzle schema in `src/lib/db/schema/projects.ts` — id, userId FK, name, description, instructions, createdAt, updatedAt
+- [X] T013 [P] Create `api_keys` Drizzle schema in `src/lib/db/schema/api-keys.ts` — id, userId FK, provider (unique per user), encryptedKey, iv, createdAt
+- [X] T014 [P] Create `mcp_servers` Drizzle schema in `src/lib/db/schema/mcp-servers.ts` — id, userId FK, name, transportType, command, url, args (json), env (json), enabled, createdAt
+- [X] T015 [P] Create `memories` Drizzle schema in `src/lib/db/schema/memories.ts` — id, userId FK, content, embedding (vector 1536), tags (json), sourceConversationId FK, createdAt
+- [X] T015a [P] Create `tasks` Drizzle schema in `src/lib/db/schema/tasks.ts` — id, userId FK, title, description, completed (boolean), priority (text), dueDate (timestamp), projectId FK, sourceConversationId FK, createdAt, updatedAt
+- [X] T016 Create Drizzle config in `drizzle.config.ts` at repo root — schema path `./src/lib/db/schema/`, output `./src/lib/db/migrations/`, pgvector enabled
+- [X] T017 Generate and run initial Drizzle migration: `npx drizzle-kit generate` then `npx drizzle-kit migrate`
 
 ### Better Auth Configuration
 
-- [ ] T018 Create Better Auth configuration in `src/lib/auth/index.ts` — `createAuth()` with Drizzle adapter, emailPassword provider, Google and GitHub OAuth providers, database session strategy
-- [ ] T019 Create Better Auth route handler in `src/app/api/auth/route.ts` — export GET and POST handlers from Better Auth
-- [ ] T020 Create session helpers in `src/lib/auth/session.ts` — `getSession()`, `requireAuth()` wrappers for server components and actions
+- [X] T018 Create Better Auth configuration in `src/lib/auth/index.ts` — `createAuth()` with Drizzle adapter, emailPassword provider, Google and GitHub OAuth providers, database session strategy
+- [X] T019 Create Better Auth route handler in `src/app/api/auth/route.ts` — export GET and POST handlers from Better Auth
+- [X] T020 Create session helpers in `src/lib/auth/session.ts` — `getSession()`, `requireAuth()` wrappers for server components and actions
 
 ### Python Agent Service Skeleton
 
-- [ ] T021 Create `services/agent/pyproject.toml` — Python ≥3.11, dependencies: fastapi, uvicorn, copilotkit, langgraph, langgraph-checkpoint-postgres, langchain-core, langchain-anthropic, langchain-openai, langchain-google-genai, asyncpg, pydantic, structlog, composio-langgraph; dev deps: pytest, pytest-asyncio, httpx
-- [ ] T022 Create `services/agent/app/config.py` — environment configuration using pydantic-settings: DATABASE_URL, PORT, HOST, LOG_LEVEL, COPILOT_CORS_ORIGINS
-- [ ] T023 Create `services/agent/app/graph/state.py` — define `AgentState` TypedDict with messages (Annotated Sequence + operator.add), user_id, model, api_keys dict, mcp_tools list, active_artifacts list, conversation_id, thread_id
-- [ ] T024 Create `services/agent/app/db/connection.py` — asyncpg connection pool factory and `create_checkpointer()` function returning `AsyncPostgresSaver.from_conn_string()` with `await checkpointer.setup()`
-- [ ] T025 Create `services/agent/app/main.py` — FastAPI app, health check endpoint at `GET /health`, CopilotKit Python SDK AG-UI endpoint at `POST /api/agent` using `CopilotKitSDK(agents=[LangGraphAgent(...)])` with `add_fastapi_endpoint()`, startup event to initialize checkpointer
-- [ ] T025a Add shared secret auth middleware to `services/agent/app/main.py` — Bearer token validation using `AGENT_SERVICE_SECRET` env var, reject unauthenticated requests to `/api/agent`, forward `user_id` from AG-UI metadata
-- [ ] T025b Configure structured JSON logging in `services/agent/app/main.py` — `structlog` setup for request tracing, log every LLM call (model, latency, tokens), tool execution (name, duration, success/error), and checkpoint events
+- [X] T021 Create `services/agent/pyproject.toml` — Python ≥3.11, dependencies: fastapi, uvicorn, copilotkit, langgraph, langgraph-checkpoint-postgres, langchain-core, langchain-anthropic, langchain-openai, langchain-google-genai, asyncpg, pydantic, structlog, composio-langgraph; dev deps: pytest, pytest-asyncio, httpx
+- [X] T022 Create `services/agent/app/config.py` — environment configuration using pydantic-settings: DATABASE_URL, PORT, HOST, LOG_LEVEL, COPILOT_CORS_ORIGINS
+- [X] T023 Create `services/agent/app/graph/state.py` — define `AgentState` TypedDict with messages (Annotated Sequence + operator.add), user_id, model, api_keys dict, mcp_tools list, active_artifacts list, conversation_id, thread_id
+- [X] T024 Create `services/agent/app/db/connection.py` — asyncpg connection pool factory and `create_checkpointer()` function returning `AsyncPostgresSaver.from_conn_string()` with `await checkpointer.setup()`
+- [X] T025 Create `services/agent/app/main.py` — FastAPI app, health check endpoint at `GET /health`, CopilotKit Python SDK AG-UI endpoint at `POST /api/agent` using `CopilotKitSDK(agents=[LangGraphAgent(...)])` with `add_fastapi_endpoint()`, startup event to initialize checkpointer
+- [X] T025a Add shared secret auth middleware to `services/agent/app/main.py` — Bearer token validation using `AGENT_SERVICE_SECRET` env var, reject unauthenticated requests to `/api/agent`, forward `user_id` from AG-UI metadata
+- [X] T025b Configure structured JSON logging in `services/agent/app/main.py` — `structlog` setup for request tracing, log every LLM call (model, latency, tokens), tool execution (name, duration, success/error), and checkpoint events
 
 ### CopilotKit Runtime Bridge (Thin Shim)
 
-- [ ] T026 Create CopilotKit runtime config in `src/lib/copilot/runtime.ts` — `new CopilotRuntime({ remoteAgents: [{ name: "dexter", url: AGENT_SERVICE_URL + "/api/agent" }] })`, no BuiltInAgent
-- [ ] T027 Create CopilotKit API route in `src/app/api/copilotkit/route.ts` — `copilotRuntimeNextJSAppRouterEndpoint({ runtime, endpoint: "/api/copilotkit" })`, export POST handler
+- [X] T026 Create CopilotKit runtime config in `src/lib/copilot/runtime.ts` — `new CopilotRuntime({ remoteAgents: [{ name: "dexter", url: AGENT_SERVICE_URL + "/api/agent" }] })`, no BuiltInAgent
+- [X] T027 Create CopilotKit API route in `src/app/api/copilotkit/route.ts` — `copilotRuntimeNextJSAppRouterEndpoint({ runtime, endpoint: "/api/copilotkit" })`, export POST handler
 
 ### Shared Types
 
-- [ ] T028 Create shared TypeScript types in `src/lib/shared/types.ts` — WorkspaceTab, ArtifactType, Artifact, WorkspaceFile, WorkspaceActivity, Conversation, Message, Document, Project, ApiKey, McpServer, Memory interfaces
+- [X] T028 Create shared TypeScript types in `src/lib/shared/types.ts` — WorkspaceTab, ArtifactType, Artifact, WorkspaceFile, WorkspaceActivity, Conversation, Message, Document, Project, ApiKey, McpServer, Memory interfaces
 
 **Checkpoint**: Foundation ready — Drizzle tables exist, Better Auth configured, Python agent service skeleton runnable, CopilotKit runtime bridges to Python. User story implementation can now begin.
 
@@ -89,16 +89,16 @@
 
 ### Implementation
 
-- [ ] T029 [US5] Rewrite `src/middleware.ts` for Better Auth — use Better Auth's `authClient` for route protection, protect `/(app)/*` routes, allow `/(auth)/*` and `/api/auth/*` through
-- [ ] T030 [P] [US5] Create sign-up page in `src/app/(auth)/sign-up/page.tsx` — email/password registration form using Better Auth client, redirect to main app on success
-- [ ] T031 [P] [US5] Create sign-in page in `src/app/(auth)/login/page.tsx` — email/password + OAuth buttons (Google, GitHub) using Better Auth client, redirect to main app on success
-- [ ] T032 [US5] Create root layout update in `src/app/layout.tsx` — wrap app in Better Auth `AuthProvider` (or equivalent provider)
-- [ ] T033 [US5] Remove dead route directories: delete `src/app/notes/`, `src/app/tasks/`, `src/app/library/` (replaced by unified workspace surfaces)
-- [ ] T034 [US5] Create auth server actions in `src/lib/server/actions/auth.ts` — `signUp()`, `signIn()`, `signOut()`, `getSession()` wrapping Better Auth client calls
+- [X] T029 [US5] Rewrite `src/middleware.ts` for Better Auth — use Better Auth's `authClient` for route protection, protect `/(app)/*` routes, allow `/(auth)/*` and `/api/auth/*` through
+- [X] T030 [P] [US5] Create sign-up page in `src/app/(auth)/sign-up/page.tsx` — email/password registration form using Better Auth client, redirect to main app on success
+- [X] T031 [P] [US5] Create sign-in page in `src/app/(auth)/login/page.tsx` — email/password + OAuth buttons (Google, GitHub) using Better Auth client, redirect to main app on success
+- [X] T032 [US5] Create root layout update in `src/app/layout.tsx` — wrap app in Better Auth `AuthProvider` (or equivalent provider)
+- [X] T033 [US5] Remove dead route directories: delete `src/app/notes/`, `src/app/tasks/`, `src/app/library/` (replaced by unified workspace surfaces)
+- [X] T034 [US5] Create auth server actions in `src/lib/server/actions/auth.ts` — `signUp()`, `signIn()`, `signOut()`, `getSession()` wrapping Better Auth client calls
 
 ### Tests
 
-- [ ] T035 [US5] Create auth flow tests in `src/__tests__/auth.test.ts` — test sign-up validation, sign-in with email/password, session persistence, protected route access, sign-out (Vitest)
+- [X] T035 [US5] Create auth flow tests in `src/__tests__/auth.test.ts` — test sign-up validation, sign-in with email/password, session persistence, protected route access, sign-out (Vitest)
 
 **Checkpoint**: Users can sign up, sign in, sessions persist across refreshes, protected routes enforce authentication.
 
@@ -112,44 +112,44 @@
 
 ### Server Actions (Conversation Data)
 
-- [ ] T036 [US1] Create conversation server actions in `src/lib/server/actions/conversations.ts` — `createConversation()`, `renameConversation()`, `deleteConversation()`, `getConversations()` scoped to authenticated user via Drizzle
-- [ ] T037 [US1] Create message server actions in `src/lib/server/actions/messages.ts` — `getMessages(conversationId)`, `saveMessage()` scoped to authenticated user via Drizzle
-- [ ] T038 [US1] Create shared utility helpers in `src/lib/shared/utils.ts` — `cn()` class merge helper, `formatDate()`, any shared formatting
+- [X] T036 [US1] Create conversation server actions in `src/lib/server/actions/conversations.ts` — `createConversation()`, `renameConversation()`, `deleteConversation()`, `getConversations()` scoped to authenticated user via Drizzle
+- [X] T037 [US1] Create message server actions in `src/lib/server/actions/messages.ts` — `getMessages(conversationId)`, `saveMessage()` scoped to authenticated user via Drizzle
+- [X] T038 [US1] Create shared utility helpers in `src/lib/shared/utils.ts` — `cn()` class merge helper, `formatDate()`, any shared formatting
 
 ### Frontend — App Shell & Chat
 
-- [ ] T039 [US1] Create app layout in `src/app/(app)/layout.tsx` — wrap children in `CopilotKit` provider with `runtimeUrl="/api/copilotkit"`, render `<AppShell>` for three-panel structure
-- [ ] T040 [US1] Create app shell component in `src/components/layout/app-shell.tsx` — three-panel layout using `react-resizable-panels`: sidebar (conversation list), center (chat), right (workspace panel, initially collapsed)
-- [ ] T041 [P] [US1] Create header component in `src/components/layout/header.tsx` — top bar with logo, model selector placeholder, settings link, user menu
-- [ ] T042 [US1] Create conversation sidebar in `src/components/layout/app-sidebar.tsx` — list conversations from server actions, "New Chat" button, rename/delete context menu, ordered by most recent activity
-- [ ] T043 [US1] Create chat page in `src/app/(app)/chat/page.tsx` — render `<CopilotChat>` component with labels and initial message, integrated into app shell center panel
-- [ ] T044 [US1] Create root page redirect in `src/app/page.tsx` — redirect authenticated users to `/chat`, unauthenticated to `/login`
+- [X] T039 [US1] Create app layout in `src/app/(app)/layout.tsx` — wrap children in `CopilotKit` provider with `runtimeUrl="/api/copilotkit"`, render `<AppShell>` for three-panel structure
+- [X] T040 [US1] Create app shell component in `src/components/layout/app-shell.tsx` — three-panel layout using `react-resizable-panels`: sidebar (conversation list), center (chat), right (workspace panel, initially collapsed)
+- [X] T041 [P] [US1] Create header component in `src/components/layout/header.tsx` — top bar with logo, model selector placeholder, settings link, user menu
+- [X] T042 [US1] Create conversation sidebar in `src/components/layout/app-sidebar.tsx` — list conversations from server actions, "New Chat" button, rename/delete context menu, ordered by most recent activity
+- [X] T043 [US1] Create chat page in `src/app/(app)/chat/page.tsx` — render `<CopilotChat>` component with labels and initial message, integrated into app shell center panel
+- [X] T044 [US1] Create root page redirect in `src/app/page.tsx` — redirect authenticated users to `/chat`, unauthenticated to `/login`
 
 ### Python Agent — LangGraph Graph & Core Tools
 
-- [ ] T045 [US1] Create system prompts in `services/agent/app/prompts/system.py` — main agent system prompt, sub-agent prompts (research, code), define agent personality and tool usage guidelines
-- [ ] T046 [US1] Create provider resolution in `services/agent/app/models/providers.py` — `resolve_model(model_id, api_key, base_url)` mapping provider strings to LangChain ChatModel instances (openai, anthropic, google, groq, mistral, xai, deepseek, openrouter, ollama)
-- [ ] T047 [US1] Create LLM node in `services/agent/app/graph/nodes/llm.py` — `call_llm(state)` function that resolves the model from state, binds tools, invokes LLM with message history, returns updated state
-- [ ] T048 [US1] Create tool execution node in `services/agent/app/graph/nodes/tools.py` — `execute_tools(state)` function that iterates over pending tool calls from last AI message, executes each tool, returns tool result messages
-- [ ] T049 [US1] Create routing logic in `services/agent/app/graph/nodes/router.py` — `route_after_llm(state)` conditional edge: if tool calls → "tools", if delegate_to_agent call → sub-graph name, else → END
-- [ ] T050 [US1] Build main agent graph in `services/agent/app/graph/builder.py` — `build_agent_graph()` creating StateGraph with llm + tools nodes, entry point → llm, conditional edges from llm (tools/end), edge tools → llm, compile with PostgresSaver checkpointer
-- [ ] T051 [US1] Register all tools in graph builder — import and collect all `@tool` decorated functions from `services/agent/app/tools/` into `ALL_TOOLS` list, bind to LLM in llm node
+- [X] T045 [US1] Create system prompts in `services/agent/app/prompts/system.py` — main agent system prompt, sub-agent prompts (research, code), define agent personality and tool usage guidelines
+- [X] T046 [US1] Create provider resolution in `services/agent/app/models/providers.py` — `resolve_model(model_id, api_key, base_url)` mapping provider strings to LangChain ChatModel instances (openai, anthropic, google, groq, mistral, xai, deepseek, openrouter, ollama)
+- [X] T047 [US1] Create LLM node in `services/agent/app/graph/nodes/llm.py` — `call_llm(state)` function that resolves the model from state, binds tools, invokes LLM with message history, returns updated state
+- [X] T048 [US1] Create tool execution node in `services/agent/app/graph/nodes/tools.py` — `execute_tools(state)` function that iterates over pending tool calls from last AI message, executes each tool, returns tool result messages
+- [X] T049 [US1] Create routing logic in `services/agent/app/graph/nodes/router.py` — `route_after_llm(state)` conditional edge: if tool calls → "tools", if delegate_to_agent call → sub-graph name, else → END
+- [X] T050 [US1] Build main agent graph in `services/agent/app/graph/builder.py` — `build_agent_graph()` creating StateGraph with llm + tools nodes, entry point → llm, conditional edges from llm (tools/end), edge tools → llm, compile with PostgresSaver checkpointer
+- [X] T051 [US1] Register all tools in graph builder — import and collect all `@tool` decorated functions from `services/agent/app/tools/` into `ALL_TOOLS` list, bind to LLM in llm node
 
 ### Python Agent — Individual Tools
 
-- [ ] T052 [P] [US1] Create `search_web` tool in `services/agent/app/tools/search.py` — accept query and max_results params, call search API, return list of `{title, url, snippet}` results
-- [ ] T053 [P] [US1] Create `browse_web` tool in `services/agent/app/tools/browser.py` — accept url and action params, capture screenshot (base64), return `{url, title, screenshot, text_content}`
-- [ ] T054 [P] [US1] Create `execute_code` tool in `services/agent/app/tools/terminal.py` — accept language, code, timeout params, execute in sandbox, return `{stdout, stderr, exit_code}`
-- [ ] T055 [P] [US1] Create file tools in `services/agent/app/tools/files.py` — `list_files(path, recursive)`, `read_file(path)`, `write_file(path, content)` with HITL approval for writes
-- [ ] T056 [P] [US1] Create delegate tool stub in `services/agent/app/tools/delegate.py` — placeholder `delegate_to_agent(agent, task, context)` returning not-implemented (fleshed out in US8)
-- [ ] T056a [P] [US1] Create task management tools in `services/agent/app/tools/tasks.py` — `create_task(title, description, priority, due_date)`, `list_tasks(status, project_id)`, `update_task(task_id, title, description, completed, priority)`, `complete_task(task_id)` — all backed by local Postgres `tasks` table via asyncpg
-- [ ] T056b [P] [US1] Create Composio toolset in `services/agent/app/tools/composio.py` — initialize `ComposioToolSet` from `composio-langgraph`, expose as optional tools for external app connections (Todoist, Notion, etc.), guarded by `COMPOSIO_API_KEY` env var
+- [X] T052 [P] [US1] Create `search_web` tool in `services/agent/app/tools/search.py` — accept query and max_results params, call search API, return list of `{title, url, snippet}` results
+- [X] T053 [P] [US1] Create `browse_web` tool in `services/agent/app/tools/browser.py` — accept url and action params, capture screenshot (base64), return `{url, title, screenshot, text_content}`
+- [X] T054 [P] [US1] Create `execute_code` tool in `services/agent/app/tools/terminal.py` — accept language, code, timeout params, execute in sandbox, return `{stdout, stderr, exit_code}`
+- [X] T055 [P] [US1] Create file tools in `services/agent/app/tools/files.py` — `list_files(path, recursive)`, `read_file(path)`, `write_file(path, content)` with HITL approval for writes
+- [X] T056 [P] [US1] Create delegate tool stub in `services/agent/app/tools/delegate.py` — placeholder `delegate_to_agent(agent, task, context)` returning not-implemented (fleshed out in US8)
+- [X] T056a [P] [US1] Create task management tools in `services/agent/app/tools/tasks.py` — `create_task(title, description, priority, due_date)`, `list_tasks(status, project_id)`, `update_task(task_id, title, description, completed, priority)`, `complete_task(task_id)` — all backed by local Postgres `tasks` table via asyncpg
+- [X] T056b [P] [US1] Create Composio toolset in `services/agent/app/tools/composio.py` — initialize `ComposioToolSet` from `composio-langgraph`, expose as optional tools for external app connections (Todoist, Notion, etc.), guarded by `COMPOSIO_API_KEY` env var
 
 ### Tests
 
-- [ ] T057 [US1] Create server action tests in `src/__tests__/server-actions.test.ts` — test `createConversation`, `getConversations`, `saveMessage`, `getMessages` with auth scoping and validation (Vitest)
-- [ ] T058 [US1] Create agent graph tests in `services/agent/tests/test_graph.py` — test graph structure (nodes, edges), routing logic (tools vs end), basic invocation with mock LLM (pytest)
-- [ ] T059 [US1] Create agent tool tests in `services/agent/tests/test_tools.py` — test tool definitions, argument parsing, return payloads for search_web, execute_code, list_files, read_file (pytest)
+- [X] T057 [US1] Create server action tests in `src/__tests__/server-actions.test.ts` — test `createConversation`, `getConversations`, `saveMessage`, `getMessages` with auth scoping and validation (Vitest)
+- [X] T058 [US1] Create agent graph tests in `services/agent/tests/test_graph.py` — test graph structure (nodes, edges), routing logic (tools vs end), basic invocation with mock LLM (pytest)
+- [X] T059 [US1] Create agent tool tests in `services/agent/tests/test_tools.py` — test tool definitions, argument parsing, return payloads for search_web, execute_code, list_files, read_file (pytest)
 
 **Checkpoint**: MVP complete — users can sign in, start a conversation, agent responds with streaming text, tools execute and return results inline via CopilotKit chat. This is the minimum viable product.
 

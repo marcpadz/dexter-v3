@@ -1,3 +1,10 @@
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
 export function generateChatTitle(text: string): string {
   if (!text.trim()) return "New Chat";
   const cleaned = text.trim().replace(/\n/g, " ");

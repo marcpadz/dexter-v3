@@ -1,56 +1,45 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import type { Prisma } from "@prisma/client";
-import { prisma } from "@/lib/db";
-import { auth } from "@/lib/session";
+import { db } from "@/lib/db";
+import { conversations } from "@/lib/db/schema/conversations";
+import { eq, desc } from "drizzle-orm";
+import { getSession } from "@/lib/auth/session";
 
 export async function getConversations() {
-  const { userId } = await auth();
-  if (!userId) return [];
-  return prisma.conversation.findMany({
-    where: { userId },
-    orderBy: [{ pinned: "desc" }, { pinnedAt: "desc" }, { updatedAt: "desc" }],
-    include: { _count: { select: { messages: true } } },
-  });
-}
-
-export async function getConversation(id: string) {
-  const { userId } = await auth();
-  if (!userId) return null;
-  return prisma.conversation.findFirst({
-    where: { id, userId },
-    include: { messages: { orderBy: { createdAt: "asc" } } },
-  });
+  const session = await getSession();
+  if (!session) return [];
+  return db.select().from(conversations).where(eq(conversations.userId, session.user.id)).orderBy(desc(conversations.updatedAt));
 }
 
 export async function createConversation(data: { title?: string; model?: string; projectId?: string }) {
-  const { userId } = await auth();
-  if (!userId) throw new Error("Unauthorized");
-  const conv = await prisma.conversation.create({
-    data: { userId, title: data.title || "New Chat", model: data.model || null, projectId: data.projectId || null },
-  });
+  const session = await getSession();
+  if (!session) throw new Error("Unauthorized");
+
+  const [conv] = await db.insert(conversations).values({
+    userId: session.user.id,
+    title: data.title || "New Chat",
+    model: data.model || null,
+    projectId: data.projectId || null,
+  }).returning();
+
   revalidatePath("/chat");
   return conv;
 }
 
 export async function updateConversation(id: string, data: Partial<{ title: string; model: string; pinned: boolean; projectId: string }>) {
-  const { userId } = await auth();
-  if (!userId) throw new Error("Unauthorized");
-  const update: Prisma.ConversationUpdateManyMutationInput = { ...data };
-  if (data.pinned === true) update.pinnedAt = new Date();
-  if (data.pinned === false) update.pinnedAt = null;
-  const conv = await prisma.conversation.updateMany({
-    where: { id, userId },
-    data: update,
-  });
+  const session = await getSession();
+  if (!session) throw new Error("Unauthorized");
+
+  const [conv] = await db.update(conversations).set({ ...data, updatedAt: new Date() }).where(eq(conversations.id, id)).returning();
+
   revalidatePath("/chat");
   return conv;
 }
 
 export async function deleteConversation(id: string) {
-  const { userId } = await auth();
-  if (!userId) throw new Error("Unauthorized");
-  await prisma.conversation.deleteMany({ where: { id, userId } });
+  const session = await getSession();
+  if (!session) throw new Error("Unauthorized");
+  await db.delete(conversations).where(eq(conversations.id, id));
   revalidatePath("/chat");
 }
