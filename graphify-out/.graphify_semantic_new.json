@@ -1,0 +1,2444 @@
+{
+  "nodes": [
+    {
+      "id": "agents_skills_neon_postgres_neon",
+      "label": "Neon Serverless Postgres",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "id": "agents_skills_neon_postgres_neon_cli",
+      "label": "Neon CLI",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "id": "agents_skills_neon_postgres_neon_mcp",
+      "label": "Neon MCP Server",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "id": "agents_skills_neon_postgres_neon_auth",
+      "label": "Neon Auth",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "id": "agents_skills_neon_postgres_pgbouncer",
+      "label": "PgBouncer Connection Pooling",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "id": "agents_skills_neon_postgres_branching",
+      "label": "Neon Branching",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "id": "agents_skills_neon_postgres_autoscaling",
+      "label": "Neon Autoscaling",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "id": "agents_skills_neon_postgres_scale_to_zero",
+      "label": "Neon Scale to Zero",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "id": "agents_skills_neon_postgres_read_replicas",
+      "label": "Neon Read Replicas",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "id": "agents_skills_neon_postgres_neon_admin_api",
+      "label": "Neon Admin API",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_analyze_spec_kit",
+      "label": "Spec Kit",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_analyze_analyze_command",
+      "label": "Speckit Analyze Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_analyze_cross_artifact_analysis",
+      "label": "Cross-Artifact Consistency Analysis",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_analyze_constitution_authority",
+      "label": "Constitution Authority Principle",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_checklist_checklist_command",
+      "label": "Speckit Checklist Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_checklist_unit_tests_for_english",
+      "label": "Unit Tests for English (Requirements Quality)",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_clarify_clarify_command",
+      "label": "Speckit Clarify Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_clarify_clarification_workflow",
+      "label": "Spec Clarification Workflow",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_constitution_constitution_command",
+      "label": "Speckit Constitution Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_constitution_project_constitution",
+      "label": "Project Constitution",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_constitution_sync_impact_report",
+      "label": "Sync Impact Report",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_implement_implement_command",
+      "label": "Speckit Implement Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_implement_project_setup_verification",
+      "label": "Project Setup Verification",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_plan_plan_command",
+      "label": "Speckit Plan Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_plan_implementation_planning",
+      "label": "Implementation Planning Workflow",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_plan_design_artifacts",
+      "label": "Design Artifacts (data-model.md, contracts/, quickstart.md)",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_specify_specify_command",
+      "label": "Speckit Specify Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-specify/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_specify_feature_specification",
+      "label": "Feature Specification",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-specify/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_specify_spec_quality_checklist",
+      "label": "Specification Quality Checklist",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-specify/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_tasks_tasks_command",
+      "label": "Speckit Tasks Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_tasks_task_generation",
+      "label": "Task Generation Workflow",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_tasks_task_format",
+      "label": "Strict Task Checklist Format",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_taskstoissues_taskstoissues_command",
+      "label": "Speckit Taskstoissues Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-taskstoissues/SKILL.md"
+    },
+    {
+      "id": "agents_skills_speckit_taskstoissues_github_issues",
+      "label": "GitHub Issues Integration",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-taskstoissues/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_agent_context_update_agent_context_update",
+      "label": "Speckit Agent Context Update",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-agent-context-update/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_agent_context_update_coding_agent_context",
+      "label": "Coding Agent Context File",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-agent-context-update/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_agent_context_update_speckit_markers",
+      "label": "SPECKIT START/END Markers",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-agent-context-update/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_git_commit_git_commit_command",
+      "label": "Speckit Git Commit Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-commit/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_git_commit_auto_commit",
+      "label": "Auto-Commit Mechanism",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-commit/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_git_feature_git_feature_command",
+      "label": "Speckit Git Feature Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-feature/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_git_feature_feature_branch",
+      "label": "Feature Branch Creation",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-feature/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_git_feature_branch_numbering",
+      "label": "Branch Numbering (Sequential/Timestamp)",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-feature/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_git_initialize_git_initialize_command",
+      "label": "Speckit Git Initialize Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-initialize/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_git_initialize_repo_init",
+      "label": "Git Repository Initialization",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-initialize/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_git_remote_git_remote_command",
+      "label": "Speckit Git Remote Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-remote/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_git_remote_remote_url_detection",
+      "label": "Git Remote URL Detection",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-remote/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_git_validate_git_validate_command",
+      "label": "Speckit Git Validate Command",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-validate/SKILL.md"
+    },
+    {
+      "id": "claude_skills_speckit_git_validate_branch_validation",
+      "label": "Branch Name Validation",
+      "file_type": "document",
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-validate/SKILL.md"
+    },
+    {
+      "id": "concept_extension_hooks",
+      "label": "Extension Hooks System",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_check_prerequisites",
+      "label": "Check Prerequisites Script",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_workflow_pipeline",
+      "label": "Spec Kit Workflow Pipeline (Specify → Clarify → Plan → Tasks → Implement)",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_git",
+      "label": "Git Version Control",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_github",
+      "label": "GitHub Platform",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_spec_md",
+      "label": "Feature Specification Document (spec.md)",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_plan_md",
+      "label": "Implementation Plan Document (plan.md)",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_tasks_md",
+      "label": "Tasks Document (tasks.md)",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_constitution_md",
+      "label": "Project Constitution File (.specify/memory/constitution.md)",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_data_model_md",
+      "label": "Data Model Document (data-model.md)",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_research_md",
+      "label": "Research Document (research.md)",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_quickstart_md",
+      "label": "Quickstart Guide (quickstart.md)",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_dot_specify",
+      "label": ".specify Project Directory",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_contracts_dir",
+      "label": "Contracts Directory",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_checklists_dir",
+      "label": "Checklists Directory",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_serverless_postgres",
+      "label": "Serverless Postgres",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_oauth",
+      "label": "OAuth Authentication",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "concept_tdd",
+      "label": "Test-Driven Development (TDD)",
+      "file_type": "concept",
+      "source_file": ""
+    },
+    {
+      "id": "speckit",
+      "label": "Speckit",
+      "file_type": "document",
+      "source_file": ".claude/skills/speckit-taskstoissues/SKILL.md"
+    },
+    {
+      "id": "specification",
+      "label": "Specification",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "implementation_plan",
+      "label": "Implementation Plan",
+      "file_type": "document",
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "id": "task_generation",
+      "label": "Task Generation",
+      "file_type": "command",
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "id": "requirement_analysis",
+      "label": "Requirement Analysis",
+      "file_type": "command",
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "id": "checklist_validation",
+      "label": "Checklist Validation",
+      "file_type": "command",
+      "source_file": ".opencode/commands/speckit.checklist.md"
+    },
+    {
+      "id": "spec_clarification",
+      "label": "Spec Clarification",
+      "file_type": "command",
+      "source_file": ".opencode/commands/speckit.clarify.md"
+    },
+    {
+      "id": "constitution",
+      "label": "Constitution",
+      "file_type": "document",
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "id": "implementation_execution",
+      "label": "Implementation Execution",
+      "file_type": "command",
+      "source_file": ".opencode/commands/speckit.implement.md"
+    },
+    {
+      "id": "github_issues",
+      "label": "GitHub Issues",
+      "file_type": "command",
+      "source_file": ".opencode/commands/speckit.taskstoissues.md"
+    },
+    {
+      "id": "extension_hooks",
+      "label": "Extension Hooks",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "user_stories",
+      "label": "User Stories",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "functional_requirements",
+      "label": "Functional Requirements",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "id": "success_criteria",
+      "label": "Success Criteria",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "data_model",
+      "label": "Data Model",
+      "file_type": "document",
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "id": "contracts",
+      "label": "Contracts",
+      "file_type": "document",
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "id": "research_document",
+      "label": "Research Document",
+      "file_type": "document",
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "id": "quickstart",
+      "label": "Quickstart Guide",
+      "file_type": "document",
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "id": "prerequisites_check",
+      "label": "Prerequisites Check",
+      "file_type": "script",
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "id": "feature_directory",
+      "label": "Feature Directory",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "spec_template",
+      "label": "Spec Template",
+      "file_type": "template",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "plan_template",
+      "label": "Plan Template",
+      "file_type": "template",
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "id": "tasks_template",
+      "label": "Tasks Template",
+      "file_type": "template",
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "id": "checklist_template",
+      "label": "Checklist Template",
+      "file_type": "template",
+      "source_file": ".opencode/commands/speckit.checklist.md"
+    },
+    {
+      "id": "constitution_template",
+      "label": "Constitution Template",
+      "file_type": "template",
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "id": "spec_quality_checklist",
+      "label": "Spec Quality Checklist",
+      "file_type": "document",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "task_ids",
+      "label": "Task IDs",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "id": "task_phases",
+      "label": "Task Phases",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "id": "parallel_markers",
+      "label": "Parallel Markers",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "id": "dependency_graph",
+      "label": "Dependency Graph",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "id": "mcp_server",
+      "label": "MCP Server",
+      "file_type": "tool",
+      "source_file": ".opencode/commands/speckit.taskstoissues.md"
+    },
+    {
+      "id": "yaml_extensions",
+      "label": "YAML Extensions",
+      "file_type": "config",
+      "source_file": ".opencode/commands/speckit.taskstoissues.md"
+    },
+    {
+      "id": "agent_handoffs",
+      "label": "Agent Handoffs",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.clarify.md"
+    },
+    {
+      "id": "ambiguity_scan",
+      "label": "Ambiguity Scan",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.clarify.md"
+    },
+    {
+      "id": "coverage_taxonomy",
+      "label": "Coverage Taxonomy",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.clarify.md"
+    },
+    {
+      "id": "severity_assignment",
+      "label": "Severity Assignment",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "id": "semantic_models",
+      "label": "Semantic Models",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "id": "unit_tests_for_english",
+      "label": "Unit Tests for English",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.checklist.md"
+    },
+    {
+      "id": "constitution_violations",
+      "label": "Constitution Violations",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "id": "ignore_file_management",
+      "label": "Ignore File Management",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.implement.md"
+    },
+    {
+      "id": "project_setup_verification",
+      "label": "Project Setup Verification",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.implement.md"
+    },
+    {
+      "id": "sync_impact_report",
+      "label": "Sync Impact Report",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "id": "version_bump",
+      "label": "Version Bump",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "id": "placeholder_tokens",
+      "label": "Placeholder Tokens",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "id": "edge_cases",
+      "label": "Edge Cases",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "acceptance_criteria",
+      "label": "Acceptance Criteria",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "id": "constitution_check",
+      "label": "Constitution Check",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "id": "technical_context",
+      "label": "Technical Context",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "id": "spec_branch",
+      "label": "Spec Branch",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "needs_clarification",
+      "label": "Needs Clarification",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "post_execution_hooks",
+      "label": "Post-Execution Hooks",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "pre_execution_hooks",
+      "label": "Pre-Execution Hooks",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "claude_skill",
+      "label": "Claude Skill",
+      "file_type": "platform",
+      "source_file": ".claude/skills/speckit-taskstoissues/SKILL.md"
+    },
+    {
+      "id": "opencode_platform",
+      "label": "OpenCode Platform",
+      "file_type": "platform",
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "id": "pi_agent_platform",
+      "label": "Pi Agent Platform",
+      "file_type": "platform",
+      "source_file": ".pi/prompts/speckit.analyze.md"
+    },
+    {
+      "id": "qoder_platform",
+      "label": "Qoder Platform",
+      "file_type": "platform",
+      "source_file": ".qoder/commands/speckit.analyze.md"
+    },
+    {
+      "id": "hook_executor",
+      "label": "Hook Executor",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.taskstoissues.md"
+    },
+    {
+      "id": "specify_feature_directory",
+      "label": "Specify Feature Directory",
+      "file_type": "variable",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "completion_report",
+      "label": "Completion Report",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.clarify.md"
+    },
+    {
+      "id": "remediation_plan",
+      "label": "Remediation Plan",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "id": "progressive_disclosure",
+      "label": "Progressive Disclosure",
+      "file_type": "concept",
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "id": "branch_numbering",
+      "label": "Branch Numbering",
+      "file_type": "config",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "init_options",
+      "label": "Init Options",
+      "file_type": "config",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "feature_json",
+      "label": "Feature JSON",
+      "file_type": "config",
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "id": "templates_directory",
+      "label": "Templates Directory",
+      "file_type": "directory",
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "id": "specs_directory",
+      "label": "Specs Directory",
+      "file_type": "directory",
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "id": "checklists_directory",
+      "label": "Checklists Directory",
+      "file_type": "directory",
+      "source_file": ".opencode/commands/speckit.checklist.md"
+    },
+    {
+      "id": "memory_directory",
+      "label": "Memory Directory",
+      "file_type": "directory",
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "id": "public_window_svg",
+      "label": "Window Icon SVG",
+      "file_type": "image",
+      "source_file": "public/window.svg",
+      "source_location": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "agents_skills_neon_postgres_neon",
+      "target": "concept_serverless_postgres",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "source": "agents_skills_neon_postgres_neon",
+      "target": "agents_skills_neon_postgres_neon_cli",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "source": "agents_skills_neon_postgres_neon",
+      "target": "agents_skills_neon_postgres_neon_mcp",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "source": "agents_skills_neon_postgres_neon",
+      "target": "agents_skills_neon_postgres_neon_auth",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "source": "agents_skills_neon_postgres_neon",
+      "target": "agents_skills_neon_postgres_branching",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "source": "agents_skills_neon_postgres_neon",
+      "target": "agents_skills_neon_postgres_autoscaling",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "source": "agents_skills_neon_postgres_neon",
+      "target": "agents_skills_neon_postgres_scale_to_zero",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "source": "agents_skills_neon_postgres_neon",
+      "target": "agents_skills_neon_postgres_read_replicas",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "source": "agents_skills_neon_postgres_neon",
+      "target": "agents_skills_neon_postgres_pgbouncer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "source": "agents_skills_neon_postgres_neon",
+      "target": "agents_skills_neon_postgres_neon_admin_api",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "source": "agents_skills_neon_postgres_neon",
+      "target": "concept_oauth",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/neon-postgres/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_analyze_spec_kit",
+      "target": "concept_dot_specify",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_analyze_analyze_command",
+      "target": "concept_spec_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_analyze_analyze_command",
+      "target": "concept_plan_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_analyze_analyze_command",
+      "target": "concept_tasks_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_analyze_analyze_command",
+      "target": "concept_constitution_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_analyze_analyze_command",
+      "target": "concept_extension_hooks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_analyze_analyze_command",
+      "target": "concept_check_prerequisites",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_analyze_analyze_command",
+      "target": "agents_skills_speckit_analyze_constitution_authority",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_checklist_checklist_command",
+      "target": "concept_spec_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_checklist_checklist_command",
+      "target": "concept_plan_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_checklist_checklist_command",
+      "target": "concept_tasks_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_checklist_checklist_command",
+      "target": "concept_checklists_dir",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_checklist_checklist_command",
+      "target": "concept_extension_hooks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_checklist_checklist_command",
+      "target": "agents_skills_speckit_checklist_unit_tests_for_english",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_clarify_clarify_command",
+      "target": "concept_spec_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_clarify_clarify_command",
+      "target": "concept_constitution_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_clarify_clarify_command",
+      "target": "concept_extension_hooks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_clarify_clarify_command",
+      "target": "concept_check_prerequisites",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_clarify_clarify_command",
+      "target": "agents_skills_speckit_clarify_clarification_workflow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_constitution_constitution_command",
+      "target": "concept_constitution_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_constitution_constitution_command",
+      "target": "concept_extension_hooks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_constitution_constitution_command",
+      "target": "agents_skills_speckit_constitution_project_constitution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_constitution_constitution_command",
+      "target": "agents_skills_speckit_constitution_sync_impact_report",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_implement_implement_command",
+      "target": "concept_tasks_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_implement_implement_command",
+      "target": "concept_plan_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_implement_implement_command",
+      "target": "concept_extension_hooks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_implement_implement_command",
+      "target": "agents_skills_speckit_implement_project_setup_verification",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_implement_implement_command",
+      "target": "concept_check_prerequisites",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_implement_implement_command",
+      "target": "concept_checklists_dir",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_implement_implement_command",
+      "target": "concept_tdd",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_plan_plan_command",
+      "target": "concept_spec_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_plan_plan_command",
+      "target": "concept_constitution_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_plan_plan_command",
+      "target": "concept_extension_hooks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_plan_plan_command",
+      "target": "concept_research_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_plan_plan_command",
+      "target": "concept_data_model_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_plan_plan_command",
+      "target": "concept_quickstart_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_plan_plan_command",
+      "target": "concept_contracts_dir",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_plan_plan_command",
+      "target": "agents_skills_speckit_plan_implementation_planning",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_specify_specify_command",
+      "target": "concept_spec_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-specify/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_specify_specify_command",
+      "target": "concept_constitution_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-specify/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_specify_specify_command",
+      "target": "concept_extension_hooks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-specify/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_specify_specify_command",
+      "target": "agents_skills_speckit_specify_feature_specification",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-specify/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_specify_specify_command",
+      "target": "agents_skills_speckit_specify_spec_quality_checklist",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-specify/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "concept_spec_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "concept_plan_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "concept_constitution_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "concept_extension_hooks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "concept_data_model_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "concept_contracts_dir",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "concept_research_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "concept_quickstart_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "agents_skills_speckit_tasks_task_generation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "agents_skills_speckit_tasks_task_format",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_taskstoissues_taskstoissues_command",
+      "target": "concept_tasks_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-taskstoissues/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_taskstoissues_taskstoissues_command",
+      "target": "concept_extension_hooks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-taskstoissues/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_taskstoissues_taskstoissues_command",
+      "target": "agents_skills_speckit_taskstoissues_github_issues",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-taskstoissues/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_taskstoissues_taskstoissues_command",
+      "target": "concept_github",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-taskstoissues/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_taskstoissues_taskstoissues_command",
+      "target": "concept_check_prerequisites",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-taskstoissues/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_agent_context_update_agent_context_update",
+      "target": "claude_skills_speckit_agent_context_update_coding_agent_context",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-agent-context-update/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_agent_context_update_agent_context_update",
+      "target": "claude_skills_speckit_agent_context_update_speckit_markers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-agent-context-update/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_agent_context_update_agent_context_update",
+      "target": "concept_dot_specify",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-agent-context-update/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_commit_git_commit_command",
+      "target": "concept_git",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-commit/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_commit_git_commit_command",
+      "target": "claude_skills_speckit_git_commit_auto_commit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-commit/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_feature_git_feature_command",
+      "target": "concept_git",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-feature/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_feature_git_feature_command",
+      "target": "claude_skills_speckit_git_feature_feature_branch",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-feature/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_feature_git_feature_command",
+      "target": "claude_skills_speckit_git_feature_branch_numbering",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-feature/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_initialize_git_initialize_command",
+      "target": "concept_git",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-initialize/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_initialize_git_initialize_command",
+      "target": "claude_skills_speckit_git_initialize_repo_init",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-initialize/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_remote_git_remote_command",
+      "target": "concept_git",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-remote/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_remote_git_remote_command",
+      "target": "claude_skills_speckit_git_remote_remote_url_detection",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-remote/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_remote_git_remote_command",
+      "target": "concept_github",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-remote/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_validate_git_validate_command",
+      "target": "concept_git",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-validate/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_validate_git_validate_command",
+      "target": "claude_skills_speckit_git_validate_branch_validation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-validate/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_validate_git_validate_command",
+      "target": "claude_skills_speckit_git_feature_branch_numbering",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-validate/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_specify_specify_command",
+      "target": "agents_skills_speckit_clarify_clarify_command",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ""
+    },
+    {
+      "source": "agents_skills_speckit_clarify_clarify_command",
+      "target": "agents_skills_speckit_plan_plan_command",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ""
+    },
+    {
+      "source": "agents_skills_speckit_plan_plan_command",
+      "target": "agents_skills_speckit_tasks_tasks_command",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ""
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "agents_skills_speckit_implement_implement_command",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ""
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "agents_skills_speckit_analyze_analyze_command",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ""
+    },
+    {
+      "source": "agents_skills_speckit_tasks_tasks_command",
+      "target": "agents_skills_speckit_taskstoissues_taskstoissues_command",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ""
+    },
+    {
+      "source": "concept_workflow_pipeline",
+      "target": "agents_skills_speckit_specify_specify_command",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ""
+    },
+    {
+      "source": "concept_workflow_pipeline",
+      "target": "agents_skills_speckit_clarify_clarify_command",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ""
+    },
+    {
+      "source": "concept_workflow_pipeline",
+      "target": "agents_skills_speckit_plan_plan_command",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ""
+    },
+    {
+      "source": "concept_workflow_pipeline",
+      "target": "agents_skills_speckit_tasks_tasks_command",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ""
+    },
+    {
+      "source": "concept_workflow_pipeline",
+      "target": "agents_skills_speckit_implement_implement_command",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ""
+    },
+    {
+      "source": "agents_skills_speckit_plan_plan_command",
+      "target": "agents_skills_speckit_specify_specify_command",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_implement_implement_command",
+      "target": "agents_skills_speckit_tasks_tasks_command",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_agent_context_update_agent_context_update",
+      "target": "concept_plan_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-agent-context-update/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_commit_git_commit_command",
+      "target": "concept_dot_specify",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-commit/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_feature_git_feature_command",
+      "target": "agents_skills_speckit_specify_specify_command",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-feature/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_feature_git_feature_command",
+      "target": "concept_dot_specify",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-feature/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_initialize_git_initialize_command",
+      "target": "concept_dot_specify",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-initialize/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_remote_git_remote_command",
+      "target": "concept_dot_specify",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-remote/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_git_validate_git_validate_command",
+      "target": "concept_dot_specify",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-validate/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_analyze_analyze_command",
+      "target": "agents_skills_speckit_tasks_tasks_command",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_analyze_analyze_command",
+      "target": "agents_skills_speckit_implement_implement_command",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_checklist_checklist_command",
+      "target": "agents_skills_speckit_specify_specify_command",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_clarify_clarify_command",
+      "target": "agents_skills_speckit_specify_specify_command",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_clarify_clarify_command",
+      "target": "agents_skills_speckit_plan_plan_command",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_constitution_constitution_command",
+      "target": "concept_plan_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_constitution_constitution_command",
+      "target": "concept_spec_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/SKILL.md"
+    },
+    {
+      "source": "agents_skills_speckit_constitution_constitution_command",
+      "target": "concept_tasks_md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/SKILL.md"
+    },
+    {
+      "source": "concept_github",
+      "target": "concept_git",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ""
+    },
+    {
+      "source": "agents_skills_speckit_plan_plan_command",
+      "target": "claude_skills_speckit_agent_context_update_agent_context_update",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md"
+    },
+    {
+      "source": "claude_skills_speckit_agent_context_update_agent_context_update",
+      "target": "agents_skills_speckit_plan_plan_command",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-agent-context-update/SKILL.md"
+    },
+    {
+      "source": "speckit",
+      "target": "specification",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "speckit",
+      "target": "implementation_plan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "source": "speckit",
+      "target": "task_generation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "source": "speckit",
+      "target": "requirement_analysis",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "source": "speckit",
+      "target": "checklist_validation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.checklist.md"
+    },
+    {
+      "source": "speckit",
+      "target": "spec_clarification",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.clarify.md"
+    },
+    {
+      "source": "speckit",
+      "target": "constitution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "speckit",
+      "target": "implementation_execution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.implement.md"
+    },
+    {
+      "source": "speckit",
+      "target": "github_issues",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.taskstoissues.md"
+    },
+    {
+      "source": "specification",
+      "target": "user_stories",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "specification",
+      "target": "functional_requirements",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "specification",
+      "target": "success_criteria",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "specification",
+      "target": "edge_cases",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "implementation_plan",
+      "target": "data_model",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "source": "implementation_plan",
+      "target": "contracts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "source": "implementation_plan",
+      "target": "research_document",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "source": "implementation_plan",
+      "target": "quickstart",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "source": "implementation_plan",
+      "target": "constitution_check",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "source": "implementation_plan",
+      "target": "technical_context",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "source": "task_generation",
+      "target": "task_ids",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "source": "task_generation",
+      "target": "task_phases",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "source": "task_generation",
+      "target": "parallel_markers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "source": "task_generation",
+      "target": "dependency_graph",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "source": "requirement_analysis",
+      "target": "severity_assignment",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "source": "requirement_analysis",
+      "target": "semantic_models",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "source": "requirement_analysis",
+      "target": "acceptance_criteria",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "source": "requirement_analysis",
+      "target": "progressive_disclosure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "source": "requirement_analysis",
+      "target": "remediation_plan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "source": "requirement_analysis",
+      "target": "constitution_violations",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "source": "checklist_validation",
+      "target": "unit_tests_for_english",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.checklist.md"
+    },
+    {
+      "source": "checklist_validation",
+      "target": "spec_quality_checklist",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.checklist.md"
+    },
+    {
+      "source": "spec_clarification",
+      "target": "ambiguity_scan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.clarify.md"
+    },
+    {
+      "source": "spec_clarification",
+      "target": "coverage_taxonomy",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.clarify.md"
+    },
+    {
+      "source": "spec_clarification",
+      "target": "agent_handoffs",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.clarify.md"
+    },
+    {
+      "source": "spec_clarification",
+      "target": "completion_report",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.clarify.md"
+    },
+    {
+      "source": "specification",
+      "target": "needs_clarification",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "specification",
+      "target": "spec_template",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "specification",
+      "target": "feature_directory",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "specification",
+      "target": "spec_branch",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "specification",
+      "target": "specify_feature_directory",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "specification",
+      "target": "branch_numbering",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "specification",
+      "target": "init_options",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "specification",
+      "target": "feature_json",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "constitution",
+      "target": "constitution_template",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "constitution",
+      "target": "sync_impact_report",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "constitution",
+      "target": "version_bump",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "constitution",
+      "target": "placeholder_tokens",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "implementation_execution",
+      "target": "ignore_file_management",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.implement.md"
+    },
+    {
+      "source": "implementation_execution",
+      "target": "project_setup_verification",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.implement.md"
+    },
+    {
+      "source": "github_issues",
+      "target": "mcp_server",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.taskstoissues.md"
+    },
+    {
+      "source": "extension_hooks",
+      "target": "yaml_extensions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.taskstoissues.md"
+    },
+    {
+      "source": "extension_hooks",
+      "target": "hook_executor",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.taskstoissues.md"
+    },
+    {
+      "source": "extension_hooks",
+      "target": "pre_execution_hooks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "extension_hooks",
+      "target": "post_execution_hooks",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "task_generation",
+      "target": "prerequisites_check",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "source": "task_generation",
+      "target": "tasks_template",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "source": "implementation_plan",
+      "target": "plan_template",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "source": "checklist_validation",
+      "target": "checklist_template",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.checklist.md"
+    },
+    {
+      "source": "specification",
+      "target": "spec_quality_checklist",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "claude_skill",
+      "target": "speckit",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".claude/skills/speckit-taskstoissues/SKILL.md"
+    },
+    {
+      "source": "opencode_platform",
+      "target": "speckit",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "source": "pi_agent_platform",
+      "target": "speckit",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".pi/prompts/speckit.analyze.md"
+    },
+    {
+      "source": "qoder_platform",
+      "target": "speckit",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".qoder/commands/speckit.analyze.md"
+    },
+    {
+      "source": "claude_skill",
+      "target": "github_issues",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".claude/skills/speckit-taskstoissues/SKILL.md"
+    },
+    {
+      "source": "templates_directory",
+      "target": "spec_template",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "templates_directory",
+      "target": "plan_template",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "templates_directory",
+      "target": "tasks_template",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "templates_directory",
+      "target": "checklist_template",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "templates_directory",
+      "target": "constitution_template",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "specs_directory",
+      "target": "feature_directory",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "source": "checklists_directory",
+      "target": "spec_quality_checklist",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.checklist.md"
+    },
+    {
+      "source": "memory_directory",
+      "target": "constitution",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "specification",
+      "target": "spec_clarification",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "specification",
+      "target": "implementation_plan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.specify.md"
+    },
+    {
+      "source": "implementation_plan",
+      "target": "task_generation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": ".opencode/commands/speckit.plan.md"
+    },
+    {
+      "source": "task_generation",
+      "target": "requirement_analysis",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "source": "task_generation",
+      "target": "implementation_execution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.tasks.md"
+    },
+    {
+      "source": "spec_clarification",
+      "target": "implementation_plan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.clarify.md"
+    },
+    {
+      "source": "constitution",
+      "target": "specification",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "constitution",
+      "target": "implementation_plan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "constitution",
+      "target": "task_generation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": ".opencode/commands/speckit.constitution.md"
+    },
+    {
+      "source": "requirement_analysis",
+      "target": "constitution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.analyze.md"
+    },
+    {
+      "source": "spec_clarification",
+      "target": "constitution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.clarify.md"
+    },
+    {
+      "source": "checklist_validation",
+      "target": "constitution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.checklist.md"
+    },
+    {
+      "source": "implementation_execution",
+      "target": "constitution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.implement.md"
+    },
+    {
+      "source": "github_issues",
+      "target": "constitution",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": ".opencode/commands/speckit.taskstoissues.md"
+    },
+    {
+      "source": "checklist_validation",
+      "target": "requirement_analysis",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".opencode/commands/speckit.checklist.md"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
