@@ -5,7 +5,7 @@ logger = structlog.get_logger(__name__)
 
 # Forward declare until state is defined properly
 def call_llm(state: Dict[str, Any]) -> Dict[str, Any]:
-    from services.agent.app.models.providers import resolve_model
+    from app.models.providers import resolve_model
 
     messages = state.get("messages", [])
     model_id = state.get("model", "openai/gpt-4o")
@@ -14,12 +14,12 @@ def call_llm(state: Dict[str, Any]) -> Dict[str, Any]:
     try:
         model = resolve_model(model_id, api_keys)
 
-        # Tools will be bound here when defined
-        # model_with_tools = model.bind_tools(ALL_TOOLS)
+        # Bind all available tools
+        from app.tools import ALL_TOOLS
+        model_with_tools = model.bind_tools(ALL_TOOLS)
 
         logger.info("calling_llm", model=model_id)
-        # response = model_with_tools.invoke(messages)
-        response = model.invoke(messages)
+        response = model_with_tools.invoke(messages)
 
         return {"messages": [response]}
 

@@ -1,10 +1,10 @@
 import pytest
 from unittest.mock import AsyncMock, patch
-from services.agent.app.db.memory import save_memory, recall_memories, generate_embedding
+from app.db.memory import save_memory, recall_memories, generate_embedding
 
 @pytest.mark.asyncio
 async def test_generate_embedding():
-    with patch("services.agent.app.db.memory.OpenAIEmbeddings.aembed_query", new_callable=AsyncMock) as mock_embed:
+    with patch("app.db.memory.OpenAIEmbeddings.aembed_query", new_callable=AsyncMock) as mock_embed:
         mock_embed.return_value = [0.1, 0.2, 0.3]
 
         result = await generate_embedding("test text", "test-key")

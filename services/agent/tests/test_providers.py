@@ -1,5 +1,5 @@
 import pytest
-from services.agent.app.models.providers import resolve_model
+from app.models.providers import resolve_model
 from langchain_openai import ChatOpenAI
 from langchain_anthropic import ChatAnthropic
 from langchain_google_genai import ChatGoogleGenerativeAI

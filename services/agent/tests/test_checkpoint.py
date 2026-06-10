@@ -3,12 +3,12 @@ from unittest.mock import AsyncMock, patch
 
 @pytest.mark.asyncio
 async def test_checkpoint_setup():
-    with patch("services.agent.app.db.connection.AsyncPostgresSaver.from_conn_string") as mock_from_conn:
+    with patch("app.db.connection.AsyncPostgresSaver.from_conn_string") as mock_from_conn:
         mock_saver = AsyncMock()
         mock_from_conn.return_value = mock_saver
 
         with patch.dict("os.environ", {"DATABASE_URL": "postgresql://test:test@localhost:5432/test"}):
-            from services.agent.app.db.connection import create_checkpointer
+            from app.db.connection import create_checkpointer
             checkpointer = await create_checkpointer()
 
             # Verify setup was called on the saver
@@ -18,7 +18,7 @@ async def test_checkpoint_setup():
 @pytest.mark.asyncio
 async def test_checkpoint_missing_url():
     with patch.dict("os.environ", {}, clear=True):
-        from services.agent.app.db.connection import create_checkpointer
+        from app.db.connection import create_checkpointer
         with pytest.raises(ValueError, match="DATABASE_URL must be set"):
             await create_checkpointer()
 
