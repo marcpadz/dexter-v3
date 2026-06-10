@@ -1,7 +1,10 @@
 from fastapi import FastAPI
 import structlog
 from contextlib import asynccontextmanager
-from services.agent.app.db.connection import create_checkpointer
+from app.db.connection import create_checkpointer
+from copilotkit import CopilotKitRemoteEndpoint, LangGraphAGUIAgent
+from copilotkit.integrations.fastapi import add_fastapi_endpoint
+from app.graph.builder import build_agent_graph
 
 logger = structlog.get_logger(__name__)
 
@@ -32,5 +35,18 @@ app = FastAPI(lifespan=lifespan)
 async def health():
     return {"status": "ok", "checkpointer": global_checkpointer is not None}
 
-# The CopilotKit AG-UI endpoint would go here, integrating the checkpointer
-# and parsing thread_id from the conversation
+def build_agents(context):
+    graph = build_agent_graph(checkpointer=global_checkpointer)
+    return [
+        LangGraphAGUIAgent(
+            name="agent",
+            description="The dexter agent",
+            graph=graph,
+            copilotkit_config={
+                "checkpointer": global_checkpointer
+            }
+        )
+    ]
+
+sdk = CopilotKitRemoteEndpoint(agents=build_agents)
+add_fastapi_endpoint(app, sdk, "/api/agent")

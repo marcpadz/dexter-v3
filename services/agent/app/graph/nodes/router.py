@@ -1,5 +1,5 @@
 import structlog
-from services.agent.app.graph.state import AgentState
+from app.graph.state import AgentState
 from typing import Literal
 
 logger = structlog.get_logger(__name__)

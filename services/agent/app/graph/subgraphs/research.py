@@ -1,5 +1,5 @@
 from langgraph.graph import StateGraph, END
-from services.agent.app.graph.state import ResearchState
+from app.graph.state import ResearchState
 import structlog
 from langchain_core.messages import AIMessage, SystemMessage
 

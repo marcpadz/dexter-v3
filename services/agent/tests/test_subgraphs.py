@@ -1,8 +1,8 @@
 import pytest
 from langchain_core.messages import AIMessage, HumanMessage
-from services.agent.app.graph.subgraphs.research import create_research_subgraph
-from services.agent.app.graph.subgraphs.code import create_code_subgraph
-from services.agent.app.graph.nodes.router import route_after_llm
+from app.graph.subgraphs.research import create_research_subgraph
+from app.graph.subgraphs.code import create_code_subgraph
+from app.graph.nodes.router import route_after_llm
 
 def test_research_subgraph():
     graph = create_research_subgraph().compile()
