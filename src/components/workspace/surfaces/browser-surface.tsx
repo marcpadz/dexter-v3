@@ -65,7 +65,7 @@ export default function BrowserSurface() {
           </div>
         ) : browserScreenshot ? (
           <img
-            src={`data:image/png;base64,${browserScreenshot}`}
+            src={browserScreenshot}
             alt="Browser screenshot"
             className="w-full h-full object-contain"
           />

@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next build && next start --port 3001",
+    "dev": "next dev --port 3001",
     "dev:turbo": "next dev --turbopack --port 3001",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "type-check": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "dev:prod": "next build && next start --port 3001"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^3.0.81",

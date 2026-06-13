@@ -72,6 +72,15 @@ export async function getOrCreateSandbox(conversationId: string): Promise<Sandbo
     .set({ sandboxId: sandbox.id, updatedAt: new Date() })
     .where(eq(conversations.id, conversationId));
 
+  // If conversationId is a CopilotKit threadId (not a DB row), the UPDATE
+  // silently affects 0 rows — that's fine. The in-memory cache handles
+  // sandbox reuse within the session, and auto-delete handles cleanup.
+  if (conv) {
+    console.log("[sandbox] Persisted sandboxId for conversation:", conversationId);
+  } else {
+    console.log("[sandbox] Created sandbox (no DB row for conversationId):", conversationId, "sandbox:", sandbox.id);
+  }
+
   sandboxCache.set(conversationId, sandbox);
   return sandbox;
 }

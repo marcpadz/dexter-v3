@@ -125,9 +125,13 @@ export function useWorkspaceTools() {
         description: "The base64 encoded screenshot of the page.",
       },
     ],
-    handler: async ({ url, screenshot_base64 }: { url: string; screenshot_base64: string }) => {
+    handler: async (args: any) => {
+      // Tool result comes as JSON string from the LangGraph tool
+      const data = typeof args === "string" ? JSON.parse(args) : args;
+      const url = data.url || "";
+      const screenshot = data.screenshot_base64 || "";
       setBrowserUrl(url);
-      setBrowserScreenshot(screenshot_base64);
+      setBrowserScreenshot(screenshot);
       setActiveTab("browser");
       pushActivity({
         kind: "info",
@@ -152,7 +156,13 @@ export function useWorkspaceTools() {
         description: "The output of the command execution.",
       },
     ],
-    handler: async ({ command, output }: { command: string; output: string }) => {
+    handler: async (args: any) => {
+      // Tool result comes as JSON string from the LangGraph tool: { exitCode, stdout, stderr }
+      const data = typeof args === "string" ? JSON.parse(args) : args;
+      const command = data.command || "";
+      const stdout = data.stdout || "";
+      const stderr = data.stderr || "";
+      const output = stdout + (stderr ? `\n${stderr}` : "");
       appendTerminalOutput(`$ ${command}\n${output}\n`);
       setActiveTab("terminal");
       pushActivity({
@@ -178,12 +188,16 @@ export function useWorkspaceTools() {
         description: "The files in the directory.",
       },
     ],
-    handler: async ({ path, files }: { path: string; files: Array<{ name: string; path: string; isDir: boolean; size: number; modifiedAt: string }> }) => {
+    handler: async (args: any) => {
+      // Tool result comes as JSON string: { files: Array<{name, path, isDir, size}> }
+      const data = typeof args === "string" ? JSON.parse(args) : args;
+      const files = data.files || [];
+      const path = data.path || "/";
       setFiles(files);
       setActiveTab("files");
       pushActivity({
         kind: "info",
-        title: `Listed files in ${path || "/"}`,
+        title: `Listed files in ${path}`,
       });
       return `Successfully listed files.`;
     },
@@ -204,7 +218,10 @@ export function useWorkspaceTools() {
         description: "The content of the file.",
       },
     ],
-    handler: async ({ path, content }: { path: string; content: string }) => {
+    handler: async (args: any) => {
+      // Tool result comes as JSON string: { path, content }
+      const data = typeof args === "string" ? JSON.parse(args) : args;
+      const path = data.path || "";
       setSelectedFilePath(path);
       setActiveTab("files");
       pushActivity({
@@ -232,6 +249,72 @@ export function useWorkspaceTools() {
         title: `Wrote file: ${path}`,
       });
       return `Successfully wrote to file ${path}.`;
+    },
+  });
+
+  // ── Chat-result tools (push activity, no panel update) ──
+
+  useCopilotAction({
+    name: "delete_file",
+    description: "Deletes a file from the sandbox.",
+    parameters: [{ name: "path", type: "string", description: "The path to delete." }],
+    handler: async (args: any) => {
+      pushActivity({ kind: "action", title: `Deleted file: ${typeof args === "string" ? JSON.parse(args).path : args.path}` });
+      return `File deleted.`;
+    },
+  });
+
+  useCopilotAction({
+    name: "git_clone",
+    description: "Clones a git repository into the sandbox.",
+    parameters: [{ name: "url", type: "string", description: "The repository URL." }],
+    handler: async (args: any) => {
+      const data = typeof args === "string" ? JSON.parse(args) : args;
+      pushActivity({ kind: "action", title: `Cloned: ${data.url || "repository"}` });
+      return `Repository cloned.`;
+    },
+  });
+
+  useCopilotAction({
+    name: "git_status",
+    description: "Shows git status of a repository.",
+    parameters: [{ name: "path", type: "string", description: "The repository path." }],
+    handler: async (_args: any) => {
+      pushActivity({ kind: "info", title: "Checked git status" });
+      return `Git status checked.`;
+    },
+  });
+
+  useCopilotAction({
+    name: "git_commit",
+    description: "Stages and commits changes.",
+    parameters: [{ name: "message", type: "string", description: "The commit message." }],
+    handler: async (args: any) => {
+      const data = typeof args === "string" ? JSON.parse(args) : args;
+      pushActivity({ kind: "action", title: `Committed: ${(data.message || "").slice(0, 50)}` });
+      return `Changes committed.`;
+    },
+  });
+
+  useCopilotAction({
+    name: "web_search",
+    description: "Searches the web for information.",
+    parameters: [{ name: "query", type: "string", description: "The search query." }],
+    handler: async (args: any) => {
+      const data = typeof args === "string" ? JSON.parse(args) : args;
+      const results = data.results || [];
+      pushActivity({ kind: "info", title: `Searched: ${data.query || "web"} (${results.length} results)` });
+      return `Search complete.`;
+    },
+  });
+
+  useCopilotAction({
+    name: "take_screenshot",
+    description: "Takes a screenshot of the current sandbox browser state.",
+    parameters: [],
+    handler: async () => {
+      pushActivity({ kind: "action", title: "Took screenshot" });
+      return `Screenshot taken.`;
     },
   });
 }

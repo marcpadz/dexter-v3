@@ -33,6 +33,10 @@ class DexterAgent extends AbstractAgent {
           subscriber.complete();
         })
         .catch((err) => {
+          console.error(
+            "[agent] Execution error:",
+            err.message || "Unknown error"
+          );
           subscriber.next({
             type: EventType.RUN_ERROR,
             runId,
@@ -62,8 +66,25 @@ class DexterAgent extends AbstractAgent {
         "anthropic/claude-sonnet-4-20250514",
       conversationId: (input.forwardedProps as any)?.conversationId || threadId,
       sandboxId: null,
-      apiKeys: (input.forwardedProps as any)?.apiKeys || {},
+        apiKeys: (input.forwardedProps as any)?.apiKeys || {},
     };
+
+    // conversationId defaults to threadId (the CopilotKit-generated stable UUID).
+    // The sandbox-manager uses this to track sandboxId. Since threadId is
+    // stable for the CopilotChat session, sandbox reuse works within a session.
+    // The sandbox auto-deletes after 7 days, so cross-session persistence
+    // is handled by Daytona's lifecycle, not the DB.
+
+    console.log(
+      "[agent] Processing request:",
+      JSON.stringify({
+        threadId,
+        conversationId: graphInput.conversationId,
+        model: graphInput.model,
+        userId: graphInput.userId,
+        messageCount: input.messages.length,
+      })
+    );
 
     const config: any = {
       configurable: {

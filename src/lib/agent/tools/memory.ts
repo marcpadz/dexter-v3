@@ -6,14 +6,18 @@ import { eq, sql } from "drizzle-orm";
 
 /**
  * Generate a simple text embedding using OpenAI's API.
- * Falls back to a hash-based vector if no OpenAI key is configured.
+ * Requires OPENAI_API_KEY env var for proper semantic search.
+ *
+ * Fallback: returns a hash-based vector when no key is configured.
+ * This provides degraded recall — memories will match by keyword
+ * rather than meaning. Set OPENAI_API_KEY for full pgvector support.
  */
 async function generateEmbedding(text: string): Promise<number[]> {
   const apiKey = process.env.OPENAI_API_KEY;
 
   if (!apiKey) {
     // Fallback: return a zero vector with the text length as a crude signal
-    console.warn("[memory] No OPENAI_API_KEY — using fallback embedding");
+    console.warn("[memory] No OPENAI_API_KEY — using fallback embedding. Set OPENAI_API_KEY for semantic search via pgvector.");
     const dim = 1536;
     const arr = new Array(dim).fill(0);
     const hash = text.split("").reduce((acc, c) => acc + c.charCodeAt(0), 0);
