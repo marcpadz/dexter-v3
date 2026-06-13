@@ -81,9 +81,18 @@ export function resolveModel(model: string, apiKeys: Record<string, string>): Ba
       const apiKey = apiKeys["zai"] || process.env.ZAI_API_KEY;
       if (!apiKey) throw new Error("No Z.AI API key configured");
       return new ChatOpenAI({
-        model: modelName || "yi-large",
+        model: modelName || "glm-4-plus",
         apiKey,
-        configuration: { baseURL: "https://api.01.ai/v1" },
+        configuration: { baseURL: "https://api.z.ai/api/paas/v4" },
+      });
+    }
+    case "zai-coding": {
+      const apiKey = apiKeys["zai"] || process.env.ZAI_API_KEY;
+      if (!apiKey) throw new Error("No Z.AI API key configured");
+      return new ChatOpenAI({
+        model: modelName || "glm-4-plus",
+        apiKey,
+        configuration: { baseURL: "https://api.z.ai/api/coding/paas/v4" },
       });
     }
     default: {
