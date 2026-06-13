@@ -36,7 +36,7 @@ describe("auth proxy", () => {
     expect(response.status).toBe(200);
   });
 
-  it("should redirect unauthenticated users to /auth/login", async () => {
+  it("should redirect unauthenticated users to /login", async () => {
     (auth.api.getSession as any).mockResolvedValueOnce(null);
 
     const { proxy } = await import("@/proxy");
@@ -44,14 +44,14 @@ describe("auth proxy", () => {
     const response = await proxy(request);
 
     expect(response.status).toBe(307);
-    expect(response.headers.get("location")).toContain("/auth/login");
+    expect(response.headers.get("location")).toContain("/login");
   });
 
-  it("should allow access to /auth routes without session", async () => {
+  it("should allow access to /login without session", async () => {
     (auth.api.getSession as any).mockResolvedValueOnce(null);
 
     const { proxy } = await import("@/proxy");
-    const request = mockRequest("/auth/login");
+    const request = mockRequest("/login");
     const response = await proxy(request);
 
     expect(response.status).toBe(200);
