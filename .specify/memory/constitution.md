@@ -95,8 +95,8 @@ and simpler integration with modern Next.js App Router patterns.
 ### V. LangGraph.js Agent Backend
 
 The agent backend MUST run as LangGraph.js (TypeScript) in-process
-inside Next.js. CopilotKit's Next.js runtime connects to it via a
-custom `AbstractAgent` adapter implementing the AG-UI protocol.
+inside Next.js. CopilotKit's Next.js runtime connects to it via the
+`LangGraphAgent` adapter from `@copilotkit/runtime/langgraph`.
 
 - The agent graph is defined in TypeScript using LangGraph.js `StateGraph`.
 - Persistent state uses LangGraph.js `PostgresSaver` checkpointer —
@@ -185,7 +185,8 @@ workspace state desync.
   ORM.
 - **Auth**: Better Auth (not NextAuth).
 - **Agent Backend**: LangGraph.js (TypeScript) running in-process inside
-  Next.js, connected to CopilotKit via custom AbstractAgent AG-UI adapter.
+  Next.js, connected to CopilotKit via the `LangGraphAgent` adapter from
+  `@copilotkit/runtime/langgraph`.
 - **Agent Models**: ChatAnthropic, ChatOpenAI via LangChain.js. Multi-provider
   resolution from user-configured API keys in the `api_keys` table.
 - **State Management**: Zustand for client-side workspace state.

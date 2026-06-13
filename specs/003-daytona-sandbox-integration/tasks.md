@@ -4,7 +4,7 @@
 
 **Prerequisites**: plan.md (required), spec.md (required), research.md, data-model.md, contracts/
 
-**Tests**: Not explicitly requested — test tasks omitted. Focus on implementation.
+**Tests**: Constitution Principle VIII mandates automated tests for server actions, agent tool execution, auth flows, and workspace state transitions. Test tasks included as Phase 10.
 
 **Organization**: Tasks grouped by user story for independent implementation and testing.
 
@@ -41,7 +41,7 @@
 - [X] T010 Create Daytona client singleton in `src/lib/daytona/client.ts` — initialize `new Daytona({ apiKey, apiUrl })` from env vars, export singleton
 - [X] T011 Create sandbox manager in `src/lib/daytona/sandbox-manager.ts` — implement `getOrCreateSandbox(conversationId)`, `stopSandbox(conversationId)`, `deleteSandbox(conversationId)` with lazy creation, auto-stop 15min, state checking via Daytona API, and `sandboxId` persistence to conversations table
 - [X] T012 Create LangGraph agent state type in `src/lib/agent/state.ts` — `AgentState` with `messages`, `userId`, `model`, `conversationId`, `sandboxId`, `apiKeys`
-- [X] T013 Create model provider resolver in `src/lib/agent/providers.ts` — resolve model string (e.g., "anthropic/claude-sonnet-4") to LangChain `BaseChatModel` instance using user's decrypted API keys from the `api_keys` table
+- [X] T013 Create model provider resolver in `src/lib/agent/providers.ts` — resolve model string (e.g., "anthropic/claude-sonnet-4") to LangChain `BaseChatModel` instance using user's decrypted API keys from the `api_keys` table (call crypto helper from `src/lib/auth/crypto.ts`)
 - [X] T014 REWRITE `src/lib/copilot/runtime.ts` — replace `remoteEndpoints` to Python service with `LangGraphAgent` from `@copilotkit/runtime/langgraph` + `CopilotRuntime({ agents: { default: agent } })`
 - [X] T015 REWRITE `src/app/(app)/chat/page.tsx` — replace custom form with `<CopilotChat>` from `@copilotkit/react-ui` + `useWorkspaceTools()` hook call. Import `@copilotkit/react-ui/styles.css`
 - [X] T016 REWRITE `src/middleware.ts` — re-enable auth checks using `auth.api.getSession()`, redirect unauthenticated users to `/auth/login`
@@ -59,7 +59,7 @@
 ### Implementation for User Story 1
 
 - [X] T017 [P] [US1] Create code execution tool in `src/lib/daytona/tools/execute-code.ts` — `tool("execute_code", ...)` wrapping `sandbox.process.codeRun()` for Python and `sandbox.process.executeCommand()` for JS/TS/shell. Returns `{ exitCode, stdout, stderr }`
-- [X] T018 [P] [US1] Create shell command tool in `src/lib/daytona/tools/execute-command.ts` — `tool("execute_command", ...)` wrapping `sandbox.process.createSession()` + `sandbox.process.executeSessionCommand()` for stateful multi-step commands. Returns `{ sessionId, exitCode, stdout, stderr }`
+- [X] T018 [P] [US1] Create shell command tool in `src/lib/daytona/tools/execute-command.ts` — `tool("execute_command", ...)` wrapping `sandbox.process.createSession()` + `sandbox.process.executeSessionCommand()` for stateful multi-step commands. Returns `{ sessionId, exitCode, stdout, stderr }`. Note: PTY WebSocket integration for xterm.js is deferred; see task notes.
 - [X] T019 [US1] Create tool barrel export in `src/lib/daytona/tools/index.ts` — export array of all tools for the agent graph
 - [X] T020 [US1] Build LangGraph supervisor node in `src/lib/agent/nodes/supervisor.ts` — LLM node that binds all Daytona tools, calls model with messages, returns AI message with tool calls
 - [X] T021 [US1] Build LangGraph agent graph in `src/lib/agent/graph.ts` — `StateGraph(AgentState)` with supervisor node, tool node, conditional edges (tools → supervisor → end). Compile with `PostgresSaver` checkpointer using `DATABASE_URL`, thread_id = conversationId
@@ -78,9 +78,10 @@
 
 ### Implementation for User Story 2
 
-- [X] T024 [US2] Create browser tools in `src/lib/daytona/tools/browser.ts` — `tool("browse_url", ...)` that calls `sandbox.computerUse.start()`, navigates via keyboard (`ctrl+l` → type URL → enter), waits for load, calls `screenshot.takeCompressed()`. Returns `{ url, screenshot_base64 }`. Also `tool("take_screenshot", ...)` for standalone screenshots
+- [X] T024 [US2] Create browser tools in `src/lib/daytona/tools/browser.ts` — `tool("browse_web", ...)` that calls `sandbox.computerUse.start()`, navigates via keyboard (`ctrl+l` → type URL → enter), waits for load, calls `screenshot.takeCompressed()`. Returns `{ url, screenshot_base64 }`. Also `tool("take_screenshot", ...)` for standalone screenshots
 - [X] T025 [US2] Add browser tools to barrel export in `src/lib/daytona/tools/index.ts`
 - [X] T026 [US2] Add browser tools to supervisor node's tool list in `src/lib/agent/nodes/supervisor.ts`
+- [X] T026.5 [US2] Add mouse/keyboard action tools (`click_element`, `type_text`, `scroll_page`) to `src/lib/daytona/tools/browser.ts` and update `contracts/sandbox-tools.md` — enables the agent to interact with pages beyond navigation
 
 **Checkpoint**: Browser panel shows real Daytona sandbox screenshots
 
@@ -129,7 +130,7 @@
 
 - [X] T034 [US5] Add sandbox cleanup to conversation delete action in `src/lib/server/actions/conversations.ts` — before deleting a conversation, call `sandboxManager.deleteSandbox(conversationId)` to stop and remove the Daytona sandbox
 - [X] T035 [US5] Add sandbox restart logic to sandbox manager in `src/lib/daytona/sandbox-manager.ts` — when `getOrCreateSandbox()` finds a stopped sandbox, call `sandbox.start()`. When it finds an archived sandbox, create a new one and update `sandboxId`
-- [X] T036 [US5] Set sandbox auto-stop interval on creation — pass `autoStopInterval: 15` to `daytona.create()`. Set `autoArchiveInterval: 1440` (24h). Set `autoDeleteInterval: -1` (disabled — we manage deletion at conversation level)
+- [ ] T036 [US5] Set sandbox auto-stop interval on creation — pass `autoStopInterval: 15` to `daytona.create()`. Set `autoArchiveInterval: 1440` (24h). Set `autoDeleteInterval: 10080` (7 days — conversation-level cleanup handles earlier deletion)
 
 **Checkpoint**: Sandbox lifecycle is fully automated — no manual intervention needed
 
@@ -143,6 +144,7 @@
 - [X] T038 [P] Create code sub-graph in `src/lib/agent/subgraphs/code.ts` — `StateGraph` with plan → execute_code → validate nodes. Supervisor delegates for complex coding tasks
 - [X] T039 Create router node in `src/lib/agent/nodes/router.ts` — conditional edge logic after supervisor: if tool calls → tools node, if `delegate_to_agent("research")` → research sub-graph, if `delegate_to_agent("code")` → code sub-graph, else → end
 - [X] T040 Update graph definition in `src/lib/agent/graph.ts` — add sub-graphs as nodes, wire router edges, recompile with checkpointer
+- [X] T040.5 Create memory tool in `src/lib/agent/tools/memory.ts` — `tool("save_memory", ...)` writes facts with embeddings to the `memories` table; `tool("recall_memory", ...)` queries pgvector by cosine similarity. Add to graph tool list (Constitution Principle V)
 
 **Checkpoint**: Agent can delegate complex tasks to specialized sub-graphs
 
@@ -152,11 +154,23 @@
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [X] T041 [P] Amend constitution Principle V in `.specify/memory/constitution.md` — change from "Python LangGraph" to "LangGraph.js (TypeScript) in-process", bump version to 3.0.0, add Sync Impact Report
+- [X] T041 [P] Verify constitution Principle V in `.specify/memory/constitution.md` — wording references `LangGraphAgent` from `@copilotkit/runtime/langgraph`; version is 3.0.0; Sync Impact Report is present
 - [X] T042 [P] Update `CHANGELOG.md` with Daytona integration session entry
 - [X] T043 Run full quickstart.md validation — execute all 6 validation scenarios from `specs/003-daytona-sandbox-integration/quickstart.md` and verify each passes
 - [X] T044 [P] Add logging throughout `src/lib/daytona/` — structured logging for sandbox creation, reuse, errors, and lifecycle events using `console.log` with conversation context
 - [X] T045 Security audit — verify Daytona API key never exposed client-side, verify sandbox isolation, verify auth middleware gates all tool-triggering routes
+
+---
+
+## Phase 10: Tests (Constitution Principle VIII)
+
+**Purpose**: Constitution VIII mandates automated tests for server actions, agent tool execution, auth flows, and workspace state transitions
+
+- [ ] T046 [P] Test sandbox manager in `src/__tests__/daytona/sandbox-manager.test.ts` — test `getOrCreateSandbox()` lazy creation, reuse of existing sandbox, restart of stopped sandbox, error handling for Daytona API failures
+- [ ] T047 [P] Test Daytona tool handlers in `src/__tests__/daytona/tools/execute-code.test.ts` — test `execute_code` tool with Python/JS/shell, timeout handling, stderr capture, exit code propagation
+- [ ] T048 [P] Test Daytona tool handlers in `src/__tests__/daytona/tools/filesystem.test.ts` — test `list_files`, `read_file`, `write_file`, `delete_file` tool definitions, parameter validation, return payload shape
+- [ ] T049 [P] Test auth middleware in `src/__tests__/auth/middleware.test.ts` — test session check, redirect to `/auth/login` for unauthenticated users, passthrough for auth routes
+- [ ] T050 [P] Test workspace store transitions in `src/__tests__/workspace-store.test.ts` — test `open/close`, `setActiveTab`, `addArtifact/removeArtifact`, `appendTerminalOutput`, state isolation between conversations
 
 ---
 
@@ -173,6 +187,7 @@
 - **US5 (Phase 7)**: Depends on Phase 2 — can start in parallel with US2-US4
 - **Sub-Graphs (Phase 8)**: Depends on US1 (needs working tools first)
 - **Polish (Phase 9)**: Depends on all desired user stories being complete
+- **Tests (Phase 10)**: Depends on Phases 2–8 — tests validate foundational code and user stories (per Constitution VIII)
 
 ### User Story Dependencies
 
@@ -235,6 +250,7 @@ T034: "Add sandbox cleanup to conversation delete (US5)"
 6. + Phase 7 (US5) → Lifecycle automated
 7. + Phase 8 → Multi-agent sub-graphs
 8. + Phase 9 → Production polish
+9. + Phase 10 → Automated tests (Constitution VIII)
 
 ---
 

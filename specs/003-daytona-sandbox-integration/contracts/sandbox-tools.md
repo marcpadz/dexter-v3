@@ -104,11 +104,11 @@ All tools are LangGraph.js `tool()` definitions called from the agent graph. Eac
 
 ## Browser Tools
 
-### `browse_url`
+### `browse_web`
 
 | Field | Value |
 |-------|-------|
-| **Name** | `browse_url` |
+| **Name** | `browse_web` |
 | **Description** | Open a URL in the sandbox browser and take a screenshot. |
 | **Input** | `{ url: string, action?: "screenshot" \| "click" \| "type" \| "scroll", x?: number, y?: number, text?: string }` |
 | **Output** | `{ url: string, screenshot: string (base64 JPEG), title?: string }` |

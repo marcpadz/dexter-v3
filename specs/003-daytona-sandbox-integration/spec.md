@@ -118,6 +118,8 @@ The system automatically creates a sandbox per user session, manages its lifecyc
 - **FR-013**: System MUST track the user's active sandbox ID in the database (conversations table) so it persists across page reloads
 - **FR-014**: System MUST clean up orphaned sandboxes (auto-delete interval) to prevent resource waste
 
+- **FR-015**: System MUST provide a memory tool that saves and recalls user-specific facts from a `memories` table using pgvector embeddings
+
 ### Key Entities
 
 - **Sandbox**: A Daytona sandbox instance — has an ID, state (started/stopped/archived), resources (CPU, memory, disk), and belongs to a user. Tracked via `sandboxId` on the Conversation entity.
