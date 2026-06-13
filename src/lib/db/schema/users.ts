@@ -1,6 +1,6 @@
 import { pgTable, text, timestamp, boolean, uuid } from "drizzle-orm/pg-core";
 
-export const users = pgTable("user", {
+export const user = pgTable("user", {
   id: text("id").primaryKey(),
   name: text("name").notNull(),
   email: text("email").notNull().unique(),
@@ -9,6 +9,9 @@ export const users = pgTable("user", {
   createdAt: timestamp("createdAt").notNull().defaultNow(),
   updatedAt: timestamp("updatedAt").notNull().defaultNow(),
 });
+
+/** @deprecated Use `user` instead. Kept for backward compatibility. */
+export const users = user;
 
 export const session = pgTable("session", {
   id: text("id").primaryKey(),
