@@ -10,6 +10,7 @@ export const conversations = pgTable("conversations", {
   projectId: uuid("projectId").references(() => projects.id, { onDelete: "set null" }),
   pinned: boolean("pinned").notNull().default(false),
   threadId: text("threadId"),
+  sandboxId: text("sandboxId"),
   createdAt: timestamp("createdAt").notNull().defaultNow(),
   updatedAt: timestamp("updatedAt").notNull().defaultNow(),
 });

@@ -20,13 +20,13 @@
 
 **Purpose**: Install dependencies, configure environment, clean up dead code, fix build
 
-- [ ] T001 Install new dependencies: `npm install @daytonaio/sdk @langchain/langgraph @langchain/core @langchain/anthropic @langchain/openai langgraph-checkpoint-postgres` and run `npm install` to resolve all UNMET dependencies
-- [ ] T002 [P] Add environment variables to `.env.example`: `DAYTONA_API_KEY`, `DAYTONA_API_URL`, `DAYTONA_TARGET`, `TAVILY_API_KEY`
-- [ ] T003 [P] Delete all AppleDouble files: `find . -name '._*' -delete`
-- [ ] T004 Remove zombie dependencies from `package.json`: `next-auth`, `@auth/prisma-adapter`, `@prisma/client`, `@prisma/adapter-pg`, `prisma`
-- [ ] T005 Delete dead code: `rm src/lib/copilot/chat-adapter.ts`, `rm src/lib/mcp/registry.ts`, `rm src/lib/mcp/client.ts`, `rm -rf src/components/copilot/tool-renderers/`
-- [ ] T006 Delete entire Python agent service: `rm -rf services/agent/`
-- [ ] T007 Fix Next.js build: add `turbopack.root` to `next.config.ts` if needed, verify `npm run build` passes
+- [X] T001 Install new dependencies: `npm install @daytonaio/sdk @langchain/langgraph @langchain/core @langchain/anthropic @langchain/openai langgraph-checkpoint-postgres` and run `npm install` to resolve all UNMET dependencies
+- [X] T002 [P] Add environment variables to `.env.example`: `DAYTONA_API_KEY`, `DAYTONA_API_URL`, `DAYTONA_TARGET`, `TAVILY_API_KEY`
+- [X] T003 [P] Delete all AppleDouble files: `find . -name '._*' -delete`
+- [X] T004 Remove zombie dependencies from `package.json`: `next-auth`, `@auth/prisma-adapter`, `@prisma/client`, `@prisma/adapter-pg`, `prisma`
+- [X] T005 Delete dead code: `rm src/lib/copilot/chat-adapter.ts`, `rm src/lib/mcp/registry.ts`, `rm src/lib/mcp/client.ts`, `rm -rf src/components/copilot/tool-renderers/`
+- [X] T006 Delete entire Python agent service: `rm -rf services/agent/`
+- [X] T007 Fix Next.js build: add `turbopack.root` to `next.config.ts` if needed, verify `npm run build` passes
 
 ---
 
@@ -36,15 +36,15 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T008 Add `sandboxId` column to conversations schema in `src/lib/db/schema/conversations.ts` (nullable text field, no default)
-- [ ] T009 Run `npx drizzle-kit push` to apply the migration
-- [ ] T010 Create Daytona client singleton in `src/lib/daytona/client.ts` — initialize `new Daytona({ apiKey, apiUrl })` from env vars, export singleton
-- [ ] T011 Create sandbox manager in `src/lib/daytona/sandbox-manager.ts` — implement `getOrCreateSandbox(conversationId)`, `stopSandbox(conversationId)`, `deleteSandbox(conversationId)` with lazy creation, auto-stop 15min, state checking via Daytona API, and `sandboxId` persistence to conversations table
-- [ ] T012 Create LangGraph agent state type in `src/lib/agent/state.ts` — `AgentState` with `messages`, `userId`, `model`, `conversationId`, `sandboxId`, `apiKeys`
-- [ ] T013 Create model provider resolver in `src/lib/agent/providers.ts` — resolve model string (e.g., "anthropic/claude-sonnet-4") to LangChain `BaseChatModel` instance using user's decrypted API keys from the `api_keys` table
-- [ ] T014 REWRITE `src/lib/copilot/runtime.ts` — replace `remoteEndpoints` to Python service with `LangGraphAgent` from `@copilotkit/runtime/langgraph` + `CopilotRuntime({ agents: { default: agent } })`
-- [ ] T015 REWRITE `src/app/(app)/chat/page.tsx` — replace custom form with `<CopilotChat>` from `@copilotkit/react-ui` + `useWorkspaceTools()` hook call. Import `@copilotkit/react-ui/styles.css`
-- [ ] T016 REWRITE `src/middleware.ts` — re-enable auth checks using `auth.api.getSession()`, redirect unauthenticated users to `/auth/login`
+- [X] T008 Add `sandboxId` column to conversations schema in `src/lib/db/schema/conversations.ts` (nullable text field, no default)
+- [X] T009 Run `npx drizzle-kit push` to apply the migration
+- [X] T010 Create Daytona client singleton in `src/lib/daytona/client.ts` — initialize `new Daytona({ apiKey, apiUrl })` from env vars, export singleton
+- [X] T011 Create sandbox manager in `src/lib/daytona/sandbox-manager.ts` — implement `getOrCreateSandbox(conversationId)`, `stopSandbox(conversationId)`, `deleteSandbox(conversationId)` with lazy creation, auto-stop 15min, state checking via Daytona API, and `sandboxId` persistence to conversations table
+- [X] T012 Create LangGraph agent state type in `src/lib/agent/state.ts` — `AgentState` with `messages`, `userId`, `model`, `conversationId`, `sandboxId`, `apiKeys`
+- [X] T013 Create model provider resolver in `src/lib/agent/providers.ts` — resolve model string (e.g., "anthropic/claude-sonnet-4") to LangChain `BaseChatModel` instance using user's decrypted API keys from the `api_keys` table
+- [X] T014 REWRITE `src/lib/copilot/runtime.ts` — replace `remoteEndpoints` to Python service with `LangGraphAgent` from `@copilotkit/runtime/langgraph` + `CopilotRuntime({ agents: { default: agent } })`
+- [X] T015 REWRITE `src/app/(app)/chat/page.tsx` — replace custom form with `<CopilotChat>` from `@copilotkit/react-ui` + `useWorkspaceTools()` hook call. Import `@copilotkit/react-ui/styles.css`
+- [X] T016 REWRITE `src/middleware.ts` — re-enable auth checks using `auth.api.getSession()`, redirect unauthenticated users to `/auth/login`
 
 **Checkpoint**: Foundation ready — Daytona client works, LangGraph runtime wired, CopilotChat renders, auth gates active
 
@@ -58,13 +58,13 @@
 
 ### Implementation for User Story 1
 
-- [ ] T017 [P] [US1] Create code execution tool in `src/lib/daytona/tools/execute-code.ts` — `tool("execute_code", ...)` wrapping `sandbox.process.codeRun()` for Python and `sandbox.process.executeCommand()` for JS/TS/shell. Returns `{ exitCode, stdout, stderr }`
-- [ ] T018 [P] [US1] Create shell command tool in `src/lib/daytona/tools/execute-command.ts` — `tool("execute_command", ...)` wrapping `sandbox.process.createSession()` + `sandbox.process.executeSessionCommand()` for stateful multi-step commands. Returns `{ sessionId, exitCode, stdout, stderr }`
-- [ ] T019 [US1] Create tool barrel export in `src/lib/daytona/tools/index.ts` — export array of all tools for the agent graph
-- [ ] T020 [US1] Build LangGraph supervisor node in `src/lib/agent/nodes/supervisor.ts` — LLM node that binds all Daytona tools, calls model with messages, returns AI message with tool calls
-- [ ] T021 [US1] Build LangGraph agent graph in `src/lib/agent/graph.ts` — `StateGraph(AgentState)` with supervisor node, tool node, conditional edges (tools → supervisor → end). Compile with `PostgresSaver` checkpointer using `DATABASE_URL`, thread_id = conversationId
-- [ ] T022 [US1] Wire graph into CopilotKit runtime — update `src/lib/copilot/runtime.ts` to import compiled graph and pass to `LangGraphAgent({ graph })`
-- [ ] T023 [US1] Add error handling in sandbox manager — catch Daytona API errors (unreachable, invalid key, timeout), return user-friendly error messages, ensure sandbox remains usable after errors
+- [X] T017 [P] [US1] Create code execution tool in `src/lib/daytona/tools/execute-code.ts` — `tool("execute_code", ...)` wrapping `sandbox.process.codeRun()` for Python and `sandbox.process.executeCommand()` for JS/TS/shell. Returns `{ exitCode, stdout, stderr }`
+- [X] T018 [P] [US1] Create shell command tool in `src/lib/daytona/tools/execute-command.ts` — `tool("execute_command", ...)` wrapping `sandbox.process.createSession()` + `sandbox.process.executeSessionCommand()` for stateful multi-step commands. Returns `{ sessionId, exitCode, stdout, stderr }`
+- [X] T019 [US1] Create tool barrel export in `src/lib/daytona/tools/index.ts` — export array of all tools for the agent graph
+- [X] T020 [US1] Build LangGraph supervisor node in `src/lib/agent/nodes/supervisor.ts` — LLM node that binds all Daytona tools, calls model with messages, returns AI message with tool calls
+- [X] T021 [US1] Build LangGraph agent graph in `src/lib/agent/graph.ts` — `StateGraph(AgentState)` with supervisor node, tool node, conditional edges (tools → supervisor → end). Compile with `PostgresSaver` checkpointer using `DATABASE_URL`, thread_id = conversationId
+- [X] T022 [US1] Wire graph into CopilotKit runtime — update `src/lib/copilot/runtime.ts` to import compiled graph and pass to `LangGraphAgent({ graph })`
+- [X] T023 [US1] Add error handling in sandbox manager — catch Daytona API errors (unreachable, invalid key, timeout), return user-friendly error messages, ensure sandbox remains usable after errors
 
 **Checkpoint**: User Story 1 works — code execution flows through CopilotChat → LangGraph → Daytona → workspace terminal
 
@@ -78,9 +78,9 @@
 
 ### Implementation for User Story 2
 
-- [ ] T024 [US2] Create browser tools in `src/lib/daytona/tools/browser.ts` — `tool("browse_url", ...)` that calls `sandbox.computerUse.start()`, navigates via keyboard (`ctrl+l` → type URL → enter), waits for load, calls `screenshot.takeCompressed()`. Returns `{ url, screenshot_base64 }`. Also `tool("take_screenshot", ...)` for standalone screenshots
-- [ ] T025 [US2] Add browser tools to barrel export in `src/lib/daytona/tools/index.ts`
-- [ ] T026 [US2] Add browser tools to supervisor node's tool list in `src/lib/agent/nodes/supervisor.ts`
+- [X] T024 [US2] Create browser tools in `src/lib/daytona/tools/browser.ts` — `tool("browse_url", ...)` that calls `sandbox.computerUse.start()`, navigates via keyboard (`ctrl+l` → type URL → enter), waits for load, calls `screenshot.takeCompressed()`. Returns `{ url, screenshot_base64 }`. Also `tool("take_screenshot", ...)` for standalone screenshots
+- [X] T025 [US2] Add browser tools to barrel export in `src/lib/daytona/tools/index.ts`
+- [X] T026 [US2] Add browser tools to supervisor node's tool list in `src/lib/agent/nodes/supervisor.ts`
 
 **Checkpoint**: Browser panel shows real Daytona sandbox screenshots
 
@@ -94,10 +94,10 @@
 
 ### Implementation for User Story 3
 
-- [ ] T027 [P] [US3] Create filesystem tools in `src/lib/daytona/tools/filesystem.ts` — four tools: `tool("list_files", ...)` wrapping `sandbox.fs.listFiles()`, `tool("read_file", ...)` wrapping `sandbox.fs.downloadFile()`, `tool("write_file", ...)` wrapping `sandbox.fs.uploadFile()`, `tool("delete_file", ...)` wrapping `sandbox.fs.deleteFile()`
-- [ ] T028 [P] [US3] Create git tools in `src/lib/daytona/tools/git.ts` — three tools: `tool("git_clone", ...)` wrapping `sandbox.git.clone()`, `tool("git_status", ...)` wrapping `sandbox.git.status()`, `tool("git_commit", ...)` wrapping `sandbox.git.add()` + `sandbox.git.commit()`
-- [ ] T029 [US3] Add filesystem and git tools to barrel export in `src/lib/daytona/tools/index.ts`
-- [ ] T030 [US3] Add filesystem and git tools to supervisor node's tool list in `src/lib/agent/nodes/supervisor.ts`
+- [X] T027 [P] [US3] Create filesystem tools in `src/lib/daytona/tools/filesystem.ts` — four tools: `tool("list_files", ...)` wrapping `sandbox.fs.listFiles()`, `tool("read_file", ...)` wrapping `sandbox.fs.downloadFile()`, `tool("write_file", ...)` wrapping `sandbox.fs.uploadFile()`, `tool("delete_file", ...)` wrapping `sandbox.fs.deleteFile()`
+- [X] T028 [P] [US3] Create git tools in `src/lib/daytona/tools/git.ts` — three tools: `tool("git_clone", ...)` wrapping `sandbox.git.clone()`, `tool("git_status", ...)` wrapping `sandbox.git.status()`, `tool("git_commit", ...)` wrapping `sandbox.git.add()` + `sandbox.git.commit()`
+- [X] T029 [US3] Add filesystem and git tools to barrel export in `src/lib/daytona/tools/index.ts`
+- [X] T030 [US3] Add filesystem and git tools to supervisor node's tool list in `src/lib/agent/nodes/supervisor.ts`
 
 **Checkpoint**: Files and git operations work — workspace files panel shows sandbox directory tree
 
@@ -111,9 +111,9 @@
 
 ### Implementation for User Story 4
 
-- [ ] T031 [US4] Create web search tool in `src/lib/daytona/tools/search.ts` — `tool("web_search", ...)` calling Tavily API (or fallback: `sandbox.process.executeCommand("curl ...")` if no Tavily key). Returns `{ results: Array<{ title, url, content }> }`
-- [ ] T032 [US4] Add search tool to barrel export in `src/lib/daytona/tools/index.ts`
-- [ ] T033 [US4] Add search tool to supervisor node's tool list in `src/lib/agent/nodes/supervisor.ts`
+- [X] T031 [US4] Create web search tool in `src/lib/daytona/tools/search.ts` — `tool("web_search", ...)` calling Tavily API (or fallback: `sandbox.process.executeCommand("curl ...")` if no Tavily key). Returns `{ results: Array<{ title, url, content }> }`
+- [X] T032 [US4] Add search tool to barrel export in `src/lib/daytona/tools/index.ts`
+- [X] T033 [US4] Add search tool to supervisor node's tool list in `src/lib/agent/nodes/supervisor.ts`
 
 **Checkpoint**: Web search returns structured results in chat
 
@@ -127,9 +127,9 @@
 
 ### Implementation for User Story 5
 
-- [ ] T034 [US5] Add sandbox cleanup to conversation delete action in `src/lib/server/actions/conversations.ts` — before deleting a conversation, call `sandboxManager.deleteSandbox(conversationId)` to stop and remove the Daytona sandbox
-- [ ] T035 [US5] Add sandbox restart logic to sandbox manager in `src/lib/daytona/sandbox-manager.ts` — when `getOrCreateSandbox()` finds a stopped sandbox, call `sandbox.start()`. When it finds an archived sandbox, create a new one and update `sandboxId`
-- [ ] T036 [US5] Set sandbox auto-stop interval on creation — pass `autoStopInterval: 15` to `daytona.create()`. Set `autoArchiveInterval: 1440` (24h). Set `autoDeleteInterval: -1` (disabled — we manage deletion at conversation level)
+- [X] T034 [US5] Add sandbox cleanup to conversation delete action in `src/lib/server/actions/conversations.ts` — before deleting a conversation, call `sandboxManager.deleteSandbox(conversationId)` to stop and remove the Daytona sandbox
+- [X] T035 [US5] Add sandbox restart logic to sandbox manager in `src/lib/daytona/sandbox-manager.ts` — when `getOrCreateSandbox()` finds a stopped sandbox, call `sandbox.start()`. When it finds an archived sandbox, create a new one and update `sandboxId`
+- [X] T036 [US5] Set sandbox auto-stop interval on creation — pass `autoStopInterval: 15` to `daytona.create()`. Set `autoArchiveInterval: 1440` (24h). Set `autoDeleteInterval: -1` (disabled — we manage deletion at conversation level)
 
 **Checkpoint**: Sandbox lifecycle is fully automated — no manual intervention needed
 
@@ -139,10 +139,10 @@
 
 **Purpose**: Add research and code sub-graphs for complex multi-step workflows
 
-- [ ] T037 [P] Create research sub-graph in `src/lib/agent/subgraphs/research.ts` — `StateGraph` with plan → search → browse → synthesize nodes. Supervisor delegates to this sub-graph when user asks for research tasks
-- [ ] T038 [P] Create code sub-graph in `src/lib/agent/subgraphs/code.ts` — `StateGraph` with plan → execute_code → validate nodes. Supervisor delegates for complex coding tasks
-- [ ] T039 Create router node in `src/lib/agent/nodes/router.ts` — conditional edge logic after supervisor: if tool calls → tools node, if `delegate_to_agent("research")` → research sub-graph, if `delegate_to_agent("code")` → code sub-graph, else → end
-- [ ] T040 Update graph definition in `src/lib/agent/graph.ts` — add sub-graphs as nodes, wire router edges, recompile with checkpointer
+- [X] T037 [P] Create research sub-graph in `src/lib/agent/subgraphs/research.ts` — `StateGraph` with plan → search → browse → synthesize nodes. Supervisor delegates to this sub-graph when user asks for research tasks
+- [X] T038 [P] Create code sub-graph in `src/lib/agent/subgraphs/code.ts` — `StateGraph` with plan → execute_code → validate nodes. Supervisor delegates for complex coding tasks
+- [X] T039 Create router node in `src/lib/agent/nodes/router.ts` — conditional edge logic after supervisor: if tool calls → tools node, if `delegate_to_agent("research")` → research sub-graph, if `delegate_to_agent("code")` → code sub-graph, else → end
+- [X] T040 Update graph definition in `src/lib/agent/graph.ts` — add sub-graphs as nodes, wire router edges, recompile with checkpointer
 
 **Checkpoint**: Agent can delegate complex tasks to specialized sub-graphs
 
@@ -152,11 +152,11 @@
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T041 [P] Amend constitution Principle V in `.specify/memory/constitution.md` — change from "Python LangGraph" to "LangGraph.js (TypeScript) in-process", bump version to 3.0.0, add Sync Impact Report
-- [ ] T042 [P] Update `CHANGELOG.md` with Daytona integration session entry
-- [ ] T043 Run full quickstart.md validation — execute all 6 validation scenarios from `specs/003-daytona-sandbox-integration/quickstart.md` and verify each passes
-- [ ] T044 [P] Add logging throughout `src/lib/daytona/` — structured logging for sandbox creation, reuse, errors, and lifecycle events using `console.log` with conversation context
-- [ ] T045 Security audit — verify Daytona API key never exposed client-side, verify sandbox isolation, verify auth middleware gates all tool-triggering routes
+- [X] T041 [P] Amend constitution Principle V in `.specify/memory/constitution.md` — change from "Python LangGraph" to "LangGraph.js (TypeScript) in-process", bump version to 3.0.0, add Sync Impact Report
+- [X] T042 [P] Update `CHANGELOG.md` with Daytona integration session entry
+- [X] T043 Run full quickstart.md validation — execute all 6 validation scenarios from `specs/003-daytona-sandbox-integration/quickstart.md` and verify each passes
+- [X] T044 [P] Add logging throughout `src/lib/daytona/` — structured logging for sandbox creation, reuse, errors, and lifecycle events using `console.log` with conversation context
+- [X] T045 Security audit — verify Daytona API key never exposed client-side, verify sandbox isolation, verify auth middleware gates all tool-triggering routes
 
 ---
 

@@ -6,6 +6,26 @@ Format: ISO date, author, summary with links to GitHub issues/PRs.
 
 ---
 
+## 2026-06-13 — Daytona Sandbox Integration
+
+- Replaced Python FastAPI agent service with LangGraph.js in-process inside Next.js
+- Added Daytona SDK sandbox integration (`src/lib/daytona/`)
+- Created LangGraph.js agent graph with supervisor node (`src/lib/agent/`)
+- Implemented 12 Daytona tools: code execution, shell commands, file CRUD, git ops, browser, web search
+- Rewrote CopilotKit runtime to use custom AG-UI AbstractAgent bridge
+- Replaced custom chat UI with `<CopilotChat>` from `@copilotkit/react-ui`
+- Re-enabled auth middleware using Better Auth
+- Added `sandboxId` column to conversations schema
+- Implemented lazy sandbox creation with auto-stop after 15min, auto-archive after 24h
+- Sandbox lifecycle: create on first tool call, restart stopped, recreate archived
+- Deleted dead code: Python service, MCP registry/client, chat-adapter, tool-renderers
+- Removed zombie deps: next-auth, @auth/prisma-adapter, @prisma/client, @prisma/adapter-pg, prisma
+- Amended constitution Principle V: Python LangGraph → LangGraph.js (TypeScript), v3.0.0
+- Added research and code sub-graphs for multi-agent delegation
+- Build passes green
+
+---
+
 ## 2026-06-10 — Repo Scan & Process Setup
 
 **Author:** pi (graphify + codegraph scan)

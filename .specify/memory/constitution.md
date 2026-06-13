@@ -2,22 +2,23 @@
   ═══════════════════════════════════════════════════════════════════════
   SYNC IMPACT REPORT
   ═══════════════════════════════════════════════════════════════════════
-  Version change: 1.0.0 -> 2.0.0
+  Version change: 2.0.0 -> 3.0.0
   Modified principles:
-    - V. AI SDK as Provider Layer -> V. LangGraph Agent Backend
-    - Technology Constraints: AI Runtime -> Agent Backend + Agent Models
+    - V. LangGraph Agent Backend: Python -> LangGraph.js (TypeScript) in-process
+    - Technology Constraints: Agent Backend -> LangGraph.js in Next.js
   Added sections: None
   Removed sections: None
-  Impact: Agent backend shifts from JS BuiltInAgent to Python LangGraph.
-           Frontend (CopilotKit) unchanged. Inngest dropped.
+  Impact: Python FastAPI service deleted. Agent runs as LangGraph.js in-process
+           inside Next.js. Daytona SDK called directly from TypeScript tools.
+           CopilotKit runtime connects via custom AbstractAgent adapter.
   Templates requiring updates:
-    - specs/001-agentic-workspace-rebuild/spec.md    updated (52 FRs, 10 USs)
-    - specs/001-agentic-workspace-rebuild/plan.md    updated (668 lines, LangGraph arch)
-    - specs/001-agentic-workspace-rebuild/tasks.md   regenerated (131 tasks)
-    - .specify/templates/plan-template.md            compatible
-    - .specify/templates/spec-template.md            compatible
-    - .specify/templates/tasks-template.md           compatible
-  Follow-up TODOs: Spec, plan, and tasks regenerated. Ready for /speckit-implement.
+    - specs/003-daytona-sandbox-integration/spec.md    current feature
+    - specs/003-daytona-sandbox-integration/plan.md    current feature
+    - specs/003-daytona-sandbox-integration/tasks.md   current feature
+    - .specify/templates/plan-template.md              compatible
+    - .specify/templates/spec-template.md              compatible
+    - .specify/templates/tasks-template.md             compatible
+  Follow-up TODOs: None — implementation complete.
 -->
 
 # Dexter v3 Constitution
@@ -91,34 +92,33 @@ used.
 releases. Better Auth offers a stable API, better TypeScript support,
 and simpler integration with modern Next.js App Router patterns.
 
-### V. LangGraph Agent Backend
+### V. LangGraph.js Agent Backend
 
-The agent backend MUST run as a separate Python service using
-LangGraph (`langgraph`). CopilotKit's Next.js runtime connects to it
-via the AG-UI protocol. AI SDK v6 is used for model provider routing
-on the CopilotKit side only.
+The agent backend MUST run as LangGraph.js (TypeScript) in-process
+inside Next.js. CopilotKit's Next.js runtime connects to it via a
+custom `AbstractAgent` adapter implementing the AG-UI protocol.
 
-- The agent graph is defined in Python using LangGraph's `StateGraph`.
-- Persistent state uses LangGraph's `PostgresSaver` checkpointer —
+- The agent graph is defined in TypeScript using LangGraph.js `StateGraph`.
+- Persistent state uses LangGraph.js `PostgresSaver` checkpointer —
   same Postgres database as the app, different tables.
-- Multi-agent delegation uses LangGraph sub-graphs.
-- Long-running tasks survive crashes via checkpointing — no need
-  for a separate durable execution service (Inngest dropped).
-- Human-in-the-loop uses LangGraph's `interrupt()` + CopilotKit's
+- Multi-agent delegation uses LangGraph.js sub-graphs.
+- Long-running tasks survive crashes via checkpointing.
+- Human-in-the-loop uses LangGraph.js `interrupt()` + CopilotKit's
   approval UI.
 - Memory uses checkpoint state + a dedicated memory tool that writes
   to a `memories` table.
+- Daytona SDK calls happen directly in TypeScript tool handlers — no
+  HTTP bridge between services.
+- Single language, single deployment, single process.
 - CopilotKit's `BuiltInAgent` is NOT used — it lacks persistence,
   multi-agent delegation, and checkpointing.
-- Inngest is NOT used — LangGraph handles durability natively.
+- Inngest is NOT used — LangGraph.js handles durability natively.
 
-**Rationale**: CopilotKit's BuiltInAgent is a single-request agent loop
-with no persistent state, no agent-to-agent delegation, and no
-checkpointing. LangGraph provides all four capabilities (delegation,
-persistence, long-running tasks, memory) out of the box. CopilotKit
-was designed for this split — its architecture page shows Frontend ←→
-Runtime ←→ Agent Backend as three separate layers connected by AG-UI.
-The frontend doesn't change.
+**Rationale**: LangGraph.js provides sub-graphs, supervisor pattern,
+checkpointing, and interrupt/HITL — all in TypeScript. Daytona SDK
+calls are native TypeScript — no HTTP bridge needed. Single language,
+single deployment, single process eliminates the operational complexity
+of managing a separate Python service.
 
 ### VI. Workspace as Surface Pattern
 
@@ -184,10 +184,10 @@ workspace state desync.
 - **Database**: PostgreSQL with pgvector extension, accessed via Drizzle
   ORM.
 - **Auth**: Better Auth (not NextAuth).
-- **Agent Backend**: LangGraph (Python) running as a FastAPI service,
-  connected to CopilotKit via AG-UI protocol.
-- **Agent Models**: ChatAnthropic, ChatOpenAI via LangChain (Python side).
-  AI SDK v6 used for any JS-side model routing only.
+- **Agent Backend**: LangGraph.js (TypeScript) running in-process inside
+  Next.js, connected to CopilotKit via custom AbstractAgent AG-UI adapter.
+- **Agent Models**: ChatAnthropic, ChatOpenAI via LangChain.js. Multi-provider
+  resolution from user-configured API keys in the `api_keys` table.
 - **State Management**: Zustand for client-side workspace state.
 - **UI Components**: Radix UI primitives + Tailwind CSS. No shadcn/ui
   CLI — hand-roll compound components with CVA.
@@ -241,4 +241,4 @@ Constitution follows semver. The version is recorded in the footer of
 this file. Any change to the file MUST be accompanied by a version bump
 and a Sync Impact Report comment at the top of the file.
 
-**Version**: 2.0.0 | **Ratified**: 2026-06-09 | **Last Amended**: 2026-06-09
+**Version**: 3.0.0 | **Ratified**: 2026-06-09 | **Last Amended**: 2026-06-13
