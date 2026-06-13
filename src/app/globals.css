@@ -124,3 +124,51 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* CopilotKit dark mode overrides */
+.copilotKitChat {
+  background: transparent !important;
+}
+.copilotKitHeader {
+  background: var(--background) !important;
+  border-color: var(--border) !important;
+  color: var(--foreground) !important;
+}
+.copilotKitMessages {
+  background: transparent !important;
+}
+.copilotKitMessage {
+  color: var(--foreground) !important;
+}
+.copilotKitAssistantMessage {
+  color: var(--foreground) !important;
+}
+.copilotKitUserMessage {
+  color: var(--foreground) !important;
+}
+.copilotKitInputContainer {
+  background: transparent !important;
+  border-color: var(--border) !important;
+}
+.copilotKitInput {
+  background: transparent !important;
+}
+.copilotKitInput textarea {
+  color: var(--foreground) !important;
+}
+.copilotKitInput textarea::placeholder {
+  color: var(--muted-foreground) !important;
+}
+.copilotKitInputControls button {
+  color: var(--foreground) !important;
+}
+.copilotKitPoweredBy {
+  display: none !important;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

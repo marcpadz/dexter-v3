@@ -6,7 +6,8 @@ export type WorkspaceTab =
   | 'document'
   | 'terminal'
   | 'files'
-  | 'agent-output';
+  | 'agent-output'
+  | 'knowledgebase';
 
 export type ArtifactType =
   | 'code'

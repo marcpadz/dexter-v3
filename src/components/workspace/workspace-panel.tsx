@@ -9,6 +9,7 @@ import DocumentSurface from "./surfaces/document-surface";
 import TerminalSurface from "./surfaces/terminal-surface";
 import FilesSurface from "./surfaces/files-surface";
 import AgentOutputSurface from "./surfaces/agent-output-surface";
+import KnowledgebaseSurface from "./surfaces/knowledgebase-surface";
 import {
   Code2,
   Globe,
@@ -16,6 +17,7 @@ import {
   Terminal,
   FolderTree,
   Bot,
+  BookOpen,
 } from "lucide-react";
 
 const TABS: { value: WorkspaceTab; label: string; icon: React.ReactNode }[] = [
@@ -25,6 +27,7 @@ const TABS: { value: WorkspaceTab; label: string; icon: React.ReactNode }[] = [
   { value: "terminal", label: "Terminal", icon: <Terminal className="h-3.5 w-3.5" /> },
   { value: "files", label: "Files", icon: <FolderTree className="h-3.5 w-3.5" /> },
   { value: "agent-output", label: "Agent", icon: <Bot className="h-3.5 w-3.5" /> },
+  { value: "knowledgebase", label: "KB", icon: <BookOpen className="h-3.5 w-3.5" /> },
 ];
 
 export default function WorkspacePanel() {
@@ -62,6 +65,7 @@ export default function WorkspacePanel() {
             {activeTab === "terminal" && <TerminalSurface />}
             {activeTab === "files" && <FilesSurface />}
             {activeTab === "agent-output" && <AgentOutputSurface />}
+            {activeTab === "knowledgebase" && <KnowledgebaseSurface />}
           </div>
         </ScrollArea>
       </Tabs>

@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dexter Agent — Full UI Mockup</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['"Space Grotesk"', 'sans-serif'],
+            body: ['"DM Sans"', 'sans-serif'],
+          },
+          colors: {
+            bg: { DEFAULT: '#0F172A', surface: '#1E293B', elevated: '#334155' },
+            accent: { DEFAULT: '#22C55E', hover: '#16A34A', muted: '#22C55E/20' },
+            txt: { DEFAULT: '#F8FAFC', muted: '#94A3B8', dim: '#64748B' },
+            border: { DEFAULT: '#334155', light: '#475569' },
+            danger: '#EF4444',
+            warning: '#F59E0B',
+            info: '#3B82F6',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'DM Sans', sans-serif; background: #0F172A; color: #F8FAFC; }
+    h1, h2, h3, h4, h5 { font-family: 'Space Grotesk', sans-serif; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    .resize-handle { width: 4px; cursor: col-resize; background: #334155; transition: background 0.2s; }
+    .resize-handle:hover { background: #22C55E; }
+    .tab-active { background: #22C55E; color: #0F172A; }
+    .toggle-switch { width: 36px; height: 20px; border-radius: 10px; position: relative; cursor: pointer; transition: background 0.2s; }
+    .toggle-switch::after { content: ''; position: absolute; width: 16px; height: 16px; border-radius: 50%; background: white; top: 2px; left: 2px; transition: transform 0.2s; }
+    .toggle-switch.on { background: #22C55E; }
+    .toggle-switch.on::after { transform: translateX(16px); }
+    .toggle-switch.off { background: #475569; }
+    .dropdown-panel { display: none; position: absolute; z-index: 50; }
+    .dropdown-panel.open { display: block; }
+    .fade-in { animation: fadeIn 0.2s ease-out; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    .pulse-dot { animation: pulse-dot 1.5s infinite; }
+    .surface-page { display: none; }
+    .surface-page.active { display: block; }
+    .msg-user { background: #22C55E; color: #0F172A; }
+    .msg-ai { background: #1E293B; border: 1px solid #334155; }
+    .hover-lift { transition: all 0.2s ease; }
+    .hover-lift:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+    .glow-green { box-shadow: 0 0 8px rgba(34,197,94,0.4); }
+  </style>
+</head>
+<body class="h-screen overflow-hidden flex flex-col">
+
+  <!-- ============================== -->
+  <!-- HEADER BAR -->
+  <!-- ============================== -->
+  <header class="flex h-14 items-center justify-between border-b border-border px-4 bg-bg-surface shrink-0">
+    <div class="flex items-center gap-3">
+      <div class="flex items-center gap-2 cursor-pointer" onclick="navigateTo('chat')">
+        <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+          <i data-lucide="bot" class="w-5 h-5 text-bg"></i>
+        </div>
+        <span class="font-heading font-semibold text-lg">Dexter</span>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <!-- Model Selector -->
+      <div class="relative">
+        <button onclick="toggleDropdown('model-dropdown')" class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-bg-elevated border border-border hover:border-border-light text-sm cursor-pointer transition-colors">
+          <i data-lucide="cpu" class="w-4 h-4 text-accent"></i>
+          <span id="current-model">GPT-4o</span>
+          <i data-lucide="chevron-down" class="w-3 h-3 text-txt-muted"></i>
+        </button>
+        <div id="model-dropdown" class="dropdown-panel absolute right-0 top-full mt-1 w-64 bg-bg-surface border border-border rounded-xl shadow-2xl p-1.5 fade-in">
+          <div class="px-2 py-1 text-xs font-medium text-txt-dim uppercase tracking-wider">OpenAI</div>
+          <button onclick="selectModel('GPT-4o')" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm hover:bg-bg-elevated cursor-pointer transition-colors text-left">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-accent"></i> GPT-4o
+          </button>
+          <button onclick="selectModel('GPT-4o Mini')" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm hover:bg-bg-elevated cursor-pointer transition-colors text-left">
+            <span class="w-3.5"></span> GPT-4o Mini
+          </button>
+          <div class="px-2 py-1 mt-1 text-xs font-medium text-txt-dim uppercase tracking-wider">Anthropic</div>
+          <button onclick="selectModel('Claude 3.5 Sonnet')" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm hover:bg-bg-elevated cursor-pointer transition-colors text-left">
+            <span class="w-3.5"></span> Claude 3.5 Sonnet
+          </button>
+          <button onclick="selectModel('Claude 3 Opus')" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm hover:bg-bg-elevated cursor-pointer transition-colors text-left">
+            <span class="w-3.5"></span> Claude 3 Opus
+          </button>
+          <div class="px-2 py-1 mt-1 text-xs font-medium text-txt-dim uppercase tracking-wider">Google</div>
+          <button onclick="selectModel('Gemini Pro')" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm hover:bg-bg-elevated cursor-pointer transition-colors text-left">
+            <span class="w-3.5"></span> Gemini Pro
+          </button>
+        </div>
+      </div>
+      <!-- Settings -->
+      <button onclick="navigateTo('settings')" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-txt-muted hover:text-txt hover:bg-bg-elevated cursor-pointer transition-colors">
+        <i data-lucide="settings" class="w-4 h-4"></i> Settings
+      </button>
+      <!-- Sign Out -->
+      <button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm text-txt-muted hover:text-danger hover:bg-danger/10 cursor-pointer transition-colors border border-border">
+        <i data-lucide="log-out" class="w-4 h-4"></i> Sign Out
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================== -->
+  <!-- MAIN APP SHELL (3 columns) -->
+  <!-- ============================== -->
+  <div class="flex-1 flex overflow-hidden">
+
+    <!-- ============================== -->
+    <!-- SIDEBAR (Left Panel) -->
+    <!-- ============================== -->
+    <aside class="w-64 shrink-0 border-r border-border bg-bg flex flex-col">
+      <!-- New Chat Button -->
+      <div class="p-3">
+        <button onclick="handleNewChat()" class="w-full flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-bg font-medium py-2.5 rounded-lg cursor-pointer transition-colors glow-green">
+          <i data-lucide="plus" class="w-4 h-4"></i>
+          New Chat
+        </button>
+      </div>
+      <!-- Conversation List -->
+      <div class="flex-1 overflow-y-auto px-2 pb-2 space-y-0.5">
+        <div class="px-2 py-1.5 text-xs font-medium text-txt-dim uppercase tracking-wider">Recent</div>
+        <div onclick="selectConversation(this, 'Refactoring auth module')" class="group flex items-center gap-2 px-3 py-2 rounded-lg bg-bg-elevated/50 text-sm cursor-pointer transition-colors hover:bg-bg-elevated">
+          <i data-lucide="message-square" class="w-4 h-4 text-txt-dim shrink-0"></i>
+          <span class="truncate flex-1">Refactoring auth module</span>
+          <button onclick="event.stopPropagation()" class="hidden group-hover:block text-txt-dim hover:text-danger cursor-pointer p-0.5">
+            <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+        <div onclick="selectConversation(this, 'Build REST API endpoints')" class="group flex items-center gap-2 px-3 py-2 rounded-lg text-sm cursor-pointer transition-colors hover:bg-bg-elevated/50 text-txt-muted">
+          <i data-lucide="message-square" class="w-4 h-4 text-txt-dim shrink-0"></i>
+          <span class="truncate flex-1">Build REST API endpoints</span>
+          <button onclick="event.stopPropagation()" class="hidden group-hover:block text-txt-dim hover:text-danger cursor-pointer p-0.5">
+            <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+        <div onclick="selectConversation(this, 'Deploy to production')" class="group flex items-center gap-2 px-3 py-2 rounded-lg text-sm cursor-pointer transition-colors hover:bg-bg-elevated/50 text-txt-muted">
+          <i data-lucide="message-square" class="w-4 h-4 text-txt-dim shrink-0"></i>
+          <span class="truncate flex-1">Deploy to production</span>
+          <button onclick="event.stopPropagation()" class="hidden group-hover:block text-txt-dim hover:text-danger cursor-pointer p-0.5">
+            <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+        <div onclick="selectConversation(this, 'Fix CSS layout issues')" class="group flex items-center gap-2 px-3 py-2 rounded-lg text-sm cursor-pointer transition-colors hover:bg-bg-elevated/50 text-txt-muted">
+          <i data-lucide="message-square" class="w-4 h-4 text-txt-dim shrink-0"></i>
+          <span class="truncate flex-1">Fix CSS layout issues</span>
+          <button onclick="event.stopPropagation()" class="hidden group-hover:block text-txt-dim hover:text-danger cursor-pointer p-0.5">
+            <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+        <div class="px-2 py-1.5 mt-3 text-xs font-medium text-txt-dim uppercase tracking-wider">Yesterday</div>
+        <div onclick="selectConversation(this, 'Database schema design')" class="group flex items-center gap-2 px-3 py-2 rounded-lg text-sm cursor-pointer transition-colors hover:bg-bg-elevated/50 text-txt-muted">
+          <i data-lucide="message-square" class="w-4 h-4 text-txt-dim shrink-0"></i>
+          <span class="truncate flex-1">Database schema design</span>
+          <button onclick="event.stopPropagation()" class="hidden group-hover:block text-txt-dim hover:text-danger cursor-pointer p-0.5">
+            <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+        <div onclick="selectConversation(this, 'Unit testing strategies')" class="group flex items-center gap-2 px-3 py-2 rounded-lg text-sm cursor-pointer transition-colors hover:bg-bg-elevated/50 text-txt-muted">
+          <i data-lucide="message-square" class="w-4 h-4 text-txt-dim shrink-0"></i>
+          <span class="truncate flex-1">Unit testing strategies</span>
+          <button onclick="event.stopPropagation()" class="hidden group-hover:block text-txt-dim hover:text-danger cursor-pointer p-0.5">
+            <i data-lucide="trash-2" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Sidebar Footer -->
+      <div class="p-3 border-t border-border">
+        <button onclick="navigateTo('projects')" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-txt-muted hover:text-txt hover:bg-bg-elevated/50 cursor-pointer transition-colors">
+          <i data-lucide="folder" class="w-4 h-4"></i> Projects
+        </button>
+      </div>
+    </aside>
+
+    <div class="resize-handle"></div>
+
+    <!-- ============================== -->
+    <!-- CENTER PANEL (Chat / Main Content) -->
+    <!-- ============================== -->
+    <main class="flex-1 flex flex-col overflow-hidden min-w-0">
+
+      <!-- === CHAT PAGE === -->
+      <div id="page-chat" class="surface-page active flex-1 flex flex-col overflow-hidden">
+        <!-- Chat Messages -->
+        <div class="flex-1 overflow-y-auto px-6 py-6 space-y-6">
+          <!-- Greeting -->
+          <div class="flex gap-3 items-start max-w-3xl mx-auto">
+            <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="bot" class="w-5 h-5 text-bg"></i>
+            </div>
+            <div class="msg-ai rounded-2xl rounded-tl-md px-4 py-3 text-sm leading-relaxed max-w-xl">
+              <p class="font-medium mb-1">Hello! I'm Dexter, your AI coding assistant.</p>
+              <p class="text-txt-muted">I can help you write code, debug issues, refactor, and manage your workspace. What are we building today?</p>
+            </div>
+          </div>
+          <!-- User Message -->
+          <div class="flex gap-3 items-start justify-end max-w-3xl mx-auto">
+            <div class="msg-user rounded-2xl rounded-tr-md px-4 py-3 text-sm leading-relaxed max-w-xl font-medium">
+              Help me refactor the authentication module to use JWT tokens instead of session cookies.
+            </div>
+            <div class="w-8 h-8 rounded-full bg-bg-elevated flex items-center justify-center shrink-0 mt-0.5 border border-border">
+              <i data-lucide="user" class="w-4 h-4 text-txt-muted"></i>
+            </div>
+          </div>
+          <!-- AI Response -->
+          <div class="flex gap-3 items-start max-w-3xl mx-auto">
+            <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="bot" class="w-5 h-5 text-bg"></i>
+            </div>
+            <div class="msg-ai rounded-2xl rounded-tl-md px-4 py-3 text-sm leading-relaxed max-w-xl space-y-3">
+              <p>I'll help you refactor the auth module. Let me analyze the current implementation first.</p>
+              <div class="bg-bg rounded-lg p-3 font-mono text-xs border border-border">
+                <div class="flex items-center gap-2 mb-2 text-txt-dim">
+                  <i data-lucide="file-code" class="w-3.5 h-3.5"></i>
+                  <span>src/lib/auth/jwt-handler.ts</span>
+                </div>
+                <pre class="text-txt-muted overflow-x-auto"><code>import jwt from 'jsonwebtoken';
+
+export function generateToken(user: User) {
+  return jwt.sign(
+    { userId: user.id, email: user.email },
+    process.env.JWT_SECRET!,
+    { expiresIn: '7d' }
+  );
+}
+
+export function verifyToken(token: string) {
+  return jwt.verify(token, process.env.JWT_SECRET!);
+}</code></pre>
+              </div>
+              <p class="text-txt-muted">I've created a JWT handler with token generation and verification. Want me to continue with the middleware?</p>
+              <!-- Action buttons -->
+              <div class="flex items-center gap-1 pt-1">
+                <button class="p-1.5 rounded-md hover:bg-bg-elevated text-txt-dim hover:text-txt cursor-pointer transition-colors"><i data-lucide="copy" class="w-3.5 h-3.5"></i></button>
+                <button class="p-1.5 rounded-md hover:bg-bg-elevated text-txt-dim hover:text-txt cursor-pointer transition-colors"><i data-lucide="thumbs-up" class="w-3.5 h-3.5"></i></button>
+                <button class="p-1.5 rounded-md hover:bg-bg-elevated text-txt-dim hover:text-txt cursor-pointer transition-colors"><i data-lucide="thumbs-down" class="w-3.5 h-3.5"></i></button>
+                <button class="p-1.5 rounded-md hover:bg-bg-elevated text-txt-dim hover:text-txt cursor-pointer transition-colors"><i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================== -->
+        <!-- COMPOSER (Chat Input + Toolbar) -->
+        <!-- ============================== -->
+        <div class="px-6 pb-4 shrink-0">
+          <div class="max-w-3xl mx-auto">
+            <div class="bg-bg-surface border border-border rounded-2xl overflow-hidden focus-within:border-accent/50 transition-colors">
+              <!-- Composer Toolbar -->
+              <div class="flex items-center gap-1 px-3 py-2 border-b border-border/50">
+                <!-- Attachments -->
+                <div class="relative">
+                  <button onclick="toggleDropdown('attach-dropdown')" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs text-txt-muted hover:text-txt hover:bg-bg-elevated cursor-pointer transition-colors">
+                    <i data-lucide="paperclip" class="w-4 h-4"></i>
+                    <span class="hidden sm:inline">Attach</span>
+                  </button>
+                  <div id="attach-dropdown" class="dropdown-panel absolute bottom-full left-0 mb-1 w-64 bg-bg-surface border border-border rounded-xl shadow-2xl p-3 fade-in">
+                    <div class="text-xs font-medium text-txt-dim mb-2">Attach Files</div>
+                    <div class="border-2 border-dashed border-border rounded-lg p-4 text-center hover:border-accent/50 transition-colors cursor-pointer">
+                      <i data-lucide="upload-cloud" class="w-8 h-8 text-txt-dim mx-auto mb-2"></i>
+                      <p class="text-xs text-txt-muted">Drag & drop or <span class="text-accent">browse</span></p>
+                      <p class="text-xs text-txt-dim mt-1">PDF, TXT, MD, CSV, JSON</p>
+                    </div>
+                    <div class="flex gap-2 mt-2">
+                      <button class="flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-lg bg-bg-elevated text-xs hover:bg-bg-elevated/80 cursor-pointer transition-colors">
+                        <i data-lucide="image" class="w-3.5 h-3.5"></i> Image
+                      </button>
+                      <button class="flex-1 flex items-center justify-center gap-1.5 py-1.5 rounded-lg bg-bg-elevated text-xs hover:bg-bg-elevated/80 cursor-pointer transition-colors">
+                        <i data-lucide="clipboard" class="w-3.5 h-3.5"></i> Paste
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Context -->
+                <div class="relative">
+                  <button onclick="toggleDropdown('context-dropdown')" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs text-txt-muted hover:text-txt hover:bg-bg-elevated cursor-pointer transition-colors">
+                    <i data-lucide="book-open" class="w-4 h-4"></i>
+                    <span class="hidden sm:inline">Context</span>
+                    <i data-lucide="chevron-down" class="w-3 h-3"></i>
+                  </button>
+                  <div id="context-dropdown" class="dropdown-panel absolute bottom-full left-0 mb-1 w-80 bg-bg-surface border border-border rounded-xl shadow-2xl p-2 fade-in">
+                    <!-- Projects Section -->
+                    <div class="px-2 py-1.5 text-xs font-medium text-txt-dim uppercase tracking-wider flex items-center gap-1.5">
+                      <i data-lucide="folder" class="w-3.5 h-3.5"></i> Projects
+                    </div>
+                    <label class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated cursor-pointer transition-colors">
+                      <input type="radio" name="project" checked class="accent-green-500" />
+                      <div>
+                        <div class="text-sm">API Sandbox</div>
+                        <div class="text-xs text-txt-dim">Backend testing project</div>
+                      </div>
+                    </label>
+                    <label class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated cursor-pointer transition-colors">
+                      <input type="radio" name="project" class="accent-green-500" />
+                      <div>
+                        <div class="text-sm">Frontend App</div>
+                        <div class="text-xs text-txt-dim">React dashboard</div>
+                      </div>
+                    </label>
+                    <div class="border-t border-border my-1"></div>
+                    <!-- Knowledgebase Section -->
+                    <div class="px-2 py-1.5 text-xs font-medium text-txt-dim uppercase tracking-wider flex items-center gap-1.5">
+                      <i data-lucide="database" class="w-3.5 h-3.5"></i> Knowledgebase
+                    </div>
+                    <label class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated cursor-pointer transition-colors">
+                      <input type="checkbox" checked class="accent-green-500 rounded" />
+                      <div class="flex-1">
+                        <div class="text-sm flex items-center gap-2">API Docs <span class="text-xs bg-accent/20 text-accent px-1.5 py-0.5 rounded-full">12 docs</span></div>
+                      </div>
+                    </label>
+                    <label class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated cursor-pointer transition-colors">
+                      <input type="checkbox" class="accent-green-500 rounded" />
+                      <div class="flex-1">
+                        <div class="text-sm flex items-center gap-2">Internal Wiki <span class="text-xs bg-bg-elevated text-txt-dim px-1.5 py-0.5 rounded-full">5 docs</span></div>
+                      </div>
+                    </label>
+                    <div class="border-t border-border my-1"></div>
+                    <!-- MCP Connectors -->
+                    <div class="px-2 py-1.5 text-xs font-medium text-txt-dim uppercase tracking-wider flex items-center gap-1.5">
+                      <i data-lucide="plug" class="w-3.5 h-3.5"></i> MCP Connectors
+                    </div>
+                    <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated cursor-pointer transition-colors">
+                      <span class="status-dot bg-accent pulse-dot"></span>
+                      <span class="text-sm flex-1">Tavily Search</span>
+                      <div class="toggle-switch on" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                    </div>
+                    <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated cursor-pointer transition-colors">
+                      <span class="status-dot bg-danger"></span>
+                      <span class="text-sm flex-1">Slack</span>
+                      <div class="toggle-switch off" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                    </div>
+                    <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated cursor-pointer transition-colors">
+                      <span class="status-dot bg-txt-dim"></span>
+                      <span class="text-sm flex-1">GitHub</span>
+                      <div class="toggle-switch off" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                    </div>
+                    <div class="flex gap-2 mt-1 px-1">
+                      <button class="flex-1 text-xs text-accent hover:underline cursor-pointer py-1">+ Add Connector</button>
+                      <button onclick="navigateTo('settings')" class="flex-1 text-xs text-txt-dim hover:underline cursor-pointer py-1">Manage</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tools -->
+                <div class="relative">
+                  <button onclick="toggleDropdown('tools-dropdown')" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs text-txt-muted hover:text-txt hover:bg-bg-elevated cursor-pointer transition-colors">
+                    <i data-lucide="wrench" class="w-4 h-4"></i>
+                    <span class="hidden sm:inline">Tools</span>
+                    <i data-lucide="chevron-down" class="w-3 h-3"></i>
+                  </button>
+                  <div id="tools-dropdown" class="dropdown-panel absolute bottom-full left-0 mb-1 w-64 bg-bg-surface border border-border rounded-xl shadow-2xl p-2 fade-in">
+                    <div class="px-2 py-1.5 text-xs font-medium text-txt-dim uppercase tracking-wider">Feature Flags</div>
+                    <div class="space-y-0.5">
+                      <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated transition-colors">
+                        <i data-lucide="globe" class="w-4 h-4 text-txt-dim"></i>
+                        <span class="text-sm flex-1">Web Search</span>
+                        <div class="toggle-switch on" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                      </div>
+                      <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated transition-colors">
+                        <i data-lucide="monitor" class="w-4 h-4 text-txt-dim"></i>
+                        <span class="text-sm flex-1">Browser</span>
+                        <div class="toggle-switch on" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                      </div>
+                      <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated transition-colors">
+                        <i data-lucide="terminal" class="w-4 h-4 text-txt-dim"></i>
+                        <span class="text-sm flex-1">Terminal</span>
+                        <div class="toggle-switch on" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                      </div>
+                      <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated transition-colors">
+                        <i data-lucide="folder-tree" class="w-4 h-4 text-txt-dim"></i>
+                        <span class="text-sm flex-1">File Explorer</span>
+                        <div class="toggle-switch on" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                      </div>
+                      <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated transition-colors">
+                        <i data-lucide="git-branch" class="w-4 h-4 text-txt-dim"></i>
+                        <span class="text-sm flex-1">Git</span>
+                        <div class="toggle-switch on" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                      </div>
+                      <div class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated transition-colors">
+                        <i data-lucide="brain" class="w-4 h-4 text-txt-dim"></i>
+                        <span class="text-sm flex-1">Memory</span>
+                        <div class="toggle-switch on" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Thinking Level -->
+                <div class="relative">
+                  <button onclick="toggleDropdown('thinking-dropdown')" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs text-txt-muted hover:text-txt hover:bg-bg-elevated cursor-pointer transition-colors">
+                    <i data-lucide="brain" class="w-4 h-4"></i>
+                    <span class="hidden sm:inline">Thinking</span>
+                    <i data-lucide="chevron-down" class="w-3 h-3"></i>
+                  </button>
+                  <div id="thinking-dropdown" class="dropdown-panel absolute bottom-full right-0 mb-1 w-64 bg-bg-surface border border-border rounded-xl shadow-2xl p-2 fade-in">
+                    <div class="px-2 py-1.5 text-xs font-medium text-txt-dim uppercase tracking-wider">Reasoning Level</div>
+                    <label class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated cursor-pointer transition-colors">
+                      <input type="radio" name="thinking" class="accent-green-500" />
+                      <div>
+                        <div class="text-sm">Off</div>
+                        <div class="text-xs text-txt-dim">No reasoning, fastest</div>
+                      </div>
+                    </label>
+                    <label class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated cursor-pointer transition-colors">
+                      <input type="radio" name="thinking" class="accent-green-500" />
+                      <div>
+                        <div class="text-sm">Low</div>
+                        <div class="text-xs text-txt-dim">Quick answers</div>
+                      </div>
+                    </label>
+                    <label class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated cursor-pointer transition-colors">
+                      <input type="radio" name="thinking" checked class="accent-green-500" />
+                      <div>
+                        <div class="text-sm flex items-center gap-1.5">Medium <i data-lucide="check" class="w-3.5 h-3.5 text-accent"></i></div>
+                        <div class="text-xs text-txt-dim">Balanced reasoning</div>
+                      </div>
+                    </label>
+                    <label class="flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-bg-elevated cursor-pointer transition-colors">
+                      <input type="radio" name="thinking" class="accent-green-500" />
+                      <div>
+                        <div class="text-sm">High</div>
+                        <div class="text-xs text-txt-dim">Deep analysis, slower</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="flex-1"></div>
+              </div>
+              <!-- Textarea + Send -->
+              <div class="flex items-end gap-2 p-3">
+                <textarea placeholder="Ask Dexter anything..." rows="1" class="flex-1 bg-transparent resize-none text-sm placeholder:text-txt-dim focus:outline-none min-h-[24px] max-h-[120px] leading-6"></textarea>
+                <button class="w-9 h-9 rounded-lg bg-accent hover:bg-accent-hover flex items-center justify-center cursor-pointer transition-colors shrink-0 glow-green">
+                  <i data-lucide="arrow-up" class="w-4 h-4 text-bg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- === SETTINGS PAGE === -->
+      <div id="page-settings" class="surface-page flex-1 overflow-y-auto">
+        <div class="max-w-4xl mx-auto px-6 py-8">
+          <h1 class="font-heading text-2xl font-semibold mb-6">Settings</h1>
+          <!-- Tabs -->
+          <div class="flex gap-1 mb-6 bg-bg-surface rounded-xl p-1 border border-border w-fit">
+            <button onclick="switchSettingsTab(this, 'api-keys')" class="settings-tab px-4 py-2 rounded-lg text-sm font-medium cursor-pointer transition-colors tab-active">API Keys</button>
+            <button onclick="switchSettingsTab(this, 'mcp')" class="settings-tab px-4 py-2 rounded-lg text-sm font-medium cursor-pointer transition-colors text-txt-muted hover:text-txt">MCP Servers</button>
+            <button onclick="switchSettingsTab(this, 'kb')" class="settings-tab px-4 py-2 rounded-lg text-sm font-medium cursor-pointer transition-colors text-txt-muted hover:text-txt">Knowledgebase</button>
+            <button onclick="switchSettingsTab(this, 'profile')" class="settings-tab px-4 py-2 rounded-lg text-sm font-medium cursor-pointer transition-colors text-txt-muted hover:text-txt">Profile</button>
+            <button onclick="switchSettingsTab(this, 'memory')" class="settings-tab px-4 py-2 rounded-lg text-sm font-medium cursor-pointer transition-colors text-txt-muted hover:text-txt">Memory</button>
+          </div>
+
+          <!-- API Keys Tab -->
+          <div id="settings-tab-api-keys" class="settings-content">
+            <div class="bg-bg-surface border border-border rounded-xl p-6">
+              <div class="flex items-center justify-between mb-4">
+                <h2 class="font-heading text-lg font-semibold flex items-center gap-2"><i data-lucide="key" class="w-5 h-5 text-accent"></i> LLM Providers</h2>
+                <button class="px-3 py-1.5 rounded-lg bg-accent text-bg text-sm font-medium cursor-pointer hover:bg-accent-hover transition-colors">+ Add Provider</button>
+              </div>
+              <div class="space-y-3">
+                <div class="flex items-center gap-3 p-4 rounded-lg bg-bg border border-border">
+                  <div class="w-10 h-10 rounded-lg bg-bg-elevated flex items-center justify-center"><i data-lucide="sparkles" class="w-5 h-5 text-info"></i></div>
+                  <div class="flex-1">
+                    <div class="text-sm font-medium">OpenAI</div>
+                    <div class="text-xs text-txt-dim">sk-...a8f2</div>
+                  </div>
+                  <span class="px-2 py-0.5 text-xs rounded-full bg-accent/20 text-accent">Connected</span>
+                  <button class="text-txt-dim hover:text-danger cursor-pointer"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
+                </div>
+                <div class="flex items-center gap-3 p-4 rounded-lg bg-bg border border-border">
+                  <div class="w-10 h-10 rounded-lg bg-bg-elevated flex items-center justify-center"><i data-lucide="sparkles" class="w-5 h-5 text-warning"></i></div>
+                  <div class="flex-1">
+                    <div class="text-sm font-medium">Anthropic</div>
+                    <div class="text-xs text-txt-dim">sk-ant-...k91d</div>
+                  </div>
+                  <span class="px-2 py-0.5 text-xs rounded-full bg-accent/20 text-accent">Connected</span>
+                  <button class="text-txt-dim hover:text-danger cursor-pointer"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
+                </div>
+                <div class="flex items-center gap-3 p-4 rounded-lg bg-bg border border-border">
+                  <div class="w-10 h-10 rounded-lg bg-bg-elevated flex items-center justify-center"><i data-lucide="sparkles" class="w-5 h-5 text-txt-dim"></i></div>
+                  <div class="flex-1">
+                    <div class="text-sm font-medium">Google AI</div>
+                    <div class="text-xs text-txt-dim">Not configured</div>
+                  </div>
+                  <span class="px-2 py-0.5 text-xs rounded-full bg-bg-elevated text-txt-dim">Not set</span>
+                  <button class="px-3 py-1 rounded-md bg-bg-elevated text-xs hover:bg-border cursor-pointer transition-colors">Configure</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MCP Servers Tab -->
+          <div id="settings-tab-mcp" class="settings-content hidden">
+            <div class="bg-bg-surface border border-border rounded-xl p-6">
+              <div class="flex items-center justify-between mb-4">
+                <h2 class="font-heading text-lg font-semibold flex items-center gap-2"><i data-lucide="plug" class="w-5 h-5 text-accent"></i> MCP Servers</h2>
+                <button class="px-3 py-1.5 rounded-lg bg-accent text-bg text-sm font-medium cursor-pointer hover:bg-accent-hover transition-colors">+ Add Connector</button>
+              </div>
+              <div class="space-y-3">
+                <div class="flex items-center gap-3 p-4 rounded-lg bg-bg border border-border hover-lift">
+                  <span class="status-dot bg-accent pulse-dot"></span>
+                  <div class="flex-1">
+                    <div class="text-sm font-medium">Tavily Search</div>
+                    <div class="text-xs text-txt-dim">stdio &middot; tavily-mcp</div>
+                  </div>
+                  <span class="px-2 py-0.5 text-xs rounded-full bg-accent/20 text-accent">Connected</span>
+                  <div class="toggle-switch on" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                  <button class="text-txt-dim hover:text-txt cursor-pointer p-1"><i data-lucide="pencil" class="w-4 h-4"></i></button>
+                  <button class="text-txt-dim hover:text-danger cursor-pointer p-1"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
+                </div>
+                <div class="flex items-center gap-3 p-4 rounded-lg bg-bg border border-border hover-lift">
+                  <span class="status-dot bg-danger"></span>
+                  <div class="flex-1">
+                    <div class="text-sm font-medium">Slack</div>
+                    <div class="text-xs text-txt-dim">sse &middot; https://slack-mcp.example.com</div>
+                  </div>
+                  <span class="px-2 py-0.5 text-xs rounded-full bg-danger/20 text-danger">Error</span>
+                  <div class="toggle-switch off" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                  <button class="text-txt-dim hover:text-txt cursor-pointer p-1"><i data-lucide="pencil" class="w-4 h-4"></i></button>
+                  <button class="text-txt-dim hover:text-danger cursor-pointer p-1"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
+                </div>
+                <div class="flex items-center gap-3 p-4 rounded-lg bg-bg border border-border hover-lift">
+                  <span class="status-dot bg-txt-dim"></span>
+                  <div class="flex-1">
+                    <div class="text-sm font-medium">GitHub</div>
+                    <div class="text-xs text-txt-dim">http &middot; https://api.githubcopilot.com</div>
+                  </div>
+                  <span class="px-2 py-0.5 text-xs rounded-full bg-bg-elevated text-txt-dim">Disabled</span>
+                  <div class="toggle-switch off" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                  <button class="text-txt-dim hover:text-txt cursor-pointer p-1"><i data-lucide="pencil" class="w-4 h-4"></i></button>
+                  <button class="text-txt-dim hover:text-danger cursor-pointer p-1"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Knowledgebase Tab -->
+          <div id="settings-tab-kb" class="settings-content hidden">
+            <div class="bg-bg-surface border border-border rounded-xl p-6">
+              <div class="flex items-center justify-between mb-4">
+                <h2 class="font-heading text-lg font-semibold flex items-center gap-2"><i data-lucide="database" class="w-5 h-5 text-accent"></i> Knowledgebases</h2>
+                <button class="px-3 py-1.5 rounded-lg bg-accent text-bg text-sm font-medium cursor-pointer hover:bg-accent-hover transition-colors">+ Create Knowledgebase</button>
+              </div>
+              <div class="space-y-3">
+                <div class="p-4 rounded-lg bg-bg border border-border hover-lift">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                      <h3 class="text-sm font-medium">API Docs</h3>
+                      <span class="text-xs bg-accent/20 text-accent px-2 py-0.5 rounded-full">12 docs</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="toggle-switch on" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                      <button class="text-txt-dim hover:text-txt cursor-pointer p-1"><i data-lucide="pencil" class="w-4 h-4"></i></button>
+                      <button class="text-txt-dim hover:text-danger cursor-pointer p-1"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
+                    </div>
+                  </div>
+                  <p class="text-xs text-txt-muted mb-3">OpenAPI specifications and REST API documentation for all services.</p>
+                  <div class="flex items-center gap-2">
+                    <div class="flex-1 relative">
+                      <i data-lucide="search" class="w-3.5 h-3.5 text-txt-dim absolute left-2.5 top-1/2 -translate-y-1/2"></i>
+                      <input type="text" placeholder="Test search..." class="w-full pl-8 pr-3 py-1.5 rounded-lg bg-bg-surface border border-border text-xs focus:outline-none focus:border-accent/50" />
+                    </div>
+                    <button class="text-xs text-accent hover:underline cursor-pointer px-2 py-1.5">Browse Docs</button>
+                  </div>
+                </div>
+                <div class="p-4 rounded-lg bg-bg border border-border hover-lift">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                      <h3 class="text-sm font-medium">Internal Wiki</h3>
+                      <span class="text-xs bg-bg-elevated text-txt-dim px-2 py-0.5 rounded-full">5 docs</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <div class="toggle-switch off" onclick="this.classList.toggle('on'); this.classList.toggle('off')"></div>
+                      <button class="text-txt-dim hover:text-txt cursor-pointer p-1"><i data-lucide="pencil" class="w-4 h-4"></i></button>
+                      <button class="text-txt-dim hover:text-danger cursor-pointer p-1"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
+                    </div>
+                  </div>
+                  <p class="text-xs text-txt-muted">Internal engineering documentation, coding standards, and architecture decisions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile Tab -->
+          <div id="settings-tab-profile" class="settings-content hidden">
+            <div class="bg-bg-surface border border-border rounded-xl p-6">
+              <h2 class="font-heading text-lg font-semibold mb-4 flex items-center gap-2"><i data-lucide="user" class="w-5 h-5 text-accent"></i> Profile</h2>
+              <div class="space-y-4 max-w-md">
+                <div>
+                  <label class="block text-sm font-medium text-txt-muted mb-1.5">Name</label>
+                  <input type="text" value="John Developer" class="w-full px-3 py-2 rounded-lg bg-bg border border-border text-sm focus:outline-none focus:border-accent/50" />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-txt-muted mb-1.5">Email</label>
+                  <input type="email" value="john@example.com" class="w-full px-3 py-2 rounded-lg bg-bg border border-border text-sm focus:outline-none focus:border-accent/50" />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-txt-muted mb-1.5">Avatar URL</label>
+                  <input type="url" placeholder="https://..." class="w-full px-3 py-2 rounded-lg bg-bg border border-border text-sm focus:outline-none focus:border-accent/50" />
+                </div>
+                <button class="px-4 py-2 rounded-lg bg-accent text-bg text-sm font-medium cursor-pointer hover:bg-accent-hover transition-colors">Update Profile</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory Tab -->
+          <div id="settings-tab-memory" class="settings-content hidden">
+            <div class="bg-bg-surface border border-border rounded-xl p-6">
+              <div class="flex items-center justify-between mb-4">
+                <h2 class="font-heading text-lg font-semibold flex items-center gap-2"><i data-lucide="brain" class="w-5 h-5 text-accent"></i> Memories</h2>
+                <button class="px-3 py-1.5 rounded-lg bg-danger/20 text-danger text-sm cursor-pointer hover:bg-danger/30 transition-colors">Clear All</button>
+              </div>
+              <div class="mb-4 relative">
+                <i data-lucide="search" class="w-4 h-4 text-txt-dim absolute left-3 top-1/2 -translate-y-1/2"></i>
+                <input type="text" placeholder="Search memories..." class="w-full pl-9 pr-3 py-2 rounded-lg bg-bg border border-border text-sm focus:outline-none focus:border-accent/50" />
+              </div>
+              <div class="space-y-2">
+                <div class="p-3 rounded-lg bg-bg border border-border">
+                  <p class="text-sm mb-2">User prefers TypeScript over JavaScript and always uses strict mode.</p>
+                  <div class="flex items-center gap-2">
+                    <span class="text-xs bg-info/20 text-info px-2 py-0.5 rounded-full">preference</span>
+                    <span class="text-xs bg-warning/20 text-warning px-2 py-0.5 rounded-full">typescript</span>
+                    <span class="text-xs text-txt-dim ml-auto">2 days ago</span>
+                    <button class="text-txt-dim hover:text-danger cursor-pointer"><i data-lucide="x" class="w-3.5 h-3.5"></i></button>
+                  </div>
+                </div>
+                <div class="p-3 rounded-lg bg-bg border border-border">
+                  <p class="text-sm mb-2">Project uses Next.js 16 with App Router and server components pattern.</p>
+                  <div class="flex items-center gap-2">
+                    <span class="text-xs bg-accent/20 text-accent px-2 py-0.5 rounded-full">project</span>
+                    <span class="text-xs bg-info/20 text-info px-2 py-0.5 rounded-full">nextjs</span>
+                    <span class="text-xs text-txt-dim ml-auto">5 days ago</span>
+                    <button class="text-txt-dim hover:text-danger cursor-pointer"><i data-lucide="x" class="w-3.5 h-3.5"></i></button>
+                  </div>
+                </div>
+                <div class="p-3 rounded-lg bg-bg border border-border">
+                  <p class="text-sm mb-2">User's timezone is UTC-5 and they work primarily between 9am-6pm.</p>
+                  <div class="flex items-center gap-2">
+                    <span class="text-xs bg-warning/20 text-warning px-2 py-0.5 rounded-full">context</span>
+                    <span class="text-xs text-txt-dim ml-auto">1 week ago</span>
+                    <button class="text-txt-dim hover:text-danger cursor-pointer"><i data-lucide="x" class="w-3.5 h-3.5"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- === PROJECTS PAGE === -->
+      <div id="page-projects" class="surface-page flex-1 overflow-y-auto">
+        <div class="max-w-4xl mx-auto px-6 py-8">
+          <h1 class="font-heading text-2xl font-semibold mb-6">Projects</h1>
+          <!-- Create New Project Card -->
+          <div class="bg-bg-surface border border-border rounded-xl p-6 mb-6">
+            <h2 class="font-heading text-lg font-semibold mb-3 flex items-center gap-2"><i data-lucide="plus-circle" class="w-5 h-5 text-accent"></i> Create New Project</h2>
+            <div class="grid grid-cols-2 gap-4 mb-4">
+              <div>
+                <label class="block text-sm font-medium text-txt-muted mb-1.5">Name</label>
+                <input type="text" placeholder="My Project" class="w-full px-3 py-2 rounded-lg bg-bg border border-border text-sm focus:outline-none focus:border-accent/50" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-txt-muted mb-1.5">Description</label>
+                <input type="text" placeholder="Brief description" class="w-full px-3 py-2 rounded-lg bg-bg border border-border text-sm focus:outline-none focus:border-accent/50" />
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-txt-muted mb-1.5">System Instructions</label>
+              <textarea rows="3" placeholder="Custom instructions for this project..." class="w-full px-3 py-2 rounded-lg bg-bg border border-border text-sm focus:outline-none focus:border-accent/50 resize-none"></textarea>
+            </div>
+            <button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-accent text-bg text-sm font-medium cursor-pointer hover:bg-accent-hover transition-colors">
+              <i data-lucide="plus" class="w-4 h-4"></i> Create Project
+            </button>
+          </div>
+          <!-- Project Grid -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-bg-surface border border-border rounded-xl p-5 hover-lift relative group">
+              <button class="absolute top-3 right-3 p-1 rounded-md text-txt-dim hover:text-danger opacity-0 group-hover:opacity-100 cursor-pointer transition-all"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
+              <h3 class="font-heading font-semibold text-sm mb-1">API Sandbox</h3>
+              <p class="text-xs text-txt-muted mb-2">Backend testing project for API endpoints</p>
+              <p class="text-xs text-txt-dim line-clamp-3">You are an expert backend developer. Focus on RESTful APIs, authentication, and testing best practices.</p>
+            </div>
+            <div class="bg-bg-surface border border-border rounded-xl p-5 hover-lift relative group">
+              <button class="absolute top-3 right-3 p-1 rounded-md text-txt-dim hover:text-danger opacity-0 group-hover:opacity-100 cursor-pointer transition-all"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
+              <h3 class="font-heading font-semibold text-sm mb-1">Frontend App</h3>
+              <p class="text-xs text-txt-muted mb-2">React dashboard with shadcn/ui</p>
+              <p class="text-xs text-txt-dim line-clamp-3">You are a frontend developer specializing in React and TypeScript. Use shadcn/ui components and follow modern design patterns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="resize-handle"></div>
+
+    <!-- ============================== -->
+    <!-- WORKSPACE PANEL (Right) -->
+    <!-- ============================== -->
+    <aside id="workspace-panel" class="w-96 shrink-0 border-l border-border bg-bg flex flex-col">
+      <!-- Tab Bar -->
+      <div class="flex items-center border-b border-border px-1 shrink-0 overflow-x-auto">
+        <button onclick="switchWorkspaceTab(this, 'ws-artifacts')" class="ws-tab flex items-center gap-1.5 px-3 py-2.5 text-xs font-medium cursor-pointer transition-colors border-b-2 border-accent text-txt whitespace-nowrap">
+          <i data-lucide="code-2" class="w-4 h-4"></i> <span class="hidden xl:inline">Artifacts</span>
+        </button>
+        <button onclick="switchWorkspaceTab(this, 'ws-browser')" class="ws-tab flex items-center gap-1.5 px-3 py-2.5 text-xs font-medium cursor-pointer transition-colors border-b-2 border-transparent text-txt-muted hover:text-txt whitespace-nowrap">
+          <i data-lucide="globe" class="w-4 h-4"></i> <span class="hidden xl:inline">Browser</span>
+        </button>
+        <button onclick="switchWorkspaceTab(this, 'ws-document')" class="ws-tab flex items-center gap-1.5 px-3 py-2.5 text-xs font-medium cursor-pointer transition-colors border-b-2 border-transparent text-txt-muted hover:text-txt whitespace-nowrap">
+          <i data-lucide="file-text" class="w-4 h-4"></i> <span class="hidden xl:inline">Document</span>
+        </button>
+        <button onclick="switchWorkspaceTab(this, 'ws-terminal')" class="ws-tab flex items-center gap-1.5 px-3 py-2.5 text-xs font-medium cursor-pointer transition-colors border-b-2 border-transparent text-txt-muted hover:text-txt whitespace-nowrap">
+          <i data-lucide="terminal" class="w-4 h-4"></i> <span class="hidden xl:inline">Terminal</span>
+        </button>
+        <button onclick="switchWorkspaceTab(this, 'ws-files')" class="ws-tab flex items-center gap-1.5 px-3 py-2.5 text-xs font-medium cursor-pointer transition-colors border-b-2 border-transparent text-txt-muted hover:text-txt whitespace-nowrap">
+          <i data-lucide="folder-tree" class="w-4 h-4"></i> <span class="hidden xl:inline">Files</span>
+        </button>
+        <button onclick="switchWorkspaceTab(this, 'ws-kb')" class="ws-tab flex items-center gap-1.5 px-3 py-2.5 text-xs font-medium cursor-pointer transition-colors border-b-2 border-transparent text-txt-muted hover:text-txt whitespace-nowrap">
+          <i data-lucide="book-open" class="w-4 h-4"></i> <span class="hidden xl:inline">KB</span>
+        </button>
+        <button onclick="switchWorkspaceTab(this, 'ws-agent')" class="ws-tab flex items-center gap-1.5 px-3 py-2.5 text-xs font-medium cursor-pointer transition-colors border-b-2 border-transparent text-txt-muted hover:text-txt whitespace-nowrap">
+          <i data-lucide="bot" class="w-4 h-4"></i> <span class="hidden xl:inline">Agent</span>
+        </button>
+      </div>
+      <!-- Tab Content -->
+      <div class="flex-1 overflow-y-auto">
+        <!-- Artifacts -->
+        <div id="ws-tab-ws-artifacts" class="ws-content p-4">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="text-sm font-medium">Generated Code</h3>
+            <div class="flex gap-1">
+              <button class="p-1.5 rounded-md hover:bg-bg-elevated text-txt-dim hover:text-txt cursor-pointer transition-colors"><i data-lucide="copy" class="w-3.5 h-3.5"></i></button>
+              <button class="p-1.5 rounded-md hover:bg-bg-elevated text-txt-dim hover:text-txt cursor-pointer transition-colors"><i data-lucide="download" class="w-3.5 h-3.5"></i></button>
+            </div>
+          </div>
+          <div class="bg-bg-surface rounded-lg border border-border overflow-hidden">
+            <div class="flex items-center gap-2 px-3 py-2 border-b border-border bg-bg-elevated/50">
+              <i data-lucide="file-code" class="w-3.5 h-3.5 text-accent"></i>
+              <span class="text-xs font-medium">jwt-handler.ts</span>
+            </div>
+            <pre class="p-3 text-xs font-mono text-txt-muted overflow-x-auto leading-5"><code>import jwt from 'jsonwebtoken';
+
+const SECRET = process.env.JWT_SECRET!;
+
+export interface TokenPayload {
+  userId: string;
+  email: string;
+  role: 'admin' | 'user';
+}
+
+export function generateToken(
+  user: TokenPayload
+): string {
+  return jwt.sign(user, SECRET, {
+    expiresIn: '7d',
+    issuer: 'dexter-agent',
+  });
+}
+
+export function verifyToken(
+  token: string
+): TokenPayload {
+  return jwt.verify(
+    token, SECRET
+  ) as TokenPayload;
+}</code></pre>
+          </div>
+        </div>
+        <!-- Browser -->
+        <div id="ws-tab-ws-browser" class="ws-content p-4 hidden">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="flex-1 flex items-center gap-2 px-3 py-1.5 rounded-lg bg-bg-surface border border-border">
+              <i data-lucide="lock" class="w-3.5 h-3.5 text-accent"></i>
+              <span class="text-xs text-txt-muted truncate">https://localhost:3001/api/auth</span>
+            </div>
+            <button class="p-1.5 rounded-md hover:bg-bg-elevated text-txt-dim cursor-pointer"><i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i></button>
+          </div>
+          <div class="bg-bg-surface rounded-lg border border-border p-4">
+            <div class="text-xs font-mono text-txt-muted">
+              <div class="text-accent mb-1">// Response Preview</div>
+              <pre>{
+  "status": 200,
+  "token": "eyJhbGci...",
+  "user": {
+    "id": "usr_123",
+    "email": "john@example.com"
+  }
+}</pre>
+            </div>
+          </div>
+        </div>
+        <!-- Document -->
+        <div id="ws-tab-ws-document" class="ws-content p-4 hidden">
+          <h3 class="text-sm font-medium mb-3">Documentation</h3>
+          <div class="prose prose-sm prose-invert max-w-none text-xs text-txt-muted space-y-2">
+            <h4 class="text-sm font-medium text-txt">Authentication Module</h4>
+            <p>The authentication module uses JWT tokens for stateless session management.</p>
+            <h4 class="text-sm font-medium text-txt mt-3">Key Features</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Token generation with 7-day expiry</li>
+              <li>Role-based access control</li>
+              <li>Token refresh mechanism</li>
+              <li>Middleware for route protection</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Terminal -->
+        <div id="ws-tab-ws-terminal" class="ws-content p-4 hidden">
+          <div class="bg-bg-surface rounded-lg border border-border overflow-hidden">
+            <div class="flex items-center gap-2 px-3 py-2 border-b border-border bg-bg-elevated/50">
+              <div class="flex gap-1.5">
+                <div class="w-3 h-3 rounded-full bg-danger/60"></div>
+                <div class="w-3 h-3 rounded-full bg-warning/60"></div>
+                <div class="w-3 h-3 rounded-full bg-accent/60"></div>
+              </div>
+              <span class="text-xs text-txt-dim">bash</span>
+            </div>
+            <div class="p-3 font-mono text-xs space-y-1 text-txt-muted">
+              <div><span class="text-accent">$</span> npm run dev</div>
+              <div class="text-txt-dim">> dexter-v3@0.1.0 dev</div>
+              <div class="text-txt-dim">> next dev -p 3001</div>
+              <div class="mt-2"><span class="text-accent">  </span>Ready in 2.3s</div>
+              <div class="text-txt-dim">  Local: http://localhost:3001</div>
+              <div class="mt-2"><span class="text-accent">$</span> npm test</div>
+              <div class="text-accent">PASS</div>
+              <div class="text-txt-dim">  src/__tests__/auth.test.ts</div>
+              <div class="text-txt-dim">    <span class="text-accent">&#10003;</span> generates valid JWT token</div>
+              <div class="text-txt-dim">    <span class="text-accent">&#10003;</span> rejects expired tokens</div>
+              <div class="text-txt-dim">    <span class="text-accent">&#10003;</span> handles role validation</div>
+              <div class="mt-1 text-txt-dim">Tests: 3 passed, 3 total</div>
+              <div class="flex items-center"><span class="text-accent">$</span> <span class="w-2 h-4 bg-accent pulse-dot ml-1"></span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Files -->
+        <div id="ws-tab-ws-files" class="ws-content p-4 hidden">
+          <div class="space-y-0.5">
+            <div class="flex items-center gap-2 px-2 py-1.5 rounded-md hover:bg-bg-elevated cursor-pointer transition-colors">
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-txt-dim"></i>
+              <i data-lucide="folder" class="w-4 h-4 text-warning"></i>
+              <span class="text-sm">src</span>
+            </div>
+            <div class="ml-6 space-y-0.5">
+              <div class="flex items-center gap-2 px-2 py-1.5 rounded-md hover:bg-bg-elevated cursor-pointer transition-colors">
+                <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-txt-dim"></i>
+                <i data-lucide="folder" class="w-4 h-4 text-warning"></i>
+                <span class="text-sm">lib</span>
+              </div>
+              <div class="ml-6 space-y-0.5">
+                <div class="flex items-center gap-2 px-2 py-1.5 rounded-md hover:bg-bg-elevated cursor-pointer transition-colors">
+                  <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-txt-dim"></i>
+                  <i data-lucide="folder" class="w-4 h-4 text-warning"></i>
+                  <span class="text-sm">auth</span>
+                </div>
+                <div class="ml-6 space-y-0.5">
+                  <div class="flex items-center gap-2 px-2 py-1.5 rounded-md bg-accent/10 cursor-pointer transition-colors">
+                    <i data-lucide="file-code" class="w-4 h-4 text-accent"></i>
+                    <span class="text-sm text-accent">jwt-handler.ts</span>
+                  </div>
+                  <div class="flex items-center gap-2 px-2 py-1.5 rounded-md hover:bg-bg-elevated cursor-pointer transition-colors">
+                    <i data-lucide="file-code" class="w-4 h-4 text-txt-dim"></i>
+                    <span class="text-sm">middleware.ts</span>
+                  </div>
+                  <div class="flex items-center gap-2 px-2 py-1.5 rounded-md hover:bg-bg-elevated cursor-pointer transition-colors">
+                    <i data-lucide="file-code" class="w-4 h-4 text-txt-dim"></i>
+                    <span class="text-sm">session.ts</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Knowledgebase Surface -->
+        <div id="ws-tab-ws-kb" class="ws-content p-4 hidden">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs bg-accent/20 text-accent px-2 py-0.5 rounded-full">API Docs</span>
+            <span class="text-xs text-txt-dim">Active</span>
+          </div>
+          <div class="relative mb-4">
+            <i data-lucide="search" class="w-4 h-4 text-txt-dim absolute left-3 top-1/2 -translate-y-1/2"></i>
+            <input type="text" placeholder="Search knowledgebase..." class="w-full pl-9 pr-3 py-2 rounded-lg bg-bg-surface border border-border text-sm focus:outline-none focus:border-accent/50" />
+          </div>
+          <div class="space-y-2">
+            <div class="p-3 rounded-lg bg-bg-surface border border-border hover-lift cursor-pointer">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-medium">auth-endpoints.md</span>
+                <div class="w-16 h-1.5 rounded-full bg-bg-elevated overflow-hidden"><div class="h-full bg-accent rounded-full" style="width:92%"></div></div>
+              </div>
+              <p class="text-xs text-txt-muted line-clamp-2">POST /api/auth/login - Authenticates user with email and password. Returns JWT token with 7-day expiry...</p>
+            </div>
+            <div class="p-3 rounded-lg bg-bg-surface border border-border hover-lift cursor-pointer">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-medium">jwt-spec.md</span>
+                <div class="w-16 h-1.5 rounded-full bg-bg-elevated overflow-hidden"><div class="h-full bg-accent rounded-full" style="width:78%"></div></div>
+              </div>
+              <p class="text-xs text-txt-muted line-clamp-2">JWT tokens use RS256 algorithm with rotating keys. Token payload includes userId, email, role...</p>
+            </div>
+            <div class="p-3 rounded-lg bg-bg-surface border border-border hover-lift cursor-pointer">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-xs font-medium">middleware-guide.md</span>
+                <div class="w-16 h-1.5 rounded-full bg-bg-elevated overflow-hidden"><div class="h-full bg-info rounded-full" style="width:65%"></div></div>
+              </div>
+              <p class="text-xs text-txt-muted line-clamp-2">Route protection middleware checks Authorization header for Bearer token. Returns 401 if missing...</p>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-border">
+            <h4 class="text-xs font-medium text-txt-dim mb-2 uppercase tracking-wider">Source Documents</h4>
+            <div class="space-y-1">
+              <div class="flex items-center gap-2 px-2 py-1.5 text-xs text-txt-muted hover:text-txt cursor-pointer rounded hover:bg-bg-elevated transition-colors">
+                <i data-lucide="file-text" class="w-3.5 h-3.5"></i> auth-endpoints.md <span class="ml-auto text-txt-dim">24 chunks</span>
+              </div>
+              <div class="flex items-center gap-2 px-2 py-1.5 text-xs text-txt-muted hover:text-txt cursor-pointer rounded hover:bg-bg-elevated transition-colors">
+                <i data-lucide="file-text" class="w-3.5 h-3.5"></i> jwt-spec.md <span class="ml-auto text-txt-dim">18 chunks</span>
+              </div>
+              <div class="flex items-center gap-2 px-2 py-1.5 text-xs text-txt-muted hover:text-txt cursor-pointer rounded hover:bg-bg-elevated transition-colors">
+                <i data-lucide="file-text" class="w-3.5 h-3.5"></i> middleware-guide.md <span class="ml-auto text-txt-dim">12 chunks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Agent Output -->
+        <div id="ws-tab-ws-agent" class="ws-content p-4 hidden">
+          <div class="space-y-3">
+            <div class="p-3 rounded-lg bg-bg-surface border border-border">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-2 h-2 rounded-full bg-accent"></span>
+                <span class="text-xs font-medium">Tool: read_file</span>
+                <span class="text-xs text-txt-dim ml-auto">2s ago</span>
+              </div>
+              <pre class="text-xs font-mono text-txt-muted">Reading: src/lib/auth/jwt-handler.ts</pre>
+            </div>
+            <div class="p-3 rounded-lg bg-bg-surface border border-border">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-2 h-2 rounded-full bg-accent"></span>
+                <span class="text-xs font-medium">Tool: write_file</span>
+                <span class="text-xs text-txt-dim ml-auto">5s ago</span>
+              </div>
+              <pre class="text-xs font-mono text-txt-muted">Writing: src/lib/auth/middleware.ts</pre>
+            </div>
+            <div class="p-3 rounded-lg bg-bg-surface border border-border">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-2 h-2 rounded-full bg-info"></span>
+                <span class="text-xs font-medium">Tool: execute_command</span>
+                <span class="text-xs text-txt-dim ml-auto">8s ago</span>
+              </div>
+              <pre class="text-xs font-mono text-txt-muted">$ npm test -- --filter auth</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Navigation controls (bottom left floating) -->
+  <div class="fixed bottom-4 left-4 z-50 flex gap-2">
+    <button onclick="navigateTo('chat')" class="nav-btn flex items-center gap-1.5 px-3 py-2 rounded-full bg-bg-surface border border-border text-xs shadow-xl hover:border-accent/50 cursor-pointer transition-colors">
+      <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Chat
+    </button>
+    <button onclick="navigateTo('settings')" class="nav-btn flex items-center gap-1.5 px-3 py-2 rounded-full bg-bg-surface border border-border text-xs shadow-xl hover:border-accent/50 cursor-pointer transition-colors">
+      <i data-lucide="settings" class="w-3.5 h-3.5"></i> Settings
+    </button>
+    <button onclick="navigateTo('projects')" class="nav-btn flex items-center gap-1.5 px-3 py-2 rounded-full bg-bg-surface border border-border text-xs shadow-xl hover:border-accent/50 cursor-pointer transition-colors">
+      <i data-lucide="folder" class="w-3.5 h-3.5"></i> Projects
+    </button>
+    <button onclick="toggleWorkspace()" class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-bg-surface border border-border text-xs shadow-xl hover:border-accent/50 cursor-pointer transition-colors">
+      <i data-lucide="panel-right" class="w-3.5 h-3.5"></i> Workspace
+    </button>
+  </div>
+
+  <script>
+    // Initialize icons
+    lucide.createIcons();
+
+    // Close dropdowns on outside click
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('[onclick*="toggleDropdown"]') && !e.target.closest('.dropdown-panel')) {
+        document.querySelectorAll('.dropdown-panel.open').forEach(d => d.classList.remove('open'));
+      }
+    });
+
+    function toggleDropdown(id) {
+      event.stopPropagation();
+      const el = document.getElementById(id);
+      const wasOpen = el.classList.contains('open');
+      document.querySelectorAll('.dropdown-panel.open').forEach(d => d.classList.remove('open'));
+      if (!wasOpen) el.classList.add('open');
+    }
+
+    function selectModel(name) {
+      document.getElementById('current-model').textContent = name;
+      document.getElementById('model-dropdown').classList.remove('open');
+    }
+
+    function navigateTo(page) {
+      document.querySelectorAll('.surface-page').forEach(p => p.classList.remove('active'));
+      const target = document.getElementById('page-' + page);
+      if (target) target.classList.add('active');
+    }
+
+    function switchSettingsTab(btn, tabId) {
+      document.querySelectorAll('.settings-tab').forEach(t => { t.classList.remove('tab-active'); t.classList.add('text-txt-muted'); });
+      btn.classList.add('tab-active');
+      btn.classList.remove('text-txt-muted');
+      document.querySelectorAll('.settings-content').forEach(c => c.classList.add('hidden'));
+      document.getElementById('settings-tab-' + tabId)?.classList.remove('hidden');
+    }
+
+    function switchWorkspaceTab(btn, tabId) {
+      document.querySelectorAll('.ws-tab').forEach(t => { t.classList.remove('border-accent', 'text-txt'); t.classList.add('border-transparent', 'text-txt-muted'); });
+      btn.classList.add('border-accent', 'text-txt');
+      btn.classList.remove('border-transparent', 'text-txt-muted');
+      document.querySelectorAll('.ws-content').forEach(c => c.classList.add('hidden'));
+      document.getElementById('ws-tab-' + tabId)?.classList.remove('hidden');
+    }
+
+    function toggleWorkspace() {
+      const panel = document.getElementById('workspace-panel');
+      panel.classList.toggle('hidden');
+    }
+
+    function selectConversation(el, title) {
+      document.querySelectorAll('[onclick*="selectConversation"]').forEach(c => { c.classList.remove('bg-bg-elevated/50'); c.classList.add('text-txt-muted'); });
+      el.classList.add('bg-bg-elevated/50');
+      el.classList.remove('text-txt-muted');
+    }
+
+    function handleNewChat() { /* Mock */ }
+  </script>
+</body>
+</html>
