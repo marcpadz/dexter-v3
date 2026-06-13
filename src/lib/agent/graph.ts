@@ -1,44 +1,105 @@
-import { StateGraph, Annotation, END } from "@langchain/langgraph";
+import { Annotation, StateGraph, END } from "@langchain/langgraph";
 import { ToolNode } from "@langchain/langgraph/prebuilt";
-import type { BaseMessage } from "@langchain/core/messages";
+import { PostgresSaver } from "@langchain/langgraph-checkpoint-postgres";
 import type { RunnableConfig } from "@langchain/core/runnables";
-import { getSupervisorModel } from "./nodes/supervisor";
+import type { BaseMessage } from "@langchain/core/messages";
 import { allTools } from "@/lib/daytona/tools";
+import { getSupervisorModel } from "./nodes/supervisor";
+import { router } from "./nodes/router";
+import { researchSubgraph } from "./subgraphs/research";
+import { codeSubgraph } from "./subgraphs/code";
 
-const AgentStateAnnotation = Annotation.Root({
+// --- State definition using LangGraph Annotation API ---
+
+const GraphState = Annotation.Root({
   messages: Annotation<BaseMessage[]>({
     reducer: (current, update) => current.concat(update),
     default: () => [],
   }),
+  userId: Annotation<string>({
+    reducer: (_, update) => update,
+    default: () => "",
+  }),
+  model: Annotation<string>({
+    reducer: (_, update) => update,
+    default: () => "anthropic/claude-sonnet-4-20250514",
+  }),
+  conversationId: Annotation<string>({
+    reducer: (_, update) => update,
+    default: () => "",
+  }),
+  sandboxId: Annotation<string | null>({
+    reducer: (_, update) => update,
+    default: () => null,
+  }),
+  apiKeys: Annotation<Record<string, string>>({
+    reducer: (_, update) => update,
+    default: () => ({}),
+  }),
 });
 
-type AgentState = typeof AgentStateAnnotation.State;
+type GraphStateType = typeof GraphState.State;
+
+// --- Supervisor node ---
 
 async function supervisor(
-  state: AgentState,
+  state: GraphStateType,
   config: RunnableConfig
-): Promise<Partial<AgentState>> {
-  const model = await getSupervisorModel(config) as any;
+): Promise<Partial<GraphStateType>> {
+  const model = (await getSupervisorModel(config)) as any;
   const modelWithTools = model.bindTools(allTools);
   const response = await modelWithTools.invoke(state.messages, config);
   return { messages: [response] };
 }
 
+// --- Tool node ---
+
 const toolNode = new ToolNode(allTools);
 
-function shouldContinue(state: AgentState): "tools" | typeof END {
-  const lastMessage = state.messages[state.messages.length - 1] as any;
-  if (lastMessage && "tool_calls" in lastMessage && lastMessage.tool_calls?.length) {
-    return "tools";
-  }
-  return END;
-}
+// --- Build graph ---
 
-const graph = new StateGraph(AgentStateAnnotation)
+const workflow = new StateGraph(GraphState)
+  // Nodes
   .addNode("supervisor", supervisor)
   .addNode("tools", toolNode)
-  .addEdge("__start__", "supervisor")
-  .addConditionalEdges("supervisor", shouldContinue)
-  .addEdge("tools", "supervisor");
+  .addNode("research_subgraph", researchSubgraph as any)
+  .addNode("code_subgraph", codeSubgraph as any)
 
-export const compiledGraph = graph.compile();
+  // Entry point
+  .addEdge("__start__", "supervisor")
+
+  // Supervisor routes via router function
+  .addConditionalEdges("supervisor", router, {
+    tools: "tools",
+    research_subgraph: "research_subgraph",
+    code_subgraph: "code_subgraph",
+    [END]: END,
+  })
+
+  // Tool results and sub-graph results return to supervisor
+  .addEdge("tools", "supervisor")
+  .addEdge("research_subgraph", "supervisor")
+  .addEdge("code_subgraph", "supervisor");
+
+/**
+ * Static compiled graph instance for synchronous import (e.g., custom agent adapter).
+ * Runs without checkpointer — persistence is available via createCompiledGraph().
+ */
+export const compiledGraph = workflow.compile();
+
+/**
+ * Async factory with PostgresSaver checkpointer.
+ * Call at app startup for conversation persistence.
+ */
+export async function createCompiledGraph() {
+  const connectionString = process.env.DATABASE_URL;
+
+  if (!connectionString) {
+    console.warn("[graph] DATABASE_URL not set — running without checkpointer");
+    return workflow.compile();
+  }
+
+  const checkpointer = PostgresSaver.fromConnString(connectionString);
+  await checkpointer.setup(); // Ensure checkpoint tables exist
+  return workflow.compile({ checkpointer });
+}

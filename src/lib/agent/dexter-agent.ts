@@ -54,8 +54,15 @@ class DexterAgent extends AbstractAgent {
 
     const allMessages: any[] = [];
 
-    const graphInput = {
+    const graphInput: Record<string, any> = {
       messages: [new HumanMessage(lastMessage.content || "")],
+      userId: (input.forwardedProps as any)?.userId || "",
+      model:
+        (input.forwardedProps as any)?.model ||
+        "anthropic/claude-sonnet-4-20250514",
+      conversationId: (input.forwardedProps as any)?.conversationId || threadId,
+      sandboxId: null,
+      apiKeys: (input.forwardedProps as any)?.apiKeys || {},
     };
 
     const config: any = {

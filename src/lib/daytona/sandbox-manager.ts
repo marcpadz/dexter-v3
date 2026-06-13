@@ -64,7 +64,7 @@ export async function getOrCreateSandbox(conversationId: string): Promise<Sandbo
     language: "python",
     autoStopInterval: 15,
     autoArchiveInterval: 1440,
-    autoDeleteInterval: -1,
+    autoDeleteInterval: 10080,
   } as any);
 
   await db

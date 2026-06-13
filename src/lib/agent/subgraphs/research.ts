@@ -3,7 +3,7 @@ import type { BaseMessage } from "@langchain/core/messages";
 import type { RunnableConfig } from "@langchain/core/runnables";
 import { getSupervisorModel } from "../nodes/supervisor";
 import { webSearch } from "@/lib/daytona/tools/search";
-import { browseUrl } from "@/lib/daytona/tools/browser";
+import { browseWeb } from "@/lib/daytona/tools/browser";
 
 const ResearchState = Annotation.Root({
   messages: Annotation<BaseMessage[]>({
@@ -42,8 +42,8 @@ async function browse(state: RState, config: RunnableConfig): Promise<Partial<RS
   const lastMessage = state.messages[state.messages.length - 1];
   const model = (await getSupervisorModel(config)) as any;
   const url = String((lastMessage as any).content || "https://example.com");
-  const result = await browseUrl.invoke({ url, conversationId: (config.configurable as any)?.conversationId }, config);
-  return { messages: [{ role: "tool", content: result, name: "browse_url" } as any] };
+  const result = await browseWeb.invoke({ url, action: "screenshot", conversationId: (config.configurable as any)?.conversationId }, config);
+  return { messages: [{ role: "tool", content: result, name: "browse_web" } as any] };
 }
 
 async function synthesize(state: RState, config: RunnableConfig): Promise<Partial<RState>> {

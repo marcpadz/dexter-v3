@@ -2,8 +2,9 @@ import { executeCode } from "./execute-code";
 import { executeCommand } from "./execute-command";
 import { listFiles, readFile, writeFile, deleteFile } from "./filesystem";
 import { gitClone, gitStatus, gitCommit } from "./git";
-import { browseUrl, takeScreenshot } from "./browser";
+import { browseWeb, takeScreenshot } from "./browser";
 import { webSearch } from "./search";
+import { saveMemory, recallMemory } from "@/lib/agent/tools/memory";
 
 export const allTools = [
   executeCode,
@@ -15,7 +16,9 @@ export const allTools = [
   gitClone,
   gitStatus,
   gitCommit,
-  browseUrl,
+  browseWeb,
   takeScreenshot,
   webSearch,
+  saveMemory,
+  recallMemory,
 ];

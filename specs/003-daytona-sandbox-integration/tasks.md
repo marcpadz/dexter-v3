@@ -130,7 +130,7 @@
 
 - [X] T034 [US5] Add sandbox cleanup to conversation delete action in `src/lib/server/actions/conversations.ts` — before deleting a conversation, call `sandboxManager.deleteSandbox(conversationId)` to stop and remove the Daytona sandbox
 - [X] T035 [US5] Add sandbox restart logic to sandbox manager in `src/lib/daytona/sandbox-manager.ts` — when `getOrCreateSandbox()` finds a stopped sandbox, call `sandbox.start()`. When it finds an archived sandbox, create a new one and update `sandboxId`
-- [ ] T036 [US5] Set sandbox auto-stop interval on creation — pass `autoStopInterval: 15` to `daytona.create()`. Set `autoArchiveInterval: 1440` (24h). Set `autoDeleteInterval: 10080` (7 days — conversation-level cleanup handles earlier deletion)
+- [X] T036 [US5] Set sandbox auto-stop interval on creation — pass `autoStopInterval: 15` to `daytona.create()`. Set `autoArchiveInterval: 1440` (24h). Set `autoDeleteInterval: 10080` (7 days — conversation-level cleanup handles earlier deletion)
 
 **Checkpoint**: Sandbox lifecycle is fully automated — no manual intervention needed
 
@@ -166,11 +166,11 @@
 
 **Purpose**: Constitution VIII mandates automated tests for server actions, agent tool execution, auth flows, and workspace state transitions
 
-- [ ] T046 [P] Test sandbox manager in `src/__tests__/daytona/sandbox-manager.test.ts` — test `getOrCreateSandbox()` lazy creation, reuse of existing sandbox, restart of stopped sandbox, error handling for Daytona API failures
-- [ ] T047 [P] Test Daytona tool handlers in `src/__tests__/daytona/tools/execute-code.test.ts` — test `execute_code` tool with Python/JS/shell, timeout handling, stderr capture, exit code propagation
-- [ ] T048 [P] Test Daytona tool handlers in `src/__tests__/daytona/tools/filesystem.test.ts` — test `list_files`, `read_file`, `write_file`, `delete_file` tool definitions, parameter validation, return payload shape
-- [ ] T049 [P] Test auth middleware in `src/__tests__/auth/middleware.test.ts` — test session check, redirect to `/auth/login` for unauthenticated users, passthrough for auth routes
-- [ ] T050 [P] Test workspace store transitions in `src/__tests__/workspace-store.test.ts` — test `open/close`, `setActiveTab`, `addArtifact/removeArtifact`, `appendTerminalOutput`, state isolation between conversations
+- [X] T046 [P] Test sandbox manager in `src/__tests__/daytona/sandbox-manager.test.ts` — test `getOrCreateSandbox()` lazy creation, reuse of existing sandbox, restart of stopped sandbox, error handling for Daytona API failures
+- [X] T047 [P] Test Daytona tool handlers in `src/__tests__/daytona/tools/execute-code.test.ts` — test `execute_code` tool with Python/JS/shell, timeout handling, stderr capture, exit code propagation
+- [X] T048 [P] Test Daytona tool handlers in `src/__tests__/daytona/tools/filesystem.test.ts` — test `list_files`, `read_file`, `write_file`, `delete_file` tool definitions, parameter validation, return payload shape
+- [X] T049 [P] Test auth middleware in `src/__tests__/auth/middleware.test.ts` — test session check, redirect to `/auth/login` for unauthenticated users, passthrough for auth routes
+- [X] T050 [P] Test workspace store transitions in `src/__tests__/workspace-store.test.ts` — test `open/close`, `setActiveTab`, `addArtifact/removeArtifact`, `appendTerminalOutput`, state isolation between conversations
 
 ---
 
