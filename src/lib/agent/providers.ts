@@ -59,6 +59,33 @@ export function resolveModel(model: string, apiKeys: Record<string, string>): Ba
         configuration: { baseURL: "https://openrouter.ai/api/v1" },
       });
     }
+    case "deepseek": {
+      const apiKey = apiKeys["deepseek"] || process.env.DEEPSEEK_API_KEY;
+      if (!apiKey) throw new Error("No DeepSeek API key configured");
+      return new ChatOpenAI({
+        model: modelName || "deepseek-chat",
+        apiKey,
+        configuration: { baseURL: "https://api.deepseek.com/v1" },
+      });
+    }
+    case "nvidia": {
+      const apiKey = apiKeys["nvidia"] || process.env.NVIDIA_API_KEY;
+      if (!apiKey) throw new Error("No NVIDIA API key configured");
+      return new ChatOpenAI({
+        model: modelName || "nvidia/llama-3.1-nemotron-70b-instruct",
+        apiKey,
+        configuration: { baseURL: "https://integrate.api.nvidia.com/v1" },
+      });
+    }
+    case "zai": {
+      const apiKey = apiKeys["zai"] || process.env.ZAI_API_KEY;
+      if (!apiKey) throw new Error("No Z.AI API key configured");
+      return new ChatOpenAI({
+        model: modelName || "yi-large",
+        apiKey,
+        configuration: { baseURL: "https://api.01.ai/v1" },
+      });
+    }
     default: {
       const apiKey = apiKeys[provider] || process.env.OPENAI_API_KEY;
       return new ChatOpenAI({ model: modelName || model, apiKey });
