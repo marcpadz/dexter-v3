@@ -1,1491 +1,1301 @@
 {
-  "/Volumes/Marc's SSD/Dev/2026/v2/._package-lock.json": {
-    "mtime": 1780953502.89,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
+  "/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019ea92d-1182-7fe2-a214-9fc88c28832f.json": {
+    "mtime": 1781196993.7859106,
+    "ast_hash": "5a19c7fa3c495256705ceed2d93bb0ea",
+    "semantic_hash": "5a19c7fa3c495256705ceed2d93bb0ea"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/._package.json": {
-    "mtime": 1780953502.93,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
+  "/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019ea9b5-382d-733c-8509-ce51e70fa085.json": {
+    "mtime": 1781196993.7859106,
+    "ast_hash": "a3f396dc01f0e8cc1b6fe335e2c6f5bf",
+    "semantic_hash": "a3f396dc01f0e8cc1b6fe335e2c6f5bf"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/tasks/._tasks-019ea92d-1182-7fe2-a214-9fc88c28832f.json": {
-    "mtime": 1780963417.05,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
+  "/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019ea9ba-9a19-76e5-a18d-90a539ea42b3.json": {
+    "mtime": 1781196993.7859106,
+    "ast_hash": "762e9ebd077686b0a916a3a775cf261a",
+    "semantic_hash": "762e9ebd077686b0a916a3a775cf261a"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/tasks/tasks-019ea92d-1182-7fe2-a214-9fc88c28832f.json": {
-    "mtime": 1780963417.05,
-    "ast_hash": "b1b973d2b9dc0a962b6521e6ba675044",
-    "semantic_hash": "b1b973d2b9dc0a962b6521e6ba675044"
+  "/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019ea9c3-306c-71ab-b8aa-53368a29b459.json": {
+    "mtime": 1781196993.7859106,
+    "ast_hash": "37eaa3b4982011108f78f5334af0f48a",
+    "semantic_hash": "37eaa3b4982011108f78f5334af0f48a"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/._init-options.json": {
-    "mtime": 1780962267.63,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
+  "/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019eaa45-0ef4-71bc-a5de-5ccbf07f0bdc.json": {
+    "mtime": 1781196993.7859106,
+    "ast_hash": "94d2725b183f5b9445bc53cdd0210d39",
+    "semantic_hash": "94d2725b183f5b9445bc53cdd0210d39"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/._integration.json": {
-    "mtime": 1780962265.78,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
+  "/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019eaa4e-d7bb-799c-8f72-b9d026d65f6a.json": {
+    "mtime": 1781196993.7859106,
+    "ast_hash": "f05f7d3e876f7780b9245c70f499ab9d",
+    "semantic_hash": "f05f7d3e876f7780b9245c70f499ab9d"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/scripts/bash/._update-agent-context.sh": {
-    "mtime": 1780962267.66,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
+  "/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019eaa61-7c7c-7457-b945-57fb756c83a5.json": {
+    "mtime": 1781196993.7859106,
+    "ast_hash": "314752ddfa2871a1fe86f025b06c384d",
+    "semantic_hash": "314752ddfa2871a1fe86f025b06c384d"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/scripts/bash/update-agent-context.sh": {
-    "mtime": 1780962250.74,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/agent-context/scripts/bash/update-agent-context.sh": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "b1168bb9cffc02061aa72530000b76ef",
     "semantic_hash": "b1168bb9cffc02061aa72530000b76ef"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/scripts/powershell/._update-agent-context.ps1": {
-    "mtime": 1780962267.69,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1": {
-    "mtime": 1780962250.74,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "490a5c678c46baf04f36b571861a1045",
     "semantic_hash": "490a5c678c46baf04f36b571861a1045"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/._auto-commit.sh": {
-    "mtime": 1780962267.49,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/._create-new-feature.sh": {
-    "mtime": 1780962267.5,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/._git-common.sh": {
-    "mtime": 1780962267.49,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/._initialize-repo.sh": {
-    "mtime": 1780962267.5,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/auto-commit.sh": {
-    "mtime": 1780962250.74,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/bash/auto-commit.sh": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "d2eff3439669e2f21825e2727eab3e6e",
     "semantic_hash": "d2eff3439669e2f21825e2727eab3e6e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/create-new-feature.sh": {
-    "mtime": 1780962250.74,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/bash/create-new-feature.sh": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "5236f607b9bcc2346e99714c06592817",
     "semantic_hash": "5236f607b9bcc2346e99714c06592817"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/git-common.sh": {
-    "mtime": 1780962250.74,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/bash/git-common.sh": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "ccbcc8f94d52d18a50f892b96fd2d9f0",
     "semantic_hash": "ccbcc8f94d52d18a50f892b96fd2d9f0"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/initialize-repo.sh": {
-    "mtime": 1780962250.74,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/bash/initialize-repo.sh": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "74e6c1d493a031b83243ce71777f27ae",
     "semantic_hash": "74e6c1d493a031b83243ce71777f27ae"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/._auto-commit.ps1": {
-    "mtime": 1780962267.51,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/._create-new-feature.ps1": {
-    "mtime": 1780962267.51,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/._git-common.ps1": {
-    "mtime": 1780962267.52,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/._initialize-repo.ps1": {
-    "mtime": 1780962267.51,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/auto-commit.ps1": {
-    "mtime": 1780962250.74,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/powershell/auto-commit.ps1": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "e6f96c45fe7a83a2cf333cc50b2baf1c",
     "semantic_hash": "e6f96c45fe7a83a2cf333cc50b2baf1c"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/create-new-feature.ps1": {
-    "mtime": 1780962250.74,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/powershell/create-new-feature.ps1": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "126d44abaf3f455c3a46287150ffcec7",
     "semantic_hash": "126d44abaf3f455c3a46287150ffcec7"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/git-common.ps1": {
-    "mtime": 1780962250.74,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/powershell/git-common.ps1": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "3bb34d6d2d109bfd5453ac748d46bbfb",
     "semantic_hash": "3bb34d6d2d109bfd5453ac748d46bbfb"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/initialize-repo.ps1": {
-    "mtime": 1780962250.74,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/powershell/initialize-repo.ps1": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "3ff30d0a7ab42f30caf40725e7666800",
     "semantic_hash": "3ff30d0a7ab42f30caf40725e7666800"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/init-options.json": {
-    "mtime": 1780962281.61,
+  "/home/ubuntu/workspace/dexter-v3/.specify/feature.json": {
+    "mtime": 1781323396.5913525,
+    "ast_hash": "c24aa7c157c49c12757c2acd130f494a",
+    "semantic_hash": "c24aa7c157c49c12757c2acd130f494a"
+  },
+  "/home/ubuntu/workspace/dexter-v3/.specify/init-options.json": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "3f432a2c5211cfb01cca4e86d681f4f9",
     "semantic_hash": "3f432a2c5211cfb01cca4e86d681f4f9"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integration.json": {
-    "mtime": 1780962281.61,
+  "/home/ubuntu/workspace/dexter-v3/.specify/integration.json": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "5d44697c6d787b907280fb8d356600ca",
     "semantic_hash": "5d44697c6d787b907280fb8d356600ca"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._agy.manifest.json": {
-    "mtime": 1780962281.05,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._claude.manifest.json": {
-    "mtime": 1780962265.77,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._codex.manifest.json": {
-    "mtime": 1780962281.6,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._opencode.manifest.json": {
-    "mtime": 1780962280.68,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._pi.manifest.json": {
-    "mtime": 1780962280.41,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._qodercli.manifest.json": {
-    "mtime": 1780962281.3,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._speckit.manifest.json": {
-    "mtime": 1780962281.52,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/agy.manifest.json": {
-    "mtime": 1780962281.05,
+  "/home/ubuntu/workspace/dexter-v3/.specify/integrations/agy.manifest.json": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "9ee0141f7028796767f8432295031f31",
     "semantic_hash": "9ee0141f7028796767f8432295031f31"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/claude.manifest.json": {
-    "mtime": 1780962265.77,
+  "/home/ubuntu/workspace/dexter-v3/.specify/integrations/claude.manifest.json": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "53226cefd44b70bc82af23d89cd2c667",
     "semantic_hash": "53226cefd44b70bc82af23d89cd2c667"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/codex.manifest.json": {
-    "mtime": 1780962281.6,
+  "/home/ubuntu/workspace/dexter-v3/.specify/integrations/codex.manifest.json": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "772e475777b65d203834db534728c169",
     "semantic_hash": "772e475777b65d203834db534728c169"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/opencode.manifest.json": {
-    "mtime": 1780962280.68,
+  "/home/ubuntu/workspace/dexter-v3/.specify/integrations/opencode.manifest.json": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "9aac5a3f886aa2056a1173758997037e",
     "semantic_hash": "9aac5a3f886aa2056a1173758997037e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/pi.manifest.json": {
-    "mtime": 1780962280.42,
+  "/home/ubuntu/workspace/dexter-v3/.specify/integrations/pi.manifest.json": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "970f8688dd1a2d7e6d947f4eed4679a3",
     "semantic_hash": "970f8688dd1a2d7e6d947f4eed4679a3"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/qodercli.manifest.json": {
-    "mtime": 1780962281.3,
+  "/home/ubuntu/workspace/dexter-v3/.specify/integrations/qodercli.manifest.json": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "f62e7962e327c4e75a6f1916d0847c77",
     "semantic_hash": "f62e7962e327c4e75a6f1916d0847c77"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/speckit.manifest.json": {
-    "mtime": 1780962281.52,
+  "/home/ubuntu/workspace/dexter-v3/.specify/integrations/speckit.manifest.json": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "25b2ce25dbb77dc5c98a7024fe89caba",
     "semantic_hash": "25b2ce25dbb77dc5c98a7024fe89caba"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/._check-prerequisites.sh": {
-    "mtime": 1780962265.83,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/._common.sh": {
-    "mtime": 1780962265.8,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/._create-new-feature.sh": {
-    "mtime": 1780962265.84,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/._setup-plan.sh": {
-    "mtime": 1780962265.81,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/._setup-tasks.sh": {
-    "mtime": 1780962265.82,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/check-prerequisites.sh": {
-    "mtime": 1780962265.83,
+  "/home/ubuntu/workspace/dexter-v3/.specify/scripts/bash/check-prerequisites.sh": {
+    "mtime": 1781196993.7889104,
     "ast_hash": "4406dc1bdcfa44627dbe0695cde6c5ed",
     "semantic_hash": "4406dc1bdcfa44627dbe0695cde6c5ed"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/common.sh": {
-    "mtime": 1780962265.8,
+  "/home/ubuntu/workspace/dexter-v3/.specify/scripts/bash/common.sh": {
+    "mtime": 1781196993.7889104,
     "ast_hash": "b0183529b46716036b7f10fc1f7329d6",
     "semantic_hash": "b0183529b46716036b7f10fc1f7329d6"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/create-new-feature.sh": {
-    "mtime": 1780962265.84,
+  "/home/ubuntu/workspace/dexter-v3/.specify/scripts/bash/create-new-feature.sh": {
+    "mtime": 1781196993.7889104,
     "ast_hash": "08f248f9dfe66f8f1f9a519b61568d10",
     "semantic_hash": "08f248f9dfe66f8f1f9a519b61568d10"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/setup-plan.sh": {
-    "mtime": 1780962265.82,
+  "/home/ubuntu/workspace/dexter-v3/.specify/scripts/bash/setup-plan.sh": {
+    "mtime": 1781196993.7889104,
     "ast_hash": "1fea313ae1bccf6986581a56dbc8773b",
     "semantic_hash": "1fea313ae1bccf6986581a56dbc8773b"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/setup-tasks.sh": {
-    "mtime": 1780962265.83,
+  "/home/ubuntu/workspace/dexter-v3/.specify/scripts/bash/setup-tasks.sh": {
+    "mtime": 1781196993.7889104,
     "ast_hash": "e9f091b303780054b889ccffdc16b1fd",
     "semantic_hash": "e9f091b303780054b889ccffdc16b1fd"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/workflows/._workflow-registry.json": {
-    "mtime": 1780962267.63,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/workflows/workflow-registry.json": {
-    "mtime": 1780962267.63,
+  "/home/ubuntu/workspace/dexter-v3/.specify/workflows/workflow-registry.json": {
+    "mtime": 1781196993.7889104,
     "ast_hash": "39ea50c333aa19348d259369a6e9134c",
     "semantic_hash": "39ea50c333aa19348d259369a6e9134c"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/components.json": {
-    "mtime": 1780947482.48,
+  "/home/ubuntu/workspace/dexter-v3/components.json": {
+    "mtime": 1781196993.7899103,
     "ast_hash": "fc5c9e9a7b93eeb2f7b4e1ce0959e4a6",
     "semantic_hash": "fc5c9e9a7b93eeb2f7b4e1ce0959e4a6"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/eslint.config.mjs": {
-    "mtime": 1780947307.66,
+  "/home/ubuntu/workspace/dexter-v3/drizzle.config.ts": {
+    "mtime": 1781196993.7899103,
+    "ast_hash": "16cd6650fb6019a68fb84937ba0f4f71",
+    "semantic_hash": "16cd6650fb6019a68fb84937ba0f4f71"
+  },
+  "/home/ubuntu/workspace/dexter-v3/eslint.config.mjs": {
+    "mtime": 1781196993.7899103,
     "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
     "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/next.config.ts": {
-    "mtime": 1780947584.91,
+  "/home/ubuntu/workspace/dexter-v3/next.config.ts": {
+    "mtime": 1781196993.80391,
     "ast_hash": "0b1a7e2e73e78cdcb6a9c5dae54b207d",
     "semantic_hash": "0b1a7e2e73e78cdcb6a9c5dae54b207d"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/package.json": {
-    "mtime": 1780949738.51,
-    "ast_hash": "a950ff023b841abe20c4953da3dfe459",
-    "semantic_hash": "a950ff023b841abe20c4953da3dfe459"
+  "/home/ubuntu/workspace/dexter-v3/package.json": {
+    "mtime": 1781339378.5692465,
+    "ast_hash": "530470d5d314d5da6e162d47dfe93e48",
+    "semantic_hash": "530470d5d314d5da6e162d47dfe93e48"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/postcss.config.mjs": {
-    "mtime": 1780947307.67,
+  "/home/ubuntu/workspace/dexter-v3/postcss.config.mjs": {
+    "mtime": 1781196993.80791,
     "ast_hash": "239f3ebf717465dc636818a1a619398d",
     "semantic_hash": "239f3ebf717465dc636818a1a619398d"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/prisma.config.ts": {
-    "mtime": 1780947515.62,
-    "ast_hash": "f6143a6083213d512c0beaa8d98daf63",
-    "semantic_hash": "f6143a6083213d512c0beaa8d98daf63"
+  "/home/ubuntu/workspace/dexter-v3/skills-lock.json": {
+    "mtime": 1781196993.80991,
+    "ast_hash": "0383b2ef92e4eba9415a0437da331964",
+    "semantic_hash": "0383b2ef92e4eba9415a0437da331964"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/._middleware.ts": {
-    "mtime": 1780953503.4,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
+  "/home/ubuntu/workspace/dexter-v3/src/__tests__/auth.test.ts": {
+    "mtime": 1781196993.81191,
+    "ast_hash": "67b0509d95df00a1f9c4b145a93e40d7",
+    "semantic_hash": "67b0509d95df00a1f9c4b145a93e40d7"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/(app)/layout.tsx": {
-    "mtime": 1780947822.78,
-    "ast_hash": "be401a53fed819b98180e4d920ddfffa",
-    "semantic_hash": "be401a53fed819b98180e4d920ddfffa"
+  "/home/ubuntu/workspace/dexter-v3/src/__tests__/auth/middleware.test.ts": {
+    "mtime": 1781336967.977684,
+    "ast_hash": "ccb6ad5cf441a0aae4091f41c51e01b1",
+    "semantic_hash": "ccb6ad5cf441a0aae4091f41c51e01b1"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/admin/._page.tsx": {
-    "mtime": 1780953503.31,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
+  "/home/ubuntu/workspace/dexter-v3/src/__tests__/browser-surface.test.ts": {
+    "mtime": 1781339172.4794743,
+    "ast_hash": "cd14b2c6f0d79d6e7634b46f11e980e3",
+    "semantic_hash": "cd14b2c6f0d79d6e7634b46f11e980e3"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/admin/page.tsx": {
-    "mtime": 1780949738.53,
-    "ast_hash": "0f2d82cf03f86fe5cffc2aca2aa8d565",
-    "semantic_hash": "0f2d82cf03f86fe5cffc2aca2aa8d565"
+  "/home/ubuntu/workspace/dexter-v3/src/__tests__/daytona/sandbox-manager.test.ts": {
+    "mtime": 1781336803.064066,
+    "ast_hash": "f7babef52c38e698fd96060b41bb620a",
+    "semantic_hash": "f7babef52c38e698fd96060b41bb620a"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/api/auth/[...nextauth]/._route.ts": {
-    "mtime": 1780953503.23,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
+  "/home/ubuntu/workspace/dexter-v3/src/__tests__/daytona/tools/execute-code.test.ts": {
+    "mtime": 1781336810.923905,
+    "ast_hash": "ff7d4a502f4f85b1a247fd5403ce9a0b",
+    "semantic_hash": "ff7d4a502f4f85b1a247fd5403ce9a0b"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/api/auth/[...nextauth]/route.ts": {
-    "mtime": 1780949738.52,
-    "ast_hash": "2c8a649e4d3718b459992bff5bd5e399",
-    "semantic_hash": "2c8a649e4d3718b459992bff5bd5e399"
+  "/home/ubuntu/workspace/dexter-v3/src/__tests__/daytona/tools/execute-command.test.ts": {
+    "mtime": 1781339329.7042499,
+    "ast_hash": "6ecf8f6d48d0a7f52f1650f8efa15694",
+    "semantic_hash": "6ecf8f6d48d0a7f52f1650f8efa15694"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/api/auth/register/route.ts": {
-    "mtime": 1780947711.25,
-    "ast_hash": "b4afb4cb54e69d5ae5fde0ae52ff40ea",
-    "semantic_hash": "b4afb4cb54e69d5ae5fde0ae52ff40ea"
+  "/home/ubuntu/workspace/dexter-v3/src/__tests__/daytona/tools/filesystem.test.ts": {
+    "mtime": 1781336971.0246215,
+    "ast_hash": "d113c5bc89f0bda603f1cd2c3ea357d0",
+    "semantic_hash": "d113c5bc89f0bda603f1cd2c3ea357d0"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/api/chat/route.ts": {
-    "mtime": 1780947711.25,
-    "ast_hash": "6b267880ce4ba7690e44ee3c369fa682",
-    "semantic_hash": "6b267880ce4ba7690e44ee3c369fa682"
+  "/home/ubuntu/workspace/dexter-v3/src/__tests__/frontend-tools-registration.test.ts": {
+    "mtime": 1781339552.7726674,
+    "ast_hash": "a3bd96eb3ad0f433a04eaf79b45c45ac",
+    "semantic_hash": "a3bd96eb3ad0f433a04eaf79b45c45ac"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/api/conversations/route.ts": {
-    "mtime": 1780947898.54,
-    "ast_hash": "3a2756e631b3bfe87deebe959277227f",
-    "semantic_hash": "3a2756e631b3bfe87deebe959277227f"
+  "/home/ubuntu/workspace/dexter-v3/src/__tests__/frontend-tools.test.ts": {
+    "mtime": 1781339180.4293113,
+    "ast_hash": "8571739a6e1a96b511a4fa07e9121de9",
+    "semantic_hash": "8571739a6e1a96b511a4fa07e9121de9"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/api/health/route.ts": {
-    "mtime": 1780947920.78,
-    "ast_hash": "8e45ee2a9a162e7b2c1f395b5011fe11",
-    "semantic_hash": "8e45ee2a9a162e7b2c1f395b5011fe11"
+  "/home/ubuntu/workspace/dexter-v3/src/__tests__/server-actions.test.ts": {
+    "mtime": 1781196993.81191,
+    "ast_hash": "3bed77005e10cfc12bc8b59f2d8cbefc",
+    "semantic_hash": "3bed77005e10cfc12bc8b59f2d8cbefc"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/chat/page.tsx": {
-    "mtime": 1780947822.78,
-    "ast_hash": "5d751b5b1b691e2cb84edcff3c44a4d4",
-    "semantic_hash": "5d751b5b1b691e2cb84edcff3c44a4d4"
+  "/home/ubuntu/workspace/dexter-v3/src/__tests__/workspace-store.test.ts": {
+    "mtime": 1781196993.81191,
+    "ast_hash": "284a4ead077de70b851c4b20d15beef7",
+    "semantic_hash": "284a4ead077de70b851c4b20d15beef7"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/layout.tsx": {
-    "mtime": 1780947616.77,
-    "ast_hash": "32c1293be61011d0b75773b21c57a523",
-    "semantic_hash": "32c1293be61011d0b75773b21c57a523"
+  "/home/ubuntu/workspace/dexter-v3/src/app/(app)/chat/page.tsx": {
+    "mtime": 1781339107.246812,
+    "ast_hash": "a41055344ee35834c2e1c28cd434345b",
+    "semantic_hash": "a41055344ee35834c2e1c28cd434345b"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/library/page.tsx": {
-    "mtime": 1780947890.17,
-    "ast_hash": "0a73061377bd504b70440a1c297f245f",
-    "semantic_hash": "0a73061377bd504b70440a1c297f245f"
+  "/home/ubuntu/workspace/dexter-v3/src/app/(app)/layout.tsx": {
+    "mtime": 1781196993.81191,
+    "ast_hash": "4d17f492596587aba6798c1e668779e3",
+    "semantic_hash": "4d17f492596587aba6798c1e668779e3"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/login/page.tsx": {
-    "mtime": 1780947711.25,
-    "ast_hash": "56096d412a532ba617dfe07339547cf4",
-    "semantic_hash": "56096d412a532ba617dfe07339547cf4"
+  "/home/ubuntu/workspace/dexter-v3/src/app/(app)/projects/page.tsx": {
+    "mtime": 1781196993.81191,
+    "ast_hash": "bd126cc8f2c44c22db97561089aaae58",
+    "semantic_hash": "bd126cc8f2c44c22db97561089aaae58"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/not-found.tsx": {
-    "mtime": 1780947910.76,
+  "/home/ubuntu/workspace/dexter-v3/src/app/(app)/settings/page.tsx": {
+    "mtime": 1781196993.81191,
+    "ast_hash": "2ba6330be00185d4496d4773814a4901",
+    "semantic_hash": "2ba6330be00185d4496d4773814a4901"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/app/(auth)/login/page.tsx": {
+    "mtime": 1781196993.8129098,
+    "ast_hash": "4d2df8ade07d9b57d9539e5832452858",
+    "semantic_hash": "4d2df8ade07d9b57d9539e5832452858"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/app/(auth)/sign-up/page.tsx": {
+    "mtime": 1781196993.8129098,
+    "ast_hash": "8a28f483a9d564be4781a1cefafdc855",
+    "semantic_hash": "8a28f483a9d564be4781a1cefafdc855"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/app/api/auth/[...all]/route.ts": {
+    "mtime": 1781196993.8129098,
+    "ast_hash": "e3db055923809b16adccc9d00935135a",
+    "semantic_hash": "e3db055923809b16adccc9d00935135a"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/app/api/copilotkit/route.ts": {
+    "mtime": 1781196993.8129098,
+    "ast_hash": "02dc54bbab00247c6705a1d5183ea91f",
+    "semantic_hash": "02dc54bbab00247c6705a1d5183ea91f"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/app/layout.tsx": {
+    "mtime": 1781196993.8129098,
+    "ast_hash": "ea2d6c3e03f4a304758bc5d256522c2f",
+    "semantic_hash": "ea2d6c3e03f4a304758bc5d256522c2f"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/app/not-found.tsx": {
+    "mtime": 1781196993.8129098,
     "ast_hash": "d0fb8062dcad13a10132ce97ef6e92b7",
     "semantic_hash": "d0fb8062dcad13a10132ce97ef6e92b7"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/notes/._notes-view.tsx": {
-    "mtime": 1780953503.3,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
+  "/home/ubuntu/workspace/dexter-v3/src/app/page.tsx": {
+    "mtime": 1781196993.8129098,
+    "ast_hash": "c0eeefcd6bae9b13ea391a77ba106aa3",
+    "semantic_hash": "c0eeefcd6bae9b13ea391a77ba106aa3"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/notes/notes-view.tsx": {
-    "mtime": 1780949738.54,
-    "ast_hash": "a85cc76f2cf0ca0a5853c1e133257ccc",
-    "semantic_hash": "a85cc76f2cf0ca0a5853c1e133257ccc"
+  "/home/ubuntu/workspace/dexter-v3/src/components/copilot/frontend-tools.ts": {
+    "mtime": 1781339253.3068166,
+    "ast_hash": "b44cea05f7bc9c6f45f4a013978179a2",
+    "semantic_hash": "b44cea05f7bc9c6f45f4a013978179a2"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/notes/page.tsx": {
-    "mtime": 1780947868.07,
-    "ast_hash": "a27357f1a4421a83bf66f91f62b140cb",
-    "semantic_hash": "a27357f1a4421a83bf66f91f62b140cb"
+  "/home/ubuntu/workspace/dexter-v3/src/components/copilot/model-selector.tsx": {
+    "mtime": 1781196993.8129098,
+    "ast_hash": "e5e27a3ad6b90aa3a5c4bd73c33f24cc",
+    "semantic_hash": "e5e27a3ad6b90aa3a5c4bd73c33f24cc"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/page.tsx": {
-    "mtime": 1780947822.78,
-    "ast_hash": "4a144b771da7666134ddb244168828f1",
-    "semantic_hash": "4a144b771da7666134ddb244168828f1"
+  "/home/ubuntu/workspace/dexter-v3/src/components/layout/app-shell.tsx": {
+    "mtime": 1781196993.81391,
+    "ast_hash": "914e692bc06964be5d26cf017fbe2a37",
+    "semantic_hash": "914e692bc06964be5d26cf017fbe2a37"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/projects/._projects-view.tsx": {
-    "mtime": 1780953503.29,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
+  "/home/ubuntu/workspace/dexter-v3/src/components/layout/app-sidebar.tsx": {
+    "mtime": 1781196993.81391,
+    "ast_hash": "eb3f965455bf141a5ebf0c9d2bce8225",
+    "semantic_hash": "eb3f965455bf141a5ebf0c9d2bce8225"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/projects/page.tsx": {
-    "mtime": 1780947868.07,
-    "ast_hash": "9229e98fb21c7889b12a4f6e9a4d6e74",
-    "semantic_hash": "9229e98fb21c7889b12a4f6e9a4d6e74"
+  "/home/ubuntu/workspace/dexter-v3/src/components/layout/header.tsx": {
+    "mtime": 1781196993.81391,
+    "ast_hash": "2f1594a0d49959f615639240d10ab7bd",
+    "semantic_hash": "2f1594a0d49959f615639240d10ab7bd"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/projects/projects-view.tsx": {
-    "mtime": 1780949738.53,
-    "ast_hash": "9e0d877e50ec2a15c0d2383572e381de",
-    "semantic_hash": "9e0d877e50ec2a15c0d2383572e381de"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/settings/page.tsx": {
-    "mtime": 1780947890.17,
-    "ast_hash": "c876767b1bf8006951f1607cc678a585",
-    "semantic_hash": "c876767b1bf8006951f1607cc678a585"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/settings/settings-view.tsx": {
-    "mtime": 1780947890.17,
-    "ast_hash": "b249ff1bb0e49302e680e404e8d0db10",
-    "semantic_hash": "b249ff1bb0e49302e680e404e8d0db10"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/sign-up/page.tsx": {
-    "mtime": 1780947711.25,
-    "ast_hash": "e85557a9691ddf2e8ad62b3491ea3ccd",
-    "semantic_hash": "e85557a9691ddf2e8ad62b3491ea3ccd"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/tasks/._tasks-view.tsx": {
-    "mtime": 1780953503.3,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/tasks/page.tsx": {
-    "mtime": 1780947868.07,
-    "ast_hash": "0a82ca91115069e46d688a8f21a39d3a",
-    "semantic_hash": "0a82ca91115069e46d688a8f21a39d3a"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/app/tasks/tasks-view.tsx": {
-    "mtime": 1780949738.54,
-    "ast_hash": "7c706b1036029d4e234dfdd4fe5da213",
-    "semantic_hash": "7c706b1036029d4e234dfdd4fe5da213"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/layout/._app-sidebar.tsx": {
-    "mtime": 1780953503.37,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/layout/._header.tsx": {
-    "mtime": 1780953503.37,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/layout/app-sidebar.tsx": {
-    "mtime": 1780949738.54,
-    "ast_hash": "6af768dd8bebe919b6cc8c257503295e",
-    "semantic_hash": "6af768dd8bebe919b6cc8c257503295e"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/layout/header.tsx": {
-    "mtime": 1780949738.54,
-    "ast_hash": "23f6a17c2838d407f48dfda1d4021c19",
-    "semantic_hash": "23f6a17c2838d407f48dfda1d4021c19"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/._button.tsx": {
-    "mtime": 1780953503.32,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/._dialog.tsx": {
-    "mtime": 1780953503.36,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/avatar.tsx": {
-    "mtime": 1780947527.17,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/avatar.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "8b41492907a73176027427a3f0fd2302",
     "semantic_hash": "8b41492907a73176027427a3f0fd2302"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/badge.tsx": {
-    "mtime": 1780947527.23,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/badge.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "e4ec840217040d5630ee6ed7213a1d72",
     "semantic_hash": "e4ec840217040d5630ee6ed7213a1d72"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/button.tsx": {
-    "mtime": 1780949738.52,
-    "ast_hash": "ef8b6a5f6652ac9cfc7c743f2a130600",
-    "semantic_hash": "ef8b6a5f6652ac9cfc7c743f2a130600"
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/button.tsx": {
+    "mtime": 1781196993.81391,
+    "ast_hash": "85ddc9af23379935d1f859be423fdf6b",
+    "semantic_hash": "85ddc9af23379935d1f859be423fdf6b"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/card.tsx": {
-    "mtime": 1780947527.03,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/card.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "bd5f88ad2d983dd6c4561d63824c80ba",
     "semantic_hash": "bd5f88ad2d983dd6c4561d63824c80ba"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/checkbox.tsx": {
-    "mtime": 1780947527.54,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/checkbox.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "b2348d074d43a3597b5622982f1978b6",
     "semantic_hash": "b2348d074d43a3597b5622982f1978b6"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/command.tsx": {
-    "mtime": 1780947528.23,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/command.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "a25ff237f1693d4196bd45681996572a",
     "semantic_hash": "a25ff237f1693d4196bd45681996572a"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/dialog.tsx": {
-    "mtime": 1780949738.52,
-    "ast_hash": "c5c11af0456b6e4bcda212bdda8780b0",
-    "semantic_hash": "c5c11af0456b6e4bcda212bdda8780b0"
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/dialog.tsx": {
+    "mtime": 1781196993.81391,
+    "ast_hash": "7a23d7daae98d298e85e5f35ae288ebd",
+    "semantic_hash": "7a23d7daae98d298e85e5f35ae288ebd"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/dropdown-menu.tsx": {
-    "mtime": 1780947527.4,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/dropdown-menu.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "e6107cbb2088437e76a858f75b5a0280",
     "semantic_hash": "e6107cbb2088437e76a858f75b5a0280"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/hover-card.tsx": {
-    "mtime": 1780947527.92,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/hover-card.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "a3bbb202115c25c801ee2f455e93ca4d",
     "semantic_hash": "a3bbb202115c25c801ee2f455e93ca4d"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/input-group.tsx": {
-    "mtime": 1780947528.15,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/input-group.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "e416a1443c87bacbba5ac124ee292dd5",
     "semantic_hash": "e416a1443c87bacbba5ac124ee292dd5"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/input.tsx": {
-    "mtime": 1780947527.09,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/input.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "0607b02d99a2e92f9509223f36ccc6ec",
     "semantic_hash": "0607b02d99a2e92f9509223f36ccc6ec"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/label.tsx": {
-    "mtime": 1780947527.6,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/label.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "a70440da86bfc6a07f15197cca48cb08",
     "semantic_hash": "a70440da86bfc6a07f15197cca48cb08"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/popover.tsx": {
-    "mtime": 1780947527.98,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/popover.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "3cb9c412624579717c4ad67965d80a1c",
     "semantic_hash": "3cb9c412624579717c4ad67965d80a1c"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/progress.tsx": {
-    "mtime": 1780947527.87,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/progress.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "aa71e8ceb68b33af5ed5799f42cd873e",
     "semantic_hash": "aa71e8ceb68b33af5ed5799f42cd873e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/scroll-area.tsx": {
-    "mtime": 1780947527.26,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/scroll-area.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "ac8fc719d0fd13c77c933474827337da",
     "semantic_hash": "ac8fc719d0fd13c77c933474827337da"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/select.tsx": {
-    "mtime": 1780947527.66,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/select.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "ab95f478cb74d1906b07425c15b124cc",
     "semantic_hash": "ab95f478cb74d1906b07425c15b124cc"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/separator.tsx": {
-    "mtime": 1780947527.32,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/separator.tsx": {
+    "mtime": 1781196993.81391,
     "ast_hash": "3de2dca3e47ab29c4b1f632671545628",
     "semantic_hash": "3de2dca3e47ab29c4b1f632671545628"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/sheet.tsx": {
-    "mtime": 1780947528.04,
-    "ast_hash": "43ad8bec991f7a28d2aa22d4f374e6b7",
-    "semantic_hash": "43ad8bec991f7a28d2aa22d4f374e6b7"
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/sheet.tsx": {
+    "mtime": 1781196993.81391,
+    "ast_hash": "201b88a072b9bb60c0021dd2da8d38dd",
+    "semantic_hash": "201b88a072b9bb60c0021dd2da8d38dd"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/skeleton.tsx": {
-    "mtime": 1780947527.77,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/skeleton.tsx": {
+    "mtime": 1781196993.81491,
     "ast_hash": "0e6e825c43d858d98c9903f4da975382",
     "semantic_hash": "0e6e825c43d858d98c9903f4da975382"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/sonner.tsx": {
-    "mtime": 1780947527.73,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/sonner.tsx": {
+    "mtime": 1781196993.81491,
     "ast_hash": "f46214bc2a6a5153a6e04fad523d5587",
     "semantic_hash": "f46214bc2a6a5153a6e04fad523d5587"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/switch.tsx": {
-    "mtime": 1780947527.5,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/switch.tsx": {
+    "mtime": 1781196993.81491,
     "ast_hash": "049ff4b9c939a42157e99d6bbdeaaaec",
     "semantic_hash": "049ff4b9c939a42157e99d6bbdeaaaec"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/tabs.tsx": {
-    "mtime": 1780947527.46,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/tabs.tsx": {
+    "mtime": 1781196993.81491,
     "ast_hash": "429035bc858475cd3bcedbb08a5ba8da",
     "semantic_hash": "429035bc858475cd3bcedbb08a5ba8da"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/textarea.tsx": {
-    "mtime": 1780947527.12,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/textarea.tsx": {
+    "mtime": 1781196993.81491,
     "ast_hash": "d448d2a90e48542e51b93a1189127bf2",
     "semantic_hash": "d448d2a90e48542e51b93a1189127bf2"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/tooltip.tsx": {
-    "mtime": 1780947527.83,
+  "/home/ubuntu/workspace/dexter-v3/src/components/ui/tooltip.tsx": {
+    "mtime": 1781196993.81491,
     "ast_hash": "6566a444ce6c0a87d6611903430534fa",
     "semantic_hash": "6566a444ce6c0a87d6611903430534fa"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/._auth.ts": {
-    "mtime": 1780953503.37,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
+  "/home/ubuntu/workspace/dexter-v3/src/components/workspace/surfaces/agent-output-surface.tsx": {
+    "mtime": 1781196993.81491,
+    "ast_hash": "138f5610a8eb2ec1a374e2933f641a1f",
+    "semantic_hash": "138f5610a8eb2ec1a374e2933f641a1f"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/._db.ts": {
-    "mtime": 1780953503.37,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
+  "/home/ubuntu/workspace/dexter-v3/src/components/workspace/surfaces/artifact-surface.tsx": {
+    "mtime": 1781196993.81491,
+    "ast_hash": "63d3c0084eaa81aa965e70ff7542008f",
+    "semantic_hash": "63d3c0084eaa81aa965e70ff7542008f"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/._session.ts": {
-    "mtime": 1780953503.37,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
+  "/home/ubuntu/workspace/dexter-v3/src/components/workspace/surfaces/browser-surface.tsx": {
+    "mtime": 1781338940.3652346,
+    "ast_hash": "a896484a0d1fc48c8113eae1d2ef4f18",
+    "semantic_hash": "a896484a0d1fc48c8113eae1d2ef4f18"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/__tests__/utils.test.ts": {
-    "mtime": 1780947920.78,
+  "/home/ubuntu/workspace/dexter-v3/src/components/workspace/surfaces/document-surface.tsx": {
+    "mtime": 1781196993.81491,
+    "ast_hash": "22d5cb177572450108f4fe7ab0f3e358",
+    "semantic_hash": "22d5cb177572450108f4fe7ab0f3e358"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/components/workspace/surfaces/files-surface.tsx": {
+    "mtime": 1781196993.81491,
+    "ast_hash": "81320fc2e34ce8082e68bbcaec7dfdb1",
+    "semantic_hash": "81320fc2e34ce8082e68bbcaec7dfdb1"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/components/workspace/surfaces/terminal-surface.tsx": {
+    "mtime": 1781196993.81491,
+    "ast_hash": "e0ddff3584ea75ec71a4e94616565dbb",
+    "semantic_hash": "e0ddff3584ea75ec71a4e94616565dbb"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/components/workspace/workspace-panel.tsx": {
+    "mtime": 1781196993.81491,
+    "ast_hash": "2840bc9b07712e4dc97b5aeba6ccdc65",
+    "semantic_hash": "2840bc9b07712e4dc97b5aeba6ccdc65"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/components/workspace/workspace-store.ts": {
+    "mtime": 1781196993.81491,
+    "ast_hash": "ffdf5ece6fdd193f35f4b7cc3469362e",
+    "semantic_hash": "ffdf5ece6fdd193f35f4b7cc3469362e"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/__tests__/utils.test.ts": {
+    "mtime": 1781196993.81491,
     "ast_hash": "dddc95c59b3ca14cc438850a6630b37a",
     "semantic_hash": "dddc95c59b3ca14cc438850a6630b37a"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/auth.ts": {
-    "mtime": 1780949738.51,
-    "ast_hash": "4e8d99e79d2f33f8027c2f687d79e4eb",
-    "semantic_hash": "4e8d99e79d2f33f8027c2f687d79e4eb"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/agent/dexter-agent.ts": {
+    "mtime": 1781339459.6965797,
+    "ast_hash": "6f244b31ccd9b042eeee53f2449796a0",
+    "semantic_hash": "6f244b31ccd9b042eeee53f2449796a0"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/db.ts": {
-    "mtime": 1780949738.51,
-    "ast_hash": "3d67d0f313ff8480350b3fcaf53b1177",
-    "semantic_hash": "3d67d0f313ff8480350b3fcaf53b1177"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/agent/graph.ts": {
+    "mtime": 1781336893.5372107,
+    "ast_hash": "73d19c9124f4e934143b27f42aa15b61",
+    "semantic_hash": "73d19c9124f4e934143b27f42aa15b61"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/._conversations.ts": {
-    "mtime": 1780953503.38,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/agent/nodes/router.ts": {
+    "mtime": 1781336898.3701115,
+    "ast_hash": "abb833fe144a5e9e70890dfb5aee1c08",
+    "semantic_hash": "abb833fe144a5e9e70890dfb5aee1c08"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/._settings.ts": {
-    "mtime": 1780953503.38,
-    "ast_hash": "e76fc9bb6e89e107d66043e05ab53c41",
-    "semantic_hash": "e76fc9bb6e89e107d66043e05ab53c41"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/agent/nodes/supervisor.ts": {
+    "mtime": 1781328246.056177,
+    "ast_hash": "a0f5854e09d2cf949ef143e0c9ca5be0",
+    "semantic_hash": "a0f5854e09d2cf949ef143e0c9ca5be0"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/conversations.ts": {
-    "mtime": 1780949738.53,
-    "ast_hash": "6dbac01e55b9e56f58d98e13db66ed22",
-    "semantic_hash": "6dbac01e55b9e56f58d98e13db66ed22"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/agent/providers.ts": {
+    "mtime": 1781327871.1638842,
+    "ast_hash": "d1d6b1d899d69d4e6bfb166ec393e32c",
+    "semantic_hash": "d1d6b1d899d69d4e6bfb166ec393e32c"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/messages.ts": {
-    "mtime": 1780947785.85,
-    "ast_hash": "85025c7e0b9a7c65602f1cbe5642ff13",
-    "semantic_hash": "85025c7e0b9a7c65602f1cbe5642ff13"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/agent/state.ts": {
+    "mtime": 1781327861.8580751,
+    "ast_hash": "29b805d79029bcdbe81f2019b577d0fc",
+    "semantic_hash": "29b805d79029bcdbe81f2019b577d0fc"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/notes.ts": {
-    "mtime": 1780947785.85,
-    "ast_hash": "6a5eba1a4620aa41c2269c9dc7bc3b90",
-    "semantic_hash": "6a5eba1a4620aa41c2269c9dc7bc3b90"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/agent/subgraphs/code.ts": {
+    "mtime": 1781329304.7514026,
+    "ast_hash": "391c2a4918b3d8ab0e9503b18906eb6c",
+    "semantic_hash": "391c2a4918b3d8ab0e9503b18906eb6c"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/projects.ts": {
-    "mtime": 1780947785.85,
-    "ast_hash": "3a554364b7aa30155ac395538db5db56",
-    "semantic_hash": "3a554364b7aa30155ac395538db5db56"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/agent/subgraphs/research.ts": {
+    "mtime": 1781336671.313768,
+    "ast_hash": "77f0bd83cfc6ebf61e4d70141fc8d84d",
+    "semantic_hash": "77f0bd83cfc6ebf61e4d70141fc8d84d"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/settings.ts": {
-    "mtime": 1780949738.53,
-    "ast_hash": "2263138f0ce411cdf19a9873567e9930",
-    "semantic_hash": "2263138f0ce411cdf19a9873567e9930"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/agent/tools/memory.ts": {
+    "mtime": 1781339397.8738499,
+    "ast_hash": "be665aef6ad591f0ea96ba4a3eb923e8",
+    "semantic_hash": "be665aef6ad591f0ea96ba4a3eb923e8"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/tasks.ts": {
-    "mtime": 1780947785.85,
-    "ast_hash": "3cb55851044c76478496ec3fd83b72a3",
-    "semantic_hash": "3cb55851044c76478496ec3fd83b72a3"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/auth/crypto.ts": {
+    "mtime": 1781196993.81491,
+    "ast_hash": "112bf1326d91ee241786a8b0ea75cb8a",
+    "semantic_hash": "112bf1326d91ee241786a8b0ea75cb8a"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/session.ts": {
-    "mtime": 1780949738.52,
-    "ast_hash": "a234bd3fcc06ba17edfd5df23074241b",
-    "semantic_hash": "a234bd3fcc06ba17edfd5df23074241b"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/auth/index.ts": {
+    "mtime": 1781196993.81491,
+    "ast_hash": "9e48f9c4fd6e819467150e06991eb571",
+    "semantic_hash": "9e48f9c4fd6e819467150e06991eb571"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/shared/types.ts": {
-    "mtime": 1780947785.85,
-    "ast_hash": "4c7cc6f5e67ab0e814d0fea9e28dca84",
-    "semantic_hash": "4c7cc6f5e67ab0e814d0fea9e28dca84"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/auth/session.ts": {
+    "mtime": 1781196993.81491,
+    "ast_hash": "a733093391ece57c81c4df4d61274d24",
+    "semantic_hash": "a733093391ece57c81c4df4d61274d24"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/shared/utils.ts": {
-    "mtime": 1780947910.76,
-    "ast_hash": "eaca23d51a9e749b84bd439ff5f968ee",
-    "semantic_hash": "eaca23d51a9e749b84bd439ff5f968ee"
+  "/home/ubuntu/workspace/dexter-v3/src/lib/copilot/runtime.ts": {
+    "mtime": 1781328343.7651672,
+    "ast_hash": "6f25b6cfb42605dccd550e91bb9a74f7",
+    "semantic_hash": "6f25b6cfb42605dccd550e91bb9a74f7"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/lib/utils.ts": {
-    "mtime": 1780947499.24,
+  "/home/ubuntu/workspace/dexter-v3/src/lib/daytona/client.ts": {
+    "mtime": 1781339424.197309,
+    "ast_hash": "18dbeba5f396f1fbc22bd60fa5f6eb3d",
+    "semantic_hash": "18dbeba5f396f1fbc22bd60fa5f6eb3d"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/daytona/sandbox-manager.ts": {
+    "mtime": 1781339123.2604837,
+    "ast_hash": "2e29415d9b38ad12239bc6a4924dc01c",
+    "semantic_hash": "2e29415d9b38ad12239bc6a4924dc01c"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/browser.ts": {
+    "mtime": 1781336650.9461856,
+    "ast_hash": "31f332cc1d618388d032828e5345fffd",
+    "semantic_hash": "31f332cc1d618388d032828e5345fffd"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/execute-code.ts": {
+    "mtime": 1781328987.9959173,
+    "ast_hash": "daf775ad9e79f461f078f8d484416111",
+    "semantic_hash": "daf775ad9e79f461f078f8d484416111"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/execute-command.ts": {
+    "mtime": 1781339200.722895,
+    "ast_hash": "524a61252c6ad786ab828156a2a96a1f",
+    "semantic_hash": "524a61252c6ad786ab828156a2a96a1f"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/filesystem.ts": {
+    "mtime": 1781328278.7615042,
+    "ast_hash": "2320a7988b6b76e3fc515f7c9cb762dc",
+    "semantic_hash": "2320a7988b6b76e3fc515f7c9cb762dc"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/git.ts": {
+    "mtime": 1781329022.8402007,
+    "ast_hash": "e8a41c2b1bb9b5dacfebbfe03f0b40ed",
+    "semantic_hash": "e8a41c2b1bb9b5dacfebbfe03f0b40ed"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/index.ts": {
+    "mtime": 1781336765.0418458,
+    "ast_hash": "f1f2f6365407cb96b404e155ec154c18",
+    "semantic_hash": "f1f2f6365407cb96b404e155ec154c18"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/search.ts": {
+    "mtime": 1781328301.8380296,
+    "ast_hash": "b767f2709b34798642a10150cfb5c182",
+    "semantic_hash": "b767f2709b34798642a10150cfb5c182"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/index.ts": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "bd4ccd636b1eecb3ef9e7686f10de821",
+    "semantic_hash": "bd4ccd636b1eecb3ef9e7686f10de821"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/migrations/0000_last_the_hand.sql": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "a36f13f905edde0bb6d5562eb9738d49",
+    "semantic_hash": "a36f13f905edde0bb6d5562eb9738d49"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/migrations/0000_mighty_turbo.sql": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "783b1432c6decda5b86929ce47dea1eb",
+    "semantic_hash": "783b1432c6decda5b86929ce47dea1eb"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/migrations/meta/0000_snapshot.json": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "138b5729e1e49b242d4c0b8a468c655e",
+    "semantic_hash": "138b5729e1e49b242d4c0b8a468c655e"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/migrations/meta/_journal.json": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "1680e478c73e494f36e115f0e08d61b8",
+    "semantic_hash": "1680e478c73e494f36e115f0e08d61b8"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/api-keys.ts": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "f561e5144de3bd3f6de180f0cd861fb8",
+    "semantic_hash": "f561e5144de3bd3f6de180f0cd861fb8"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/conversations.ts": {
+    "mtime": 1781327765.1270616,
+    "ast_hash": "8cbf9fbbb29056c8a21a2a5ed42e89db",
+    "semantic_hash": "8cbf9fbbb29056c8a21a2a5ed42e89db"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/documents.ts": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "ee483bda2bcb16da2d2f6670d0b99a55",
+    "semantic_hash": "ee483bda2bcb16da2d2f6670d0b99a55"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/index.ts": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "0578400567b59664e3346ca754eda161",
+    "semantic_hash": "0578400567b59664e3346ca754eda161"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/mcp-servers.ts": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "8681a59a951d0d92037a4dbd85034e23",
+    "semantic_hash": "8681a59a951d0d92037a4dbd85034e23"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/memories.ts": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "44bc6b08c8699f1bde85f24f5e59cecd",
+    "semantic_hash": "44bc6b08c8699f1bde85f24f5e59cecd"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/messages.ts": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "c37e3272518927d2802c17dc0ff49e89",
+    "semantic_hash": "c37e3272518927d2802c17dc0ff49e89"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/projects.ts": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "c256a53e36a0cdefe153a05957ccbfc6",
+    "semantic_hash": "c256a53e36a0cdefe153a05957ccbfc6"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/tasks.ts": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "5bf5c58c7812506027a767936d661255",
+    "semantic_hash": "5bf5c58c7812506027a767936d661255"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/users.ts": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "eccefe377c3cff0ae2885ce6c21a6fcc",
+    "semantic_hash": "eccefe377c3cff0ae2885ce6c21a6fcc"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/server/actions/auth.ts": {
+    "mtime": 1781196993.8159099,
+    "ast_hash": "31d0840161ca65f4ff7ffc52ed2a5363",
+    "semantic_hash": "31d0840161ca65f4ff7ffc52ed2a5363"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/server/actions/conversations.ts": {
+    "mtime": 1781329245.958612,
+    "ast_hash": "8b6bb9c81a1f988bf99f4cb4afdec989",
+    "semantic_hash": "8b6bb9c81a1f988bf99f4cb4afdec989"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/server/actions/messages.ts": {
+    "mtime": 1781196993.8169098,
+    "ast_hash": "eb8250f4be0a2d41f72920f60e81f8e3",
+    "semantic_hash": "eb8250f4be0a2d41f72920f60e81f8e3"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/server/actions/projects.ts": {
+    "mtime": 1781196993.8169098,
+    "ast_hash": "72482f31a7d0f5b8ddac2a105c5fb226",
+    "semantic_hash": "72482f31a7d0f5b8ddac2a105c5fb226"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/server/actions/settings.ts": {
+    "mtime": 1781196993.8169098,
+    "ast_hash": "f8573e3bb2e4931d666238dd0d97eedc",
+    "semantic_hash": "f8573e3bb2e4931d666238dd0d97eedc"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/shared/types.ts": {
+    "mtime": 1781196993.8169098,
+    "ast_hash": "43a1f9ba910c852bee3f66713fc6f486",
+    "semantic_hash": "43a1f9ba910c852bee3f66713fc6f486"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/shared/utils.ts": {
+    "mtime": 1781196993.8169098,
+    "ast_hash": "02deec59979adb496c3354ec3d64e153",
+    "semantic_hash": "02deec59979adb496c3354ec3d64e153"
+  },
+  "/home/ubuntu/workspace/dexter-v3/src/lib/utils.ts": {
+    "mtime": 1781196993.8169098,
     "ast_hash": "5a6fd53fdcf2be529e9cc0b718fde352",
     "semantic_hash": "5a6fd53fdcf2be529e9cc0b718fde352"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/src/middleware.ts": {
-    "mtime": 1780949738.52,
-    "ast_hash": "15b2fc64b354fdbf29189f43d23c9f5b",
-    "semantic_hash": "15b2fc64b354fdbf29189f43d23c9f5b"
+  "/home/ubuntu/workspace/dexter-v3/src/middleware.ts": {
+    "mtime": 1781327894.3174088,
+    "ast_hash": "b7b1b8c1afd1bc49de9353255cdc8db6",
+    "semantic_hash": "b7b1b8c1afd1bc49de9353255cdc8db6"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/tsconfig.json": {
-    "mtime": 1780947307.69,
+  "/home/ubuntu/workspace/dexter-v3/tsconfig.json": {
+    "mtime": 1781196993.8169098,
     "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
     "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/._AGENTS.md": {
-    "mtime": 1780962280.41,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
+  "/home/ubuntu/workspace/dexter-v3/vitest.config.ts": {
+    "mtime": 1781196993.8169098,
+    "ast_hash": "90ecb1c82bc9da713f2084b350eac065",
+    "semantic_hash": "90ecb1c82bc9da713f2084b350eac065"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/._CLAUDE.md": {
-    "mtime": 1780962265.75,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
+  "/home/ubuntu/workspace/dexter-v3/.agents/skills/neon-postgres/SKILL.md": {
+    "mtime": 1781196993.7809105,
+    "ast_hash": "174fefedcc9c7a1c66d076adf6c39dbb",
+    "semantic_hash": "174fefedcc9c7a1c66d076adf6c39dbb"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/._IMPLEMENTATION-PLAN.md": {
-    "mtime": 1780959712.9,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/._QODER.md": {
-    "mtime": 1780962281.29,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/._WORKSPACE-ARCHITECTURE.md": {
-    "mtime": 1780961332.64,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/._SKILL.md": {
-    "mtime": 1780962280.94,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md": {
-    "mtime": 1780962281.54,
+  "/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-analyze/SKILL.md": {
+    "mtime": 1781196993.7809105,
     "ast_hash": "b42e6df9ac400c06c947534176aaaadc",
     "semantic_hash": "b42e6df9ac400c06c947534176aaaadc"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/._SKILL.md": {
-    "mtime": 1780962281.01,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/SKILL.md": {
-    "mtime": 1780962281.59,
+  "/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-checklist/SKILL.md": {
+    "mtime": 1781196993.7809105,
     "ast_hash": "8d0fe845a79fd801ed92d7d78c4e5728",
     "semantic_hash": "8d0fe845a79fd801ed92d7d78c4e5728"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/._SKILL.md": {
-    "mtime": 1780962280.96,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/SKILL.md": {
-    "mtime": 1780962281.55,
+  "/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-clarify/SKILL.md": {
+    "mtime": 1781196993.7819107,
     "ast_hash": "1a72a984a8442eaf2575a4ac0e166086",
     "semantic_hash": "1a72a984a8442eaf2575a4ac0e166086"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/._SKILL.md": {
-    "mtime": 1780962280.97,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/SKILL.md": {
-    "mtime": 1780962281.55,
+  "/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-constitution/SKILL.md": {
+    "mtime": 1781196993.7819107,
     "ast_hash": "eca6c1b1f77da3388ffe6ffdb2d2ed47",
     "semantic_hash": "eca6c1b1f77da3388ffe6ffdb2d2ed47"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/._SKILL.md": {
-    "mtime": 1780962280.98,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/SKILL.md": {
-    "mtime": 1780962281.56,
+  "/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-implement/SKILL.md": {
+    "mtime": 1781196993.7819107,
     "ast_hash": "89b15c3857ddeb96bfe2fe98361fb576",
     "semantic_hash": "89b15c3857ddeb96bfe2fe98361fb576"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/._SKILL.md": {
-    "mtime": 1780962280.99,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md": {
-    "mtime": 1780962281.58,
+  "/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-plan/SKILL.md": {
+    "mtime": 1781196993.7819107,
     "ast_hash": "272eddf93466f27f08a28278c2752897",
     "semantic_hash": "272eddf93466f27f08a28278c2752897"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-specify/._SKILL.md": {
-    "mtime": 1780962281.02,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-specify/SKILL.md": {
-    "mtime": 1780962281.59,
+  "/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-specify/SKILL.md": {
+    "mtime": 1781196993.7819107,
     "ast_hash": "a895c82a0eade82198209cdbc6525573",
     "semantic_hash": "a895c82a0eade82198209cdbc6525573"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/._SKILL.md": {
-    "mtime": 1780962281.03,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md": {
-    "mtime": 1780962281.59,
+  "/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-tasks/SKILL.md": {
+    "mtime": 1781196993.7819107,
     "ast_hash": "ab4bf76264db767a2433440f791b295e",
     "semantic_hash": "ab4bf76264db767a2433440f791b295e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-taskstoissues/._SKILL.md": {
-    "mtime": 1780962281.04,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-taskstoissues/SKILL.md": {
-    "mtime": 1780962281.6,
+  "/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-taskstoissues/SKILL.md": {
+    "mtime": 1781196993.7819107,
     "ast_hash": "877c7f137b6ce1d3ab8194e5846703a6",
     "semantic_hash": "877c7f137b6ce1d3ab8194e5846703a6"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-agent-context-update/._SKILL.md": {
-    "mtime": 1780962267.7,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-agent-context-update/SKILL.md": {
-    "mtime": 1780962267.7,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-agent-context-update/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "72928dcbb13ab3fe26730bcc282a6383",
     "semantic_hash": "72928dcbb13ab3fe26730bcc282a6383"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-analyze/._SKILL.md": {
-    "mtime": 1780962265.67,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-analyze/SKILL.md": {
-    "mtime": 1780962265.75,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-analyze/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "0ad01bd773353ba12705a1602349a830",
     "semantic_hash": "0ad01bd773353ba12705a1602349a830"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-checklist/._SKILL.md": {
-    "mtime": 1780962265.72,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-checklist/SKILL.md": {
-    "mtime": 1780962265.76,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-checklist/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "2d3535f2f15a5500e7354f923860de4e",
     "semantic_hash": "2d3535f2f15a5500e7354f923860de4e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-clarify/._SKILL.md": {
-    "mtime": 1780962265.68,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-clarify/SKILL.md": {
-    "mtime": 1780962265.75,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-clarify/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "34b0b61eb75c833628cfc351d3bb9086",
     "semantic_hash": "34b0b61eb75c833628cfc351d3bb9086"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-constitution/._SKILL.md": {
-    "mtime": 1780962265.69,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-constitution/SKILL.md": {
-    "mtime": 1780962265.75,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-constitution/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "c9a285e099a64fea9cd80a9b937dffae",
     "semantic_hash": "c9a285e099a64fea9cd80a9b937dffae"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-commit/._SKILL.md": {
-    "mtime": 1780962267.57,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-commit/SKILL.md": {
-    "mtime": 1780962267.57,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-git-commit/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "b3b5452d7f4a384684f4d134977b7413",
     "semantic_hash": "b3b5452d7f4a384684f4d134977b7413"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-feature/._SKILL.md": {
-    "mtime": 1780962267.55,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-feature/SKILL.md": {
-    "mtime": 1780962267.55,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-git-feature/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "55bdacb0f76877801816a1ad323445ab",
     "semantic_hash": "55bdacb0f76877801816a1ad323445ab"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-initialize/._SKILL.md": {
-    "mtime": 1780962267.57,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-initialize/SKILL.md": {
-    "mtime": 1780962267.57,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-git-initialize/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "d804449a9c3a341b222786ea1c128a5e",
     "semantic_hash": "d804449a9c3a341b222786ea1c128a5e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-remote/._SKILL.md": {
-    "mtime": 1780962267.56,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-remote/SKILL.md": {
-    "mtime": 1780962267.56,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-git-remote/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "77460848e4cc58010cc09600b956dd47",
     "semantic_hash": "77460848e4cc58010cc09600b956dd47"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-validate/._SKILL.md": {
-    "mtime": 1780962267.56,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-validate/SKILL.md": {
-    "mtime": 1780962267.56,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-git-validate/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "18b06e81e0b57363e20fd0a3f14b1f63",
     "semantic_hash": "18b06e81e0b57363e20fd0a3f14b1f63"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-implement/._SKILL.md": {
-    "mtime": 1780962265.7,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-implement/SKILL.md": {
-    "mtime": 1780962265.75,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-implement/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "9f845a9f433d184cf3f5cfc37dca5516",
     "semantic_hash": "9f845a9f433d184cf3f5cfc37dca5516"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-plan/._SKILL.md": {
-    "mtime": 1780962265.71,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-plan/SKILL.md": {
-    "mtime": 1780962265.75,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-plan/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "95984771833637d49f5e998727b51bce",
     "semantic_hash": "95984771833637d49f5e998727b51bce"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-specify/._SKILL.md": {
-    "mtime": 1780962265.73,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-specify/SKILL.md": {
-    "mtime": 1780962265.76,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-specify/SKILL.md": {
+    "mtime": 1781196993.7829106,
     "ast_hash": "e157d94f7a3b0c48fa399b99898a6452",
     "semantic_hash": "e157d94f7a3b0c48fa399b99898a6452"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-tasks/._SKILL.md": {
-    "mtime": 1780962265.73,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-tasks/SKILL.md": {
-    "mtime": 1780962265.76,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-tasks/SKILL.md": {
+    "mtime": 1781196993.7839105,
     "ast_hash": "94bef053488a48b3238c592ad2a1969e",
     "semantic_hash": "94bef053488a48b3238c592ad2a1969e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-taskstoissues/._SKILL.md": {
-    "mtime": 1780962265.74,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-taskstoissues/SKILL.md": {
-    "mtime": 1780962265.76,
+  "/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-taskstoissues/SKILL.md": {
+    "mtime": 1781196993.7839105,
     "ast_hash": "1cd8ea6220a20445285ff68ad6370117",
     "semantic_hash": "1cd8ea6220a20445285ff68ad6370117"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.analyze.md": {
-    "mtime": 1780962280.62,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
+  "/home/ubuntu/workspace/dexter-v3/.commandcode/taste/taste.md": {
+    "mtime": 1781327370.0371747,
+    "ast_hash": "0f0ea13a48fd9dc655eeb20a6b8a9f27",
+    "semantic_hash": "0f0ea13a48fd9dc655eeb20a6b8a9f27"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.checklist.md": {
-    "mtime": 1780962280.64,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.clarify.md": {
-    "mtime": 1780962280.62,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.constitution.md": {
-    "mtime": 1780962280.63,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.implement.md": {
-    "mtime": 1780962280.63,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.plan.md": {
-    "mtime": 1780962280.64,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.specify.md": {
-    "mtime": 1780962280.65,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.tasks.md": {
-    "mtime": 1780962280.67,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.taskstoissues.md": {
-    "mtime": 1780962280.67,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.analyze.md": {
-    "mtime": 1780962280.62,
+  "/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.analyze.md": {
+    "mtime": 1781196993.7839105,
     "ast_hash": "d332d396a2d54ba22d965d2e9fdac3a4",
     "semantic_hash": "d332d396a2d54ba22d965d2e9fdac3a4"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.checklist.md": {
-    "mtime": 1780962280.64,
+  "/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.checklist.md": {
+    "mtime": 1781196993.7839105,
     "ast_hash": "96679ee57c68efd9312f93cf72c607e4",
     "semantic_hash": "96679ee57c68efd9312f93cf72c607e4"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.clarify.md": {
-    "mtime": 1780962280.62,
+  "/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.clarify.md": {
+    "mtime": 1781196993.7839105,
     "ast_hash": "41c9f18bbb543d34404a10709f510500",
     "semantic_hash": "41c9f18bbb543d34404a10709f510500"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.constitution.md": {
-    "mtime": 1780962280.63,
+  "/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.constitution.md": {
+    "mtime": 1781196993.7839105,
     "ast_hash": "c261d72531f39c176b70427b84b9da2a",
     "semantic_hash": "c261d72531f39c176b70427b84b9da2a"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.implement.md": {
-    "mtime": 1780962280.63,
+  "/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.implement.md": {
+    "mtime": 1781196993.7839105,
     "ast_hash": "4cdba0cf5e8da2de3f9ccfde191a041e",
     "semantic_hash": "4cdba0cf5e8da2de3f9ccfde191a041e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.plan.md": {
-    "mtime": 1780962280.64,
+  "/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.plan.md": {
+    "mtime": 1781196993.7839105,
     "ast_hash": "f45e1edaa173327097eb7f8cbad52ea1",
     "semantic_hash": "f45e1edaa173327097eb7f8cbad52ea1"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.specify.md": {
-    "mtime": 1780962280.65,
+  "/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.specify.md": {
+    "mtime": 1781196993.7839105,
     "ast_hash": "d0ad5da5f9d0f90dfa55bbe534e4fa22",
     "semantic_hash": "d0ad5da5f9d0f90dfa55bbe534e4fa22"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.tasks.md": {
-    "mtime": 1780962280.67,
+  "/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.tasks.md": {
+    "mtime": 1781196993.7839105,
     "ast_hash": "e050463840b11c6091e59a2f875b7ed6",
     "semantic_hash": "e050463840b11c6091e59a2f875b7ed6"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.taskstoissues.md": {
-    "mtime": 1780962280.67,
+  "/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.taskstoissues.md": {
+    "mtime": 1781196993.7849104,
     "ast_hash": "8b3be87f4b2e145815f5e787e43c2948",
     "semantic_hash": "8b3be87f4b2e145815f5e787e43c2948"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.analyze.md": {
-    "mtime": 1780962280.35,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.checklist.md": {
-    "mtime": 1780962280.38,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.clarify.md": {
-    "mtime": 1780962280.36,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.constitution.md": {
-    "mtime": 1780962280.37,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.implement.md": {
-    "mtime": 1780962280.37,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.plan.md": {
-    "mtime": 1780962280.38,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.specify.md": {
-    "mtime": 1780962280.39,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.tasks.md": {
-    "mtime": 1780962280.4,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.taskstoissues.md": {
-    "mtime": 1780962280.4,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.analyze.md": {
-    "mtime": 1780962280.36,
+  "/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.analyze.md": {
+    "mtime": 1781196993.7849104,
     "ast_hash": "d332d396a2d54ba22d965d2e9fdac3a4",
     "semantic_hash": "d332d396a2d54ba22d965d2e9fdac3a4"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.checklist.md": {
-    "mtime": 1780962280.38,
+  "/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.checklist.md": {
+    "mtime": 1781196993.7849104,
     "ast_hash": "96679ee57c68efd9312f93cf72c607e4",
     "semantic_hash": "96679ee57c68efd9312f93cf72c607e4"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.clarify.md": {
-    "mtime": 1780962280.36,
+  "/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.clarify.md": {
+    "mtime": 1781196993.7849104,
     "ast_hash": "41c9f18bbb543d34404a10709f510500",
     "semantic_hash": "41c9f18bbb543d34404a10709f510500"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.constitution.md": {
-    "mtime": 1780962280.37,
+  "/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.constitution.md": {
+    "mtime": 1781196993.7849104,
     "ast_hash": "c261d72531f39c176b70427b84b9da2a",
     "semantic_hash": "c261d72531f39c176b70427b84b9da2a"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.implement.md": {
-    "mtime": 1780962280.37,
+  "/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.implement.md": {
+    "mtime": 1781196993.7849104,
     "ast_hash": "4cdba0cf5e8da2de3f9ccfde191a041e",
     "semantic_hash": "4cdba0cf5e8da2de3f9ccfde191a041e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.plan.md": {
-    "mtime": 1780962280.38,
+  "/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.plan.md": {
+    "mtime": 1781196993.7849104,
     "ast_hash": "f45e1edaa173327097eb7f8cbad52ea1",
     "semantic_hash": "f45e1edaa173327097eb7f8cbad52ea1"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.specify.md": {
-    "mtime": 1780962280.39,
+  "/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.specify.md": {
+    "mtime": 1781196993.7849104,
     "ast_hash": "d0ad5da5f9d0f90dfa55bbe534e4fa22",
     "semantic_hash": "d0ad5da5f9d0f90dfa55bbe534e4fa22"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.tasks.md": {
-    "mtime": 1780962280.4,
+  "/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.tasks.md": {
+    "mtime": 1781196993.7849104,
     "ast_hash": "e050463840b11c6091e59a2f875b7ed6",
     "semantic_hash": "e050463840b11c6091e59a2f875b7ed6"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.taskstoissues.md": {
-    "mtime": 1780962280.4,
+  "/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.taskstoissues.md": {
+    "mtime": 1781196993.7849104,
     "ast_hash": "8b3be87f4b2e145815f5e787e43c2948",
     "semantic_hash": "8b3be87f4b2e145815f5e787e43c2948"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.analyze.md": {
-    "mtime": 1780962281.25,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.checklist.md": {
-    "mtime": 1780962281.28,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.clarify.md": {
-    "mtime": 1780962281.26,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.constitution.md": {
-    "mtime": 1780962281.26,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.implement.md": {
-    "mtime": 1780962281.27,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.plan.md": {
-    "mtime": 1780962281.27,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.specify.md": {
-    "mtime": 1780962281.28,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.tasks.md": {
-    "mtime": 1780962281.29,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.taskstoissues.md": {
-    "mtime": 1780962281.29,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.analyze.md": {
-    "mtime": 1780962281.25,
+  "/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.analyze.md": {
+    "mtime": 1781196993.7859106,
     "ast_hash": "d332d396a2d54ba22d965d2e9fdac3a4",
     "semantic_hash": "d332d396a2d54ba22d965d2e9fdac3a4"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.checklist.md": {
-    "mtime": 1780962281.28,
+  "/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.checklist.md": {
+    "mtime": 1781196993.7859106,
     "ast_hash": "96679ee57c68efd9312f93cf72c607e4",
     "semantic_hash": "96679ee57c68efd9312f93cf72c607e4"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.clarify.md": {
-    "mtime": 1780962281.26,
+  "/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.clarify.md": {
+    "mtime": 1781196993.7859106,
     "ast_hash": "41c9f18bbb543d34404a10709f510500",
     "semantic_hash": "41c9f18bbb543d34404a10709f510500"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.constitution.md": {
-    "mtime": 1780962281.26,
+  "/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.constitution.md": {
+    "mtime": 1781196993.7859106,
     "ast_hash": "c261d72531f39c176b70427b84b9da2a",
     "semantic_hash": "c261d72531f39c176b70427b84b9da2a"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.implement.md": {
-    "mtime": 1780962281.27,
+  "/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.implement.md": {
+    "mtime": 1781196993.7859106,
     "ast_hash": "4cdba0cf5e8da2de3f9ccfde191a041e",
     "semantic_hash": "4cdba0cf5e8da2de3f9ccfde191a041e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.plan.md": {
-    "mtime": 1780962281.27,
+  "/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.plan.md": {
+    "mtime": 1781196993.7859106,
     "ast_hash": "7f89a0d7d7b82d8a1f64f2a50f2d3424",
     "semantic_hash": "7f89a0d7d7b82d8a1f64f2a50f2d3424"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.specify.md": {
-    "mtime": 1780962281.28,
+  "/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.specify.md": {
+    "mtime": 1781196993.7859106,
     "ast_hash": "d0ad5da5f9d0f90dfa55bbe534e4fa22",
     "semantic_hash": "d0ad5da5f9d0f90dfa55bbe534e4fa22"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.tasks.md": {
-    "mtime": 1780962281.29,
+  "/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.tasks.md": {
+    "mtime": 1781196993.7859106,
     "ast_hash": "e050463840b11c6091e59a2f875b7ed6",
     "semantic_hash": "e050463840b11c6091e59a2f875b7ed6"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.taskstoissues.md": {
-    "mtime": 1780962281.29,
+  "/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.taskstoissues.md": {
+    "mtime": 1781196993.7859106,
     "ast_hash": "8b3be87f4b2e145815f5e787e43c2948",
     "semantic_hash": "8b3be87f4b2e145815f5e787e43c2948"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/._extensions.yml": {
-    "mtime": 1780962267.58,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions.yml": {
-    "mtime": 1780962267.73,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions.yml": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "f0014e3769eb1240d271a59980aca0b7",
     "semantic_hash": "f0014e3769eb1240d271a59980aca0b7"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/._README.md": {
-    "mtime": 1780962267.65,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/._agent-context-config.yml": {
-    "mtime": 1780962267.64,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/._extension.yml": {
-    "mtime": 1780962267.65,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/README.md": {
-    "mtime": 1780962250.75,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/agent-context/README.md": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "1aa8a439be548ec0da2e3387a4925e4f",
     "semantic_hash": "1aa8a439be548ec0da2e3387a4925e4f"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/agent-context-config.yml": {
-    "mtime": 1780962267.73,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/agent-context/agent-context-config.yml": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "1bcd2cd4858ba88295f40310ff13cd60",
     "semantic_hash": "1bcd2cd4858ba88295f40310ff13cd60"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/commands/._speckit.agent-context.update.md": {
-    "mtime": 1780962267.7,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/commands/speckit.agent-context.update.md": {
-    "mtime": 1780962250.74,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/agent-context/commands/speckit.agent-context.update.md": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "7eecbfbef236c6af3e4003b32c6ffd2a",
     "semantic_hash": "7eecbfbef236c6af3e4003b32c6ffd2a"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/extension.yml": {
-    "mtime": 1780962250.74,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/agent-context/extension.yml": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "c09cdcdf8b86381d5955182b5eac0caf",
     "semantic_hash": "c09cdcdf8b86381d5955182b5eac0caf"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/._README.md": {
-    "mtime": 1780962267.48,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/._config-template.yml": {
-    "mtime": 1780962267.48,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/._extension.yml": {
-    "mtime": 1780962267.47,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/._git-config.yml": {
-    "mtime": 1780962267.47,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/README.md": {
-    "mtime": 1780962250.75,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/README.md": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "03c2460bdc0f0edd93a3a4f551c5bec0",
     "semantic_hash": "03c2460bdc0f0edd93a3a4f551c5bec0"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/._speckit.git.commit.md": {
-    "mtime": 1780962267.53,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/._speckit.git.feature.md": {
-    "mtime": 1780962267.53,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/._speckit.git.initialize.md": {
-    "mtime": 1780962267.54,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/._speckit.git.remote.md": {
-    "mtime": 1780962267.53,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/._speckit.git.validate.md": {
-    "mtime": 1780962267.54,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/speckit.git.commit.md": {
-    "mtime": 1780962250.75,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/commands/speckit.git.commit.md": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "072a42b77ae4fc61ee2541fbdb9f191b",
     "semantic_hash": "072a42b77ae4fc61ee2541fbdb9f191b"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/speckit.git.feature.md": {
-    "mtime": 1780962250.75,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/commands/speckit.git.feature.md": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "1bd5a1974afd675961220e03622cb182",
     "semantic_hash": "1bd5a1974afd675961220e03622cb182"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/speckit.git.initialize.md": {
-    "mtime": 1780962250.75,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/commands/speckit.git.initialize.md": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "abb10d97270acaca3eb756e7ff69ba58",
     "semantic_hash": "abb10d97270acaca3eb756e7ff69ba58"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/speckit.git.remote.md": {
-    "mtime": 1780962250.75,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/commands/speckit.git.remote.md": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "eeafceb7d40fa71cd35a39d62842d74e",
     "semantic_hash": "eeafceb7d40fa71cd35a39d62842d74e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/speckit.git.validate.md": {
-    "mtime": 1780962250.75,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/commands/speckit.git.validate.md": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "4379082fcdc8ff26ae4228596e4b6f3f",
     "semantic_hash": "4379082fcdc8ff26ae4228596e4b6f3f"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/config-template.yml": {
-    "mtime": 1780962250.75,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/config-template.yml": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "2e959d8f99a1aa365700f91f006dde16",
     "semantic_hash": "2e959d8f99a1aa365700f91f006dde16"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/extension.yml": {
-    "mtime": 1780962250.75,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/extension.yml": {
+    "mtime": 1781196993.7869105,
     "ast_hash": "5d4eebdd419577a3773d375e890404f1",
     "semantic_hash": "5d4eebdd419577a3773d375e890404f1"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/git-config.yml": {
-    "mtime": 1780962250.75,
+  "/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/git-config.yml": {
+    "mtime": 1781196993.7879105,
     "ast_hash": "2e959d8f99a1aa365700f91f006dde16",
     "semantic_hash": "2e959d8f99a1aa365700f91f006dde16"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/memory/._constitution.md": {
-    "mtime": 1780962265.93,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
+  "/home/ubuntu/workspace/dexter-v3/.specify/memory/constitution.md": {
+    "mtime": 1781335220.146657,
+    "ast_hash": "e37b5ef502c00abbe598ff63513f6132",
+    "semantic_hash": "e37b5ef502c00abbe598ff63513f6132"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/memory/constitution.md": {
-    "mtime": 1780962265.85,
-    "ast_hash": "dcefb6b60e7cb3db2e966977b6f02f18",
-    "semantic_hash": "dcefb6b60e7cb3db2e966977b6f02f18"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/._checklist-template.md": {
-    "mtime": 1780962265.86,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/._constitution-template.md": {
-    "mtime": 1780962265.85,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/._plan-template.md": {
-    "mtime": 1780962265.91,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/._spec-template.md": {
-    "mtime": 1780962265.9,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/._tasks-template.md": {
-    "mtime": 1780962265.87,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/checklist-template.md": {
-    "mtime": 1780962265.86,
+  "/home/ubuntu/workspace/dexter-v3/.specify/templates/checklist-template.md": {
+    "mtime": 1781196993.7889104,
     "ast_hash": "af4274efb13cbb2263029402deb14f6b",
     "semantic_hash": "af4274efb13cbb2263029402deb14f6b"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/constitution-template.md": {
-    "mtime": 1780962265.85,
+  "/home/ubuntu/workspace/dexter-v3/.specify/templates/constitution-template.md": {
+    "mtime": 1781196993.7889104,
     "ast_hash": "dcefb6b60e7cb3db2e966977b6f02f18",
     "semantic_hash": "dcefb6b60e7cb3db2e966977b6f02f18"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/plan-template.md": {
-    "mtime": 1780962265.91,
+  "/home/ubuntu/workspace/dexter-v3/.specify/templates/plan-template.md": {
+    "mtime": 1781196993.7889104,
     "ast_hash": "fea2e21a1d9cf3470186abc1dfb6e9fb",
     "semantic_hash": "fea2e21a1d9cf3470186abc1dfb6e9fb"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/spec-template.md": {
-    "mtime": 1780962265.9,
+  "/home/ubuntu/workspace/dexter-v3/.specify/templates/spec-template.md": {
+    "mtime": 1781196993.7889104,
     "ast_hash": "45ac8538bc1220324c9f0d610145b53f",
     "semantic_hash": "45ac8538bc1220324c9f0d610145b53f"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/tasks-template.md": {
-    "mtime": 1780962265.87,
+  "/home/ubuntu/workspace/dexter-v3/.specify/templates/tasks-template.md": {
+    "mtime": 1781196993.7889104,
     "ast_hash": "f8b4f62d384defa0a559bdbbaacb0540",
     "semantic_hash": "f8b4f62d384defa0a559bdbbaacb0540"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/workflows/speckit/._workflow.yml": {
-    "mtime": 1780962267.62,
-    "ast_hash": "564b1e0b02c0bff0152f5cfec73c6b86",
-    "semantic_hash": "564b1e0b02c0bff0152f5cfec73c6b86"
-  },
-  "/Volumes/Marc's SSD/Dev/2026/v2/.specify/workflows/speckit/workflow.yml": {
-    "mtime": 1780962250.75,
+  "/home/ubuntu/workspace/dexter-v3/.specify/workflows/speckit/workflow.yml": {
+    "mtime": 1781196993.7889104,
     "ast_hash": "eba6943b2a2f6407162ae12e0218bdac",
     "semantic_hash": "eba6943b2a2f6407162ae12e0218bdac"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/AGENTS.md": {
-    "mtime": 1780962281.6,
-    "ast_hash": "f7ce1f1cb20c39d08b85624c944a9761",
-    "semantic_hash": "f7ce1f1cb20c39d08b85624c944a9761"
+  "/home/ubuntu/workspace/dexter-v3/AGENTS.md": {
+    "mtime": 1781325297.273294,
+    "ast_hash": "f656f228164f67b6afa7ac4d3d1cf616",
+    "semantic_hash": "f656f228164f67b6afa7ac4d3d1cf616"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/CLAUDE.md": {
-    "mtime": 1780962265.75,
+  "/home/ubuntu/workspace/dexter-v3/CHANGELOG.md": {
+    "mtime": 1781329498.8984096,
+    "ast_hash": "d3d6d7f5971d25fdcf17cdee60842c57",
+    "semantic_hash": "d3d6d7f5971d25fdcf17cdee60842c57"
+  },
+  "/home/ubuntu/workspace/dexter-v3/CLAUDE.md": {
+    "mtime": 1781196993.7899103,
     "ast_hash": "a48cd75817317d445900ddac90c1aaa1",
     "semantic_hash": "a48cd75817317d445900ddac90c1aaa1"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/IMPLEMENTATION-PLAN.md": {
-    "mtime": 1780959712.91,
+  "/home/ubuntu/workspace/dexter-v3/IMPLEMENTATION-PLAN.md": {
+    "mtime": 1781196993.7899103,
     "ast_hash": "61db50d0ef40acac1d01c42e7df94552",
     "semantic_hash": "61db50d0ef40acac1d01c42e7df94552"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/QODER.md": {
-    "mtime": 1780962281.3,
+  "/home/ubuntu/workspace/dexter-v3/QODER.md": {
+    "mtime": 1781196993.7899103,
     "ast_hash": "af2a4aa2afc255f108b61414df63a311",
     "semantic_hash": "af2a4aa2afc255f108b61414df63a311"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/README.md": {
-    "mtime": 1780947307.66,
+  "/home/ubuntu/workspace/dexter-v3/README.md": {
+    "mtime": 1781196993.7899103,
     "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
     "semantic_hash": "f15aaa42d5d299d091b1171097ea56ad"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/WORKSPACE-ARCHITECTURE.md": {
-    "mtime": 1780961332.64,
+  "/home/ubuntu/workspace/dexter-v3/WORKSPACE-ARCHITECTURE.md": {
+    "mtime": 1781196993.7899103,
     "ast_hash": "3525ada9e962eafa80709fb55741c432",
     "semantic_hash": "3525ada9e962eafa80709fb55741c432"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/public/file.svg": {
-    "mtime": 1780947307.67,
+  "/home/ubuntu/workspace/dexter-v3/docs/findings/2026-06-10-repo-scan.md": {
+    "mtime": 1781196993.7899103,
+    "ast_hash": "88b6d490bed6074e3349e30796d0b40c",
+    "semantic_hash": "88b6d490bed6074e3349e30796d0b40c"
+  },
+  "/home/ubuntu/workspace/dexter-v3/pi-session-2026-06-13T03-50-23-639Z_019ebf1a-2a95-7099-8f6e-c57d17ee4aa4.html": {
+    "mtime": 1781323097.0475068,
+    "ast_hash": "8fde019ba66c09e85e5580d2f1a912b9",
+    "semantic_hash": "8fde019ba66c09e85e5580d2f1a912b9"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/checklists/requirements.md": {
+    "mtime": 1781196993.80991,
+    "ast_hash": "7016a18e1545438d26d79f3cbf2f83d5",
+    "semantic_hash": "7016a18e1545438d26d79f3cbf2f83d5"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/contracts/agent-service.md": {
+    "mtime": 1781196993.81091,
+    "ast_hash": "644bb58e2baa0434121c17508b7a083d",
+    "semantic_hash": "644bb58e2baa0434121c17508b7a083d"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/contracts/agent-tools.md": {
+    "mtime": 1781196993.81091,
+    "ast_hash": "25b9be79a6f0fe3a79079a15e9e0756a",
+    "semantic_hash": "25b9be79a6f0fe3a79079a15e9e0756a"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/contracts/api-routes.md": {
+    "mtime": 1781196993.81091,
+    "ast_hash": "b97016d2bc3b20fe20ab4830f123fb1d",
+    "semantic_hash": "b97016d2bc3b20fe20ab4830f123fb1d"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/contracts/copilotkit-runtime.md": {
+    "mtime": 1781196993.81091,
+    "ast_hash": "63de5ac20afba474e1681f34aa89d513",
+    "semantic_hash": "63de5ac20afba474e1681f34aa89d513"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/contracts/workspace-store.md": {
+    "mtime": 1781196993.81091,
+    "ast_hash": "45aa715e311a977cae762069d23493a4",
+    "semantic_hash": "45aa715e311a977cae762069d23493a4"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/data-model.md": {
+    "mtime": 1781196993.81091,
+    "ast_hash": "2acf876b4631ec5c9d2991621cd71012",
+    "semantic_hash": "2acf876b4631ec5c9d2991621cd71012"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/plan.md": {
+    "mtime": 1781196993.81091,
+    "ast_hash": "7ea5b45e4df5ca3bf935bad544974f85",
+    "semantic_hash": "7ea5b45e4df5ca3bf935bad544974f85"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/quickstart.md": {
+    "mtime": 1781196993.81091,
+    "ast_hash": "2a1b3720a1cd379e54d29045d0cde940",
+    "semantic_hash": "2a1b3720a1cd379e54d29045d0cde940"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/research.md": {
+    "mtime": 1781196993.81091,
+    "ast_hash": "d844d8c5cd01225f1e3ed06db947491c",
+    "semantic_hash": "d844d8c5cd01225f1e3ed06db947491c"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/spec.md": {
+    "mtime": 1781196993.81091,
+    "ast_hash": "aa68e4c321409d27866ee13990202a6c",
+    "semantic_hash": "aa68e4c321409d27866ee13990202a6c"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/tasks.md": {
+    "mtime": 1781196993.81191,
+    "ast_hash": "5a7c40305ba476ba5aa28f9d32c307d1",
+    "semantic_hash": "5a7c40305ba476ba5aa28f9d32c307d1"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/002-tauri-porting-spec/technical_specification.md": {
+    "mtime": 1781196993.81191,
+    "ast_hash": "2b40938949f4fa21628e672d7a1a2228",
+    "semantic_hash": "2b40938949f4fa21628e672d7a1a2228"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/002-tauri-porting-spec/walkthrough.md": {
+    "mtime": 1781196993.81191,
+    "ast_hash": "85e899476c095efe4d57b99bd92672e9",
+    "semantic_hash": "85e899476c095efe4d57b99bd92672e9"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/checklists/requirements.md": {
+    "mtime": 1781323393.1764226,
+    "ast_hash": "2245adf7ec92f5733e0c506cc5fef957",
+    "semantic_hash": "2245adf7ec92f5733e0c506cc5fef957"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/contracts/sandbox-tools.md": {
+    "mtime": 1781335161.4798744,
+    "ast_hash": "d1605270f46aa61c4e72779a1698d511",
+    "semantic_hash": "d1605270f46aa61c4e72779a1698d511"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/contracts/workspace-actions.md": {
+    "mtime": 1781325226.9357402,
+    "ast_hash": "b7f74d1f830f7d502177de078d9207c3",
+    "semantic_hash": "b7f74d1f830f7d502177de078d9207c3"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/data-model.md": {
+    "mtime": 1781325187.0375607,
+    "ast_hash": "30550ec873a5d1b4b6b7d30b6ffdac25",
+    "semantic_hash": "30550ec873a5d1b4b6b7d30b6ffdac25"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/plan.md": {
+    "mtime": 1781325289.1164618,
+    "ast_hash": "03bfdb28d7a8846876264d3f88249f78",
+    "semantic_hash": "03bfdb28d7a8846876264d3f88249f78"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/quickstart.md": {
+    "mtime": 1781325241.9014325,
+    "ast_hash": "dd18b09d2cb8a8e16291758520ecbab9",
+    "semantic_hash": "dd18b09d2cb8a8e16291758520ecbab9"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/research.md": {
+    "mtime": 1781325171.6808763,
+    "ast_hash": "a14e2b07ab4b06d47b0759b1d5eef64c",
+    "semantic_hash": "a14e2b07ab4b06d47b0759b1d5eef64c"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/spec.md": {
+    "mtime": 1781335226.8115187,
+    "ast_hash": "bcd6b9308e71eb85b4a90a0304fb52b7",
+    "semantic_hash": "bcd6b9308e71eb85b4a90a0304fb52b7"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/tasks-bug-fixes.md": {
+    "mtime": 1781339595.2227952,
+    "ast_hash": "94ae059bd0acb2c9713ccd85fb67ea07",
+    "semantic_hash": "94ae059bd0acb2c9713ccd85fb67ea07"
+  },
+  "/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/tasks.md": {
+    "mtime": 1781336855.8849828,
+    "ast_hash": "3af59b3b5accc0504caf44843bcd1377",
+    "semantic_hash": "3af59b3b5accc0504caf44843bcd1377"
+  },
+  "/home/ubuntu/workspace/dexter-v3/public/file.svg": {
+    "mtime": 1781196993.80791,
     "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
     "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/public/globe.svg": {
-    "mtime": 1780947307.67,
+  "/home/ubuntu/workspace/dexter-v3/public/globe.svg": {
+    "mtime": 1781196993.80791,
     "ast_hash": "2aaafa6a49b6563925fe440891e32717",
     "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/public/next.svg": {
-    "mtime": 1780947307.67,
+  "/home/ubuntu/workspace/dexter-v3/public/next.svg": {
+    "mtime": 1781196993.80791,
     "ast_hash": "8e061864f388b47f33a1c3780831193e",
     "semantic_hash": "8e061864f388b47f33a1c3780831193e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/public/vercel.svg": {
-    "mtime": 1780947307.67,
+  "/home/ubuntu/workspace/dexter-v3/public/vercel.svg": {
+    "mtime": 1781196993.80791,
     "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
     "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
   },
-  "/Volumes/Marc's SSD/Dev/2026/v2/public/window.svg": {
-    "mtime": 1780947307.67,
+  "/home/ubuntu/workspace/dexter-v3/public/window.svg": {
+    "mtime": 1781196993.80791,
     "ast_hash": "a2760511c65806022ad20adf74370ff3",
     "semantic_hash": "a2760511c65806022ad20adf74370ff3"
   }

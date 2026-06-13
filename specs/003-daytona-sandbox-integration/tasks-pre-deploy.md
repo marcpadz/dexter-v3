@@ -20,10 +20,10 @@
 
 **Purpose**: Next.js 16 deprecates the `middleware` file convention in favor of `proxy`. Must migrate before the deprecation becomes a breaking change.
 
-- [ ] T001 [DPLY] Rename `src/middleware.ts` → `src/proxy.ts` — Next.js 16 requires the proxy file convention instead of middleware. Keep the same logic but update the file name
-- [ ] T002 [DPLY] Update proxy config in `src/proxy.ts` — the export config matcher format may differ for proxy. Change `export const config = { matcher: [...] }` to match the proxy convention. Research the Next.js 16 proxy docs for the correct matcher syntax if different
-- [ ] T003 [P] [DPLY] Update auth middleware test to import from proxy — rename `src/__tests__/auth/middleware.test.ts` → `src/__tests__/auth/proxy.test.ts` and update the import path from `@/middleware` to `@/proxy`
-- [ ] T004 [P] [DPLY] Verify auth gating still works — run the proxy test suite and manually verify `/chat` redirects unauthenticated users to `/auth/login` and `/auth/login` loads without session
+- [X] T001 [DPLY] Rename `src/middleware.ts` → `src/proxy.ts` — Next.js 16 requires the proxy file convention instead of middleware. Keep the same logic but update the file name
+- [X] T002 [DPLY] Update proxy config in `src/proxy.ts` — the export config matcher format may differ for proxy. Change `export const config = { matcher: [...] }` to match the proxy convention. Research the Next.js 16 proxy docs for the correct matcher syntax if different
+- [X] T003 [P] [DPLY] Update auth middleware test to import from proxy — rename `src/__tests__/auth/middleware.test.ts` → `src/__tests__/auth/proxy.test.ts` and update the import path from `@/middleware` to `@/proxy`
+- [X] T004 [P] [DPLY] Verify auth gating still works — run the proxy test suite and manually verify `/chat` redirects unauthenticated users to `/auth/login` and `/auth/login` loads without session
 
 **Checkpoint**: Middleware migrated to proxy, auth gates still active, tests pass
 
@@ -33,11 +33,11 @@
 
 **Purpose**: Verify the production build completes and the app starts correctly before deployment.
 
-- [ ] T005 [DPLY] Run production build — `npm run build` must complete without errors. If errors occur, fix and re-run. Maximum retries: 3
-- [ ] T006 [P] [DPLY] Verify build output — check `.next/` directory for expected outputs: `BUILD_ID`, `build-manifest.json`, `prerender-manifest.json`. Missing outputs indicate a failed or partial build
-- [ ] T007 [P] [DPLY] Verify no console warnings remain — scan build output for warnings (deprecation, missing deps, module resolution issues). Document and fix any found
-- [ ] T008 [DPLY] Smoke test the built app — start with `npm run start` and verify: (a) root page loads (200), (b) `/auth/login` loads (200), (c) `/api/copilotkit` responds (POST returns non-500), (d) no uncaught errors in console
-- [ ] T009 [DPLY] Verify all 44 tests pass against the built output — run `npx vitest run` and confirm 44/44 pass, 0 failures
+- [X] T005 [DPLY] Run production build — `npm run build` must complete without errors. If errors occur, fix and re-run. Maximum retries: 3
+- [X] T006 [P] [DPLY] Verify build output — check `.next/` directory for expected outputs: `BUILD_ID`, `build-manifest.json`, `prerender-manifest.json`. Missing outputs indicate a failed or partial build
+- [X] T007 [P] [DPLY] Verify no console warnings remain — scan build output for warnings (deprecation, missing deps, module resolution issues). Document and fix any found
+- [X] T008 [DPLY] Smoke test the built app — start with `npm run start` and verify: (a) root page loads (200), (b) `/auth/login` loads (200), (c) `/api/copilotkit` responds (POST returns non-500), (d) no uncaught errors in console
+- [X] T009 [DPLY] Verify all 44 tests pass against the built output — run `npx vitest run` and confirm 44/44 pass, 0 failures
 
 **Checkpoint**: Build passes, app starts, all routes respond, all tests pass — **READY TO DEPLOY**
 
@@ -84,12 +84,12 @@ T005: "Run production build"  # Can start while T003 runs (different concern)
 
 All 9 tasks must be `[X]` before deploying:
 
-- [ ] T001 Middleware renamed to proxy
-- [ ] T002 Proxy config updated
-- [ ] T003 Proxy test created
-- [ ] T004 Auth gating verified
-- [ ] T005 Build passes
-- [ ] T006 Build output valid
-- [ ] T007 No console warnings
-- [ ] T008 Smoke test passes
-- [ ] T009 All tests pass
+- [X] T001 Middleware renamed to proxy
+- [X] T002 Proxy config updated
+- [X] T003 Proxy test created
+- [X] T004 Auth gating verified
+- [X] T005 Build passes
+- [X] T006 Build output valid
+- [X] T007 No console warnings
+- [X] T008 Smoke test passes
+- [X] T009 All tests pass

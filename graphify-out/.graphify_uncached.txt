@@ -1,298 +1,260 @@
-/Volumes/Marc's SSD/Dev/2026/v2/._package-lock.json
-/Volumes/Marc's SSD/Dev/2026/v2/._package.json
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/tasks/._tasks-019ea92d-1182-7fe2-a214-9fc88c28832f.json
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/tasks/tasks-019ea92d-1182-7fe2-a214-9fc88c28832f.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/._init-options.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/._integration.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/scripts/bash/._update-agent-context.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/scripts/bash/update-agent-context.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/scripts/powershell/._update-agent-context.ps1
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/._auto-commit.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/._create-new-feature.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/._git-common.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/._initialize-repo.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/auto-commit.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/create-new-feature.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/git-common.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/bash/initialize-repo.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/._auto-commit.ps1
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/._create-new-feature.ps1
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/._git-common.ps1
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/._initialize-repo.ps1
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/auto-commit.ps1
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/create-new-feature.ps1
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/git-common.ps1
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/scripts/powershell/initialize-repo.ps1
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/init-options.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integration.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._agy.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._claude.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._codex.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._opencode.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._pi.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._qodercli.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/._speckit.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/agy.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/claude.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/codex.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/opencode.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/pi.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/qodercli.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/integrations/speckit.manifest.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/._check-prerequisites.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/._common.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/._create-new-feature.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/._setup-plan.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/._setup-tasks.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/check-prerequisites.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/common.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/create-new-feature.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/setup-plan.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/scripts/bash/setup-tasks.sh
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/workflows/._workflow-registry.json
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/workflows/workflow-registry.json
-/Volumes/Marc's SSD/Dev/2026/v2/components.json
-/Volumes/Marc's SSD/Dev/2026/v2/eslint.config.mjs
-/Volumes/Marc's SSD/Dev/2026/v2/next.config.ts
-/Volumes/Marc's SSD/Dev/2026/v2/package.json
-/Volumes/Marc's SSD/Dev/2026/v2/postcss.config.mjs
-/Volumes/Marc's SSD/Dev/2026/v2/prisma.config.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/._middleware.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/(app)/layout.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/admin/._page.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/admin/page.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/api/auth/[...nextauth]/._route.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/api/auth/[...nextauth]/route.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/api/auth/register/route.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/api/chat/route.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/api/conversations/route.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/api/health/route.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/chat/page.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/layout.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/library/page.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/login/page.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/not-found.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/notes/._notes-view.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/notes/notes-view.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/notes/page.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/page.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/projects/._projects-view.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/projects/page.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/projects/projects-view.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/settings/page.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/settings/settings-view.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/sign-up/page.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/tasks/._tasks-view.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/tasks/page.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/app/tasks/tasks-view.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/layout/._app-sidebar.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/layout/._header.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/layout/app-sidebar.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/layout/header.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/._button.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/._dialog.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/avatar.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/badge.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/button.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/card.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/checkbox.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/command.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/dialog.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/dropdown-menu.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/hover-card.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/input-group.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/input.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/label.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/popover.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/progress.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/scroll-area.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/select.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/separator.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/sheet.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/skeleton.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/sonner.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/switch.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/tabs.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/textarea.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/components/ui/tooltip.tsx
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/._auth.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/._db.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/._session.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/__tests__/utils.test.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/auth.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/db.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/._conversations.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/._settings.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/conversations.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/messages.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/notes.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/projects.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/settings.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/server/actions/tasks.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/session.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/shared/types.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/shared/utils.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/lib/utils.ts
-/Volumes/Marc's SSD/Dev/2026/v2/src/middleware.ts
-/Volumes/Marc's SSD/Dev/2026/v2/tsconfig.json
-/Volumes/Marc's SSD/Dev/2026/v2/._AGENTS.md
-/Volumes/Marc's SSD/Dev/2026/v2/._CLAUDE.md
-/Volumes/Marc's SSD/Dev/2026/v2/._IMPLEMENTATION-PLAN.md
-/Volumes/Marc's SSD/Dev/2026/v2/._QODER.md
-/Volumes/Marc's SSD/Dev/2026/v2/._WORKSPACE-ARCHITECTURE.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-analyze/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-checklist/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-clarify/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-constitution/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-implement/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-plan/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-specify/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-specify/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-tasks/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-taskstoissues/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.agents/skills/speckit-taskstoissues/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-agent-context-update/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-agent-context-update/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-analyze/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-analyze/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-checklist/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-checklist/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-clarify/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-clarify/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-constitution/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-constitution/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-commit/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-commit/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-feature/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-feature/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-initialize/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-initialize/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-remote/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-remote/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-validate/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-git-validate/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-implement/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-implement/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-plan/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-plan/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-specify/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-specify/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-tasks/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-tasks/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-taskstoissues/._SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.claude/skills/speckit-taskstoissues/SKILL.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.analyze.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.checklist.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.clarify.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.constitution.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.implement.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.plan.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.specify.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.tasks.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/._speckit.taskstoissues.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.analyze.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.checklist.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.clarify.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.constitution.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.implement.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.plan.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.specify.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.tasks.md
-/Volumes/Marc's SSD/Dev/2026/v2/.opencode/commands/speckit.taskstoissues.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.analyze.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.checklist.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.clarify.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.constitution.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.implement.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.plan.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.specify.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.tasks.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/._speckit.taskstoissues.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.analyze.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.checklist.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.clarify.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.constitution.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.implement.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.plan.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.specify.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.tasks.md
-/Volumes/Marc's SSD/Dev/2026/v2/.pi/prompts/speckit.taskstoissues.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.analyze.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.checklist.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.clarify.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.constitution.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.implement.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.plan.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.specify.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.tasks.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/._speckit.taskstoissues.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.analyze.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.checklist.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.clarify.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.constitution.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.implement.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.plan.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.specify.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.tasks.md
-/Volumes/Marc's SSD/Dev/2026/v2/.qoder/commands/speckit.taskstoissues.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/._extensions.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/._README.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/._agent-context-config.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/._extension.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/README.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/agent-context-config.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/commands/._speckit.agent-context.update.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/commands/speckit.agent-context.update.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/agent-context/extension.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/._README.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/._config-template.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/._extension.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/._git-config.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/README.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/._speckit.git.commit.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/._speckit.git.feature.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/._speckit.git.initialize.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/._speckit.git.remote.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/._speckit.git.validate.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/speckit.git.commit.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/speckit.git.feature.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/speckit.git.initialize.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/speckit.git.remote.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/commands/speckit.git.validate.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/config-template.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/extension.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/extensions/git/git-config.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/memory/._constitution.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/memory/constitution.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/._checklist-template.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/._constitution-template.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/._plan-template.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/._spec-template.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/._tasks-template.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/checklist-template.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/constitution-template.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/plan-template.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/spec-template.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/templates/tasks-template.md
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/workflows/speckit/._workflow.yml
-/Volumes/Marc's SSD/Dev/2026/v2/.specify/workflows/speckit/workflow.yml
-/Volumes/Marc's SSD/Dev/2026/v2/AGENTS.md
-/Volumes/Marc's SSD/Dev/2026/v2/CLAUDE.md
-/Volumes/Marc's SSD/Dev/2026/v2/IMPLEMENTATION-PLAN.md
-/Volumes/Marc's SSD/Dev/2026/v2/QODER.md
-/Volumes/Marc's SSD/Dev/2026/v2/README.md
-/Volumes/Marc's SSD/Dev/2026/v2/WORKSPACE-ARCHITECTURE.md
-/Volumes/Marc's SSD/Dev/2026/v2/public/file.svg
-/Volumes/Marc's SSD/Dev/2026/v2/public/globe.svg
-/Volumes/Marc's SSD/Dev/2026/v2/public/next.svg
-/Volumes/Marc's SSD/Dev/2026/v2/public/vercel.svg
-/Volumes/Marc's SSD/Dev/2026/v2/public/window.svg
+/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019ea92d-1182-7fe2-a214-9fc88c28832f.json
+/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019ea9b5-382d-733c-8509-ce51e70fa085.json
+/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019ea9ba-9a19-76e5-a18d-90a539ea42b3.json
+/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019ea9c3-306c-71ab-b8aa-53368a29b459.json
+/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019eaa45-0ef4-71bc-a5de-5ccbf07f0bdc.json
+/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019eaa4e-d7bb-799c-8f72-b9d026d65f6a.json
+/home/ubuntu/workspace/dexter-v3/.pi/tasks/tasks-019eaa61-7c7c-7457-b945-57fb756c83a5.json
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/agent-context/scripts/bash/update-agent-context.sh
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/agent-context/scripts/powershell/update-agent-context.ps1
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/bash/auto-commit.sh
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/bash/create-new-feature.sh
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/bash/git-common.sh
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/bash/initialize-repo.sh
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/powershell/auto-commit.ps1
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/powershell/create-new-feature.ps1
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/powershell/git-common.ps1
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/scripts/powershell/initialize-repo.ps1
+/home/ubuntu/workspace/dexter-v3/.specify/feature.json
+/home/ubuntu/workspace/dexter-v3/.specify/init-options.json
+/home/ubuntu/workspace/dexter-v3/.specify/integration.json
+/home/ubuntu/workspace/dexter-v3/.specify/integrations/agy.manifest.json
+/home/ubuntu/workspace/dexter-v3/.specify/integrations/claude.manifest.json
+/home/ubuntu/workspace/dexter-v3/.specify/integrations/codex.manifest.json
+/home/ubuntu/workspace/dexter-v3/.specify/integrations/opencode.manifest.json
+/home/ubuntu/workspace/dexter-v3/.specify/integrations/pi.manifest.json
+/home/ubuntu/workspace/dexter-v3/.specify/integrations/qodercli.manifest.json
+/home/ubuntu/workspace/dexter-v3/.specify/integrations/speckit.manifest.json
+/home/ubuntu/workspace/dexter-v3/.specify/scripts/bash/check-prerequisites.sh
+/home/ubuntu/workspace/dexter-v3/.specify/scripts/bash/common.sh
+/home/ubuntu/workspace/dexter-v3/.specify/scripts/bash/create-new-feature.sh
+/home/ubuntu/workspace/dexter-v3/.specify/scripts/bash/setup-plan.sh
+/home/ubuntu/workspace/dexter-v3/.specify/scripts/bash/setup-tasks.sh
+/home/ubuntu/workspace/dexter-v3/.specify/workflows/workflow-registry.json
+/home/ubuntu/workspace/dexter-v3/components.json
+/home/ubuntu/workspace/dexter-v3/drizzle.config.ts
+/home/ubuntu/workspace/dexter-v3/eslint.config.mjs
+/home/ubuntu/workspace/dexter-v3/next.config.ts
+/home/ubuntu/workspace/dexter-v3/package.json
+/home/ubuntu/workspace/dexter-v3/postcss.config.mjs
+/home/ubuntu/workspace/dexter-v3/skills-lock.json
+/home/ubuntu/workspace/dexter-v3/src/__tests__/auth.test.ts
+/home/ubuntu/workspace/dexter-v3/src/__tests__/auth/middleware.test.ts
+/home/ubuntu/workspace/dexter-v3/src/__tests__/browser-surface.test.ts
+/home/ubuntu/workspace/dexter-v3/src/__tests__/daytona/sandbox-manager.test.ts
+/home/ubuntu/workspace/dexter-v3/src/__tests__/daytona/tools/execute-code.test.ts
+/home/ubuntu/workspace/dexter-v3/src/__tests__/daytona/tools/execute-command.test.ts
+/home/ubuntu/workspace/dexter-v3/src/__tests__/daytona/tools/filesystem.test.ts
+/home/ubuntu/workspace/dexter-v3/src/__tests__/frontend-tools-registration.test.ts
+/home/ubuntu/workspace/dexter-v3/src/__tests__/frontend-tools.test.ts
+/home/ubuntu/workspace/dexter-v3/src/__tests__/server-actions.test.ts
+/home/ubuntu/workspace/dexter-v3/src/__tests__/workspace-store.test.ts
+/home/ubuntu/workspace/dexter-v3/src/app/(app)/chat/page.tsx
+/home/ubuntu/workspace/dexter-v3/src/app/(app)/layout.tsx
+/home/ubuntu/workspace/dexter-v3/src/app/(app)/projects/page.tsx
+/home/ubuntu/workspace/dexter-v3/src/app/(app)/settings/page.tsx
+/home/ubuntu/workspace/dexter-v3/src/app/(auth)/login/page.tsx
+/home/ubuntu/workspace/dexter-v3/src/app/(auth)/sign-up/page.tsx
+/home/ubuntu/workspace/dexter-v3/src/app/api/auth/[...all]/route.ts
+/home/ubuntu/workspace/dexter-v3/src/app/api/copilotkit/route.ts
+/home/ubuntu/workspace/dexter-v3/src/app/layout.tsx
+/home/ubuntu/workspace/dexter-v3/src/app/not-found.tsx
+/home/ubuntu/workspace/dexter-v3/src/app/page.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/copilot/frontend-tools.ts
+/home/ubuntu/workspace/dexter-v3/src/components/copilot/model-selector.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/layout/app-shell.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/layout/app-sidebar.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/layout/header.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/avatar.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/badge.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/button.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/card.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/checkbox.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/command.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/dialog.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/dropdown-menu.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/hover-card.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/input-group.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/input.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/label.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/popover.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/progress.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/scroll-area.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/select.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/separator.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/sheet.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/skeleton.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/sonner.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/switch.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/tabs.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/textarea.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/ui/tooltip.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/workspace/surfaces/agent-output-surface.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/workspace/surfaces/artifact-surface.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/workspace/surfaces/browser-surface.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/workspace/surfaces/document-surface.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/workspace/surfaces/files-surface.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/workspace/surfaces/terminal-surface.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/workspace/workspace-panel.tsx
+/home/ubuntu/workspace/dexter-v3/src/components/workspace/workspace-store.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/__tests__/utils.test.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/agent/dexter-agent.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/agent/graph.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/agent/nodes/router.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/agent/nodes/supervisor.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/agent/providers.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/agent/state.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/agent/subgraphs/code.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/agent/subgraphs/research.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/agent/tools/memory.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/auth/crypto.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/auth/index.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/auth/session.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/copilot/runtime.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/daytona/client.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/daytona/sandbox-manager.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/browser.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/execute-code.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/execute-command.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/filesystem.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/git.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/index.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/daytona/tools/search.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/db/index.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/db/migrations/0000_last_the_hand.sql
+/home/ubuntu/workspace/dexter-v3/src/lib/db/migrations/0000_mighty_turbo.sql
+/home/ubuntu/workspace/dexter-v3/src/lib/db/migrations/meta/0000_snapshot.json
+/home/ubuntu/workspace/dexter-v3/src/lib/db/migrations/meta/_journal.json
+/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/api-keys.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/conversations.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/documents.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/index.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/mcp-servers.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/memories.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/messages.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/projects.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/tasks.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/db/schema/users.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/server/actions/auth.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/server/actions/conversations.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/server/actions/messages.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/server/actions/projects.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/server/actions/settings.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/shared/types.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/shared/utils.ts
+/home/ubuntu/workspace/dexter-v3/src/lib/utils.ts
+/home/ubuntu/workspace/dexter-v3/src/middleware.ts
+/home/ubuntu/workspace/dexter-v3/tsconfig.json
+/home/ubuntu/workspace/dexter-v3/vitest.config.ts
+/home/ubuntu/workspace/dexter-v3/.agents/skills/neon-postgres/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-analyze/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-checklist/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-clarify/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-constitution/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-implement/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-plan/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-specify/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-tasks/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.agents/skills/speckit-taskstoissues/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-agent-context-update/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-analyze/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-checklist/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-clarify/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-constitution/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-git-commit/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-git-feature/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-git-initialize/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-git-remote/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-git-validate/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-implement/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-plan/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-specify/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-tasks/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.claude/skills/speckit-taskstoissues/SKILL.md
+/home/ubuntu/workspace/dexter-v3/.commandcode/taste/taste.md
+/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.analyze.md
+/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.checklist.md
+/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.clarify.md
+/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.constitution.md
+/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.implement.md
+/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.plan.md
+/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.specify.md
+/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.tasks.md
+/home/ubuntu/workspace/dexter-v3/.opencode/commands/speckit.taskstoissues.md
+/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.analyze.md
+/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.checklist.md
+/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.clarify.md
+/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.constitution.md
+/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.implement.md
+/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.plan.md
+/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.specify.md
+/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.tasks.md
+/home/ubuntu/workspace/dexter-v3/.pi/prompts/speckit.taskstoissues.md
+/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.analyze.md
+/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.checklist.md
+/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.clarify.md
+/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.constitution.md
+/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.implement.md
+/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.plan.md
+/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.specify.md
+/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.tasks.md
+/home/ubuntu/workspace/dexter-v3/.qoder/commands/speckit.taskstoissues.md
+/home/ubuntu/workspace/dexter-v3/.specify/extensions.yml
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/agent-context/README.md
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/agent-context/agent-context-config.yml
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/agent-context/commands/speckit.agent-context.update.md
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/agent-context/extension.yml
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/README.md
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/commands/speckit.git.commit.md
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/commands/speckit.git.feature.md
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/commands/speckit.git.initialize.md
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/commands/speckit.git.remote.md
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/commands/speckit.git.validate.md
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/config-template.yml
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/extension.yml
+/home/ubuntu/workspace/dexter-v3/.specify/extensions/git/git-config.yml
+/home/ubuntu/workspace/dexter-v3/.specify/memory/constitution.md
+/home/ubuntu/workspace/dexter-v3/.specify/templates/checklist-template.md
+/home/ubuntu/workspace/dexter-v3/.specify/templates/constitution-template.md
+/home/ubuntu/workspace/dexter-v3/.specify/templates/plan-template.md
+/home/ubuntu/workspace/dexter-v3/.specify/templates/spec-template.md
+/home/ubuntu/workspace/dexter-v3/.specify/templates/tasks-template.md
+/home/ubuntu/workspace/dexter-v3/.specify/workflows/speckit/workflow.yml
+/home/ubuntu/workspace/dexter-v3/AGENTS.md
+/home/ubuntu/workspace/dexter-v3/CHANGELOG.md
+/home/ubuntu/workspace/dexter-v3/CLAUDE.md
+/home/ubuntu/workspace/dexter-v3/IMPLEMENTATION-PLAN.md
+/home/ubuntu/workspace/dexter-v3/QODER.md
+/home/ubuntu/workspace/dexter-v3/README.md
+/home/ubuntu/workspace/dexter-v3/WORKSPACE-ARCHITECTURE.md
+/home/ubuntu/workspace/dexter-v3/docs/findings/2026-06-10-repo-scan.md
+/home/ubuntu/workspace/dexter-v3/pi-session-2026-06-13T03-50-23-639Z_019ebf1a-2a95-7099-8f6e-c57d17ee4aa4.html
+/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/checklists/requirements.md
+/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/contracts/agent-service.md
+/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/contracts/agent-tools.md
+/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/contracts/api-routes.md
+/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/contracts/copilotkit-runtime.md
+/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/contracts/workspace-store.md
+/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/data-model.md
+/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/plan.md
+/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/quickstart.md
+/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/research.md
+/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/spec.md
+/home/ubuntu/workspace/dexter-v3/specs/001-agentic-workspace-rebuild/tasks.md
+/home/ubuntu/workspace/dexter-v3/specs/002-tauri-porting-spec/technical_specification.md
+/home/ubuntu/workspace/dexter-v3/specs/002-tauri-porting-spec/walkthrough.md
+/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/checklists/requirements.md
+/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/contracts/sandbox-tools.md
+/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/contracts/workspace-actions.md
+/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/data-model.md
+/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/plan.md
+/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/quickstart.md
+/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/research.md
+/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/spec.md
+/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/tasks-bug-fixes.md
+/home/ubuntu/workspace/dexter-v3/specs/003-daytona-sandbox-integration/tasks.md
+/home/ubuntu/workspace/dexter-v3/public/file.svg
+/home/ubuntu/workspace/dexter-v3/public/globe.svg
+/home/ubuntu/workspace/dexter-v3/public/next.svg
+/home/ubuntu/workspace/dexter-v3/public/vercel.svg
+/home/ubuntu/workspace/dexter-v3/public/window.svg

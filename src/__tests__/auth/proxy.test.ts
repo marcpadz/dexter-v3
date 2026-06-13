@@ -20,7 +20,7 @@ function mockRequest(pathname: string, headers: Record<string, string> = {}): an
   };
 }
 
-describe("auth middleware", () => {
+describe("auth proxy", () => {
   beforeEach(() => {
     vi.clearAllMocks();
   });
@@ -30,8 +30,8 @@ describe("auth middleware", () => {
       user: { id: "user-1", email: "test@example.com" },
     });
 
-    const { middleware } = await import("@/middleware");
-    const response = await middleware(mockRequest("/chat"));
+    const { proxy } = await import("@/proxy");
+    const response = await proxy(mockRequest("/chat"));
 
     expect(response.status).toBe(200);
   });
@@ -39,9 +39,9 @@ describe("auth middleware", () => {
   it("should redirect unauthenticated users to /auth/login", async () => {
     (auth.api.getSession as any).mockResolvedValueOnce(null);
 
-    const { middleware } = await import("@/middleware");
+    const { proxy } = await import("@/proxy");
     const request = mockRequest("/chat");
-    const response = await middleware(request);
+    const response = await proxy(request);
 
     expect(response.status).toBe(307);
     expect(response.headers.get("location")).toContain("/auth/login");
@@ -50,9 +50,9 @@ describe("auth middleware", () => {
   it("should allow access to /auth routes without session", async () => {
     (auth.api.getSession as any).mockResolvedValueOnce(null);
 
-    const { middleware } = await import("@/middleware");
+    const { proxy } = await import("@/proxy");
     const request = mockRequest("/auth/login");
-    const response = await middleware(request);
+    const response = await proxy(request);
 
     expect(response.status).toBe(200);
   });
@@ -60,9 +60,9 @@ describe("auth middleware", () => {
   it("should redirect unauthenticated users from static assets (matcher handles exclusion at framework level)", async () => {
     (auth.api.getSession as any).mockResolvedValueOnce(null);
 
-    const { middleware } = await import("@/middleware");
+    const { proxy } = await import("@/proxy");
     const request = mockRequest("/_next/static/chunk.js");
-    const response = await middleware(request);
+    const response = await proxy(request);
 
     // The middleware function itself doesn't know about the matcher —
     // Next.js applies the matcher at the router level before calling middleware.
