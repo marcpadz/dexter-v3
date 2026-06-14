@@ -1,7 +1,6 @@
 "use client";
 
 import { useWorkspaceStore } from "../workspace-store";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
 import { Bot, Trash2, Copy } from "lucide-react";
 import ReactMarkdown from "react-markdown";
