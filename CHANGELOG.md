@@ -57,3 +57,6 @@ Format: ISO date, author, summary with links to GitHub issues/PRs.
 - `tools_node` is a mock
 - Runtime.ts has operator precedence bug
 - Checkpointer not passed to graph compile
+
+## 2024-06-14 Code Health Improvement
+- **WorkspacePanel**: Removed unused `WorkspaceTab` import and refactored the `TABS` array type annotation. Cast in `onValueChange` is now done implicitly leveraging TypeScript `Parameters` inference (`Parameters<typeof setActiveTab>[0]`) to maintain type-safety without external dependencies.
