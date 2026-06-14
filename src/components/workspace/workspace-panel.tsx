@@ -1,6 +1,6 @@
 "use client";
 
-import { useWorkspaceStore, type WorkspaceTab } from "./workspace-store";
+import { useWorkspaceStore } from "./workspace-store";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import ArtifactSurface from "./surfaces/artifact-surface";
@@ -20,7 +20,7 @@ import {
   BookOpen,
 } from "lucide-react";
 
-const TABS: { value: WorkspaceTab; label: string; icon: React.ReactNode }[] = [
+const TABS = [
   { value: "artifacts", label: "Artifacts", icon: <Code2 className="h-3.5 w-3.5" /> },
   { value: "browser", label: "Browser", icon: <Globe className="h-3.5 w-3.5" /> },
   { value: "document", label: "Document", icon: <FileText className="h-3.5 w-3.5" /> },
@@ -39,7 +39,7 @@ export default function WorkspacePanel() {
     <div className="h-full flex flex-col bg-background border-l">
       <Tabs
         value={activeTab}
-        onValueChange={(v) => setActiveTab(v as WorkspaceTab)}
+        onValueChange={(v) => setActiveTab(v as Parameters<typeof setActiveTab>[0])}
         className="flex flex-col h-full"
       >
         <div className="border-b px-2 pt-2">
