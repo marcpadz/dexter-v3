@@ -33,11 +33,10 @@ export default function ProjectsPage() {
   const handleCreate = async () => {
     if (!newProject.name) return;
     try {
-      await createProject(newProject);
+      const created = await createProject(newProject);
       toast.success("Project created");
       setNewProject({ name: "", description: "", instructions: "" });
-      const updated = await getProjects();
-      setProjects(updated);
+      setProjects(prev => [...prev, created]);
     } catch (e) {
       toast.error("Failed to create project");
     }
@@ -47,8 +46,7 @@ export default function ProjectsPage() {
     try {
       await deleteProject(id);
       toast.success("Project deleted");
-      const updated = await getProjects();
-      setProjects(updated);
+      setProjects(prev => prev.filter(p => p.id !== id));
     } catch (e) {
       toast.error("Failed to delete project");
     }
