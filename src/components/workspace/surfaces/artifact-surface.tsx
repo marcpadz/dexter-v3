@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { X, Copy, Code2, FileCode, Image, GitCompare, Braces } from "lucide-react";
 import ReactMarkdown from "react-markdown";
+import DOMPurify from "isomorphic-dompurify";
 
 const ARTIFACT_ICONS: Record<ArtifactType, React.ReactNode> = {
   code: <Code2 className="h-4 w-4" />,
@@ -79,7 +80,7 @@ function ArtifactViewer() {
               {active.type === "html" || active.type === "svg" ? (
                 <div
                   className="prose prose-sm max-w-none dark:prose-invert"
-                  dangerouslySetInnerHTML={{ __html: active.content }}
+                  dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(active.content) }}
                 />
               ) : active.type === "mermaid" ? (
                 <pre className="text-xs font-mono bg-muted/30 p-3 rounded overflow-x-auto">
