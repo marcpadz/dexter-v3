@@ -73,8 +73,7 @@ export default function SettingsPage() {
     try {
       await deleteApiKey(provider);
       toast.success(`${provider} API key deleted`);
-      const updatedKeys = await getApiKeys();
-      setKeys(updatedKeys);
+      setKeys(prev => prev.filter(k => k.provider !== provider));
     } catch (e) {
       toast.error("Failed to delete API key");
     }
