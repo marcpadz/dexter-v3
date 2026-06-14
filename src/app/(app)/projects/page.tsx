@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { getProjects, createProject, deleteProject } from "@/lib/server/actions/projects";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
+import { type Project } from "@/lib/db/schema/projects";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
@@ -11,7 +12,7 @@ import { toast } from "sonner";
 import { Loader2, Plus, Trash2 } from "lucide-react";
 
 export default function ProjectsPage() {
-  const [projects, setProjects] = useState<any[]>([]);
+  const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
 
   const [newProject, setNewProject] = useState({ name: "", description: "", instructions: "" });
@@ -22,6 +23,7 @@ export default function ProjectsPage() {
         const data = await getProjects();
         setProjects(data);
       } catch (e) {
+      console.error(e);
         console.error(e);
       } finally {
         setLoading(false);
@@ -39,6 +41,7 @@ export default function ProjectsPage() {
       const updated = await getProjects();
       setProjects(updated);
     } catch (e) {
+      console.error(e);
       toast.error("Failed to create project");
     }
   };
@@ -50,6 +53,7 @@ export default function ProjectsPage() {
       const updated = await getProjects();
       setProjects(updated);
     } catch (e) {
+      console.error(e);
       toast.error("Failed to delete project");
     }
   };
