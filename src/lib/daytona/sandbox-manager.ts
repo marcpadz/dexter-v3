@@ -4,7 +4,7 @@ import { eq } from "drizzle-orm";
 import { getDaytonaClient } from "./client";
 import type { Sandbox } from "@daytonaio/sdk";
 
-let sandboxCache = new Map<string, Sandbox>();
+const sandboxCache = new Map<string, Sandbox>();
 
 export async function getOrCreateSandbox(conversationId: string): Promise<Sandbox> {
   const existing = sandboxCache.get(conversationId);

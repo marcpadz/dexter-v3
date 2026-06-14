@@ -62,8 +62,11 @@ export default function SettingsPage() {
       await saveApiKey({ provider, encryptedKey: key, iv: "" });
       toast.success(`${provider} API key saved`);
       setProviderInputs(prev => ({ ...prev, [provider]: "" }));
-      const updatedKeys = await getApiKeys();
-      setKeys(updatedKeys);
+      setKeys(prev => {
+        const existing = prev.find(k => k.provider === provider);
+        if (existing) return prev;
+        return [...prev, { id: crypto.randomUUID(), provider, createdAt: new Date() }];
+      });
     } catch (e) {
       toast.error("Failed to save API key");
     }
@@ -73,8 +76,7 @@ export default function SettingsPage() {
     try {
       await deleteApiKey(provider);
       toast.success(`${provider} API key deleted`);
-      const updatedKeys = await getApiKeys();
-      setKeys(updatedKeys);
+      setKeys(prev => prev.filter(k => k.provider !== provider));
     } catch (e) {
       toast.error("Failed to delete API key");
     }
