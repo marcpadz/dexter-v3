@@ -47,8 +47,7 @@ export default function ProjectsPage() {
     try {
       await deleteProject(id);
       toast.success("Project deleted");
-      const updated = await getProjects();
-      setProjects(updated);
+      setProjects(prev => prev.filter(p => p.id !== id));
     } catch (e) {
       toast.error("Failed to delete project");
     }
