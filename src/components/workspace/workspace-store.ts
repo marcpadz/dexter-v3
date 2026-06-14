@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { v4 as uuidv4 } from 'uuid';
 
 export type WorkspaceTab =
   | 'artifacts'
@@ -115,7 +116,7 @@ export interface WorkspaceState {
   pushActivity: (entry: Omit<WorkspaceActivity, 'id' | 'timestamp'>) => void;
 }
 
-const generateId = () => Math.random().toString(36).substring(2, 9);
+const generateId = () => uuidv4();
 
 export const useWorkspaceStore = create<WorkspaceState>((set) => ({
   isOpen: false,
